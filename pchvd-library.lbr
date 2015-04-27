@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -61,7 +61,7 @@
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -70,10 +70,219 @@
 </layers>
 <library>
 <packages>
+<package name="MTE1">
+<smd name="1" x="-3.81" y="-4.699" dx="1.016" dy="2.3114" layer="1"/>
+<smd name="3" x="-1.27" y="-4.699" dx="1.016" dy="2.3114" layer="1"/>
+<smd name="7" x="3.81" y="-4.699" dx="1.016" dy="2.3114" layer="1"/>
+<smd name="8" x="3.81" y="4.699" dx="1.016" dy="2.3114" layer="1"/>
+<smd name="14" x="-3.81" y="4.699" dx="1.016" dy="2.3114" layer="1"/>
+<wire x1="-5.08" y1="5.08" x2="5.08" y2="5.08" width="0.127" layer="21"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-5.08" x2="-5.08" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.127" layer="21"/>
+<text x="-3.81" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.81" y="-1.27" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="SO8">
+<description>&lt;b&gt;SMALL OUTLINE INTEGRATED CIRCUIT&lt;/b&gt;</description>
+<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.4" x2="2.4" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
+<smd name="2" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="7" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="1" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="3" x="0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="4" x="1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="8" x="-1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="6" x="0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="5" x="1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<text x="-3.175" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="4.445" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.1501" y1="-3.1001" x2="-1.6599" y2="-2" layer="51"/>
+<rectangle x1="-0.8801" y1="-3.1001" x2="-0.3899" y2="-2" layer="51"/>
+<rectangle x1="0.3899" y1="-3.1001" x2="0.8801" y2="-2" layer="51"/>
+<rectangle x1="1.6599" y1="-3.1001" x2="2.1501" y2="-2" layer="51"/>
+<rectangle x1="1.6599" y1="2" x2="2.1501" y2="3.1001" layer="51"/>
+<rectangle x1="0.3899" y1="2" x2="0.8801" y2="3.1001" layer="51"/>
+<rectangle x1="-0.8801" y1="2" x2="-0.3899" y2="3.1001" layer="51"/>
+<rectangle x1="-2.1501" y1="2" x2="-1.6599" y2="3.1001" layer="51"/>
+</package>
+<package name="SO08">
+<description>&lt;b&gt;SMALL OUTLINE INTEGRATED CIRCUIT&lt;/b&gt;&lt;p&gt;
+body 3.9 mm/JEDEC MS-012AA</description>
+<wire x1="-2.9" y1="3.9" x2="2.9" y2="3.9" width="0.1998" layer="39"/>
+<wire x1="2.9" y1="3.9" x2="2.9" y2="-3.9" width="0.1998" layer="39"/>
+<wire x1="2.9" y1="-3.9" x2="-2.9" y2="-3.9" width="0.1998" layer="39"/>
+<wire x1="-2.9" y1="-3.9" x2="-2.9" y2="3.9" width="0.1998" layer="39"/>
+<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.4" x2="2.4" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
+<smd name="2" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="7" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="1" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="3" x="0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="4" x="1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="8" x="-1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="6" x="0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="5" x="1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<text x="-3.175" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="4.445" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.1501" y1="-3.1001" x2="-1.6599" y2="-2" layer="51"/>
+<rectangle x1="-0.8801" y1="-3.1001" x2="-0.3899" y2="-2" layer="51"/>
+<rectangle x1="0.3899" y1="-3.1001" x2="0.8801" y2="-2" layer="51"/>
+<rectangle x1="1.6599" y1="-3.1001" x2="2.1501" y2="-2" layer="51"/>
+<rectangle x1="1.6599" y1="2" x2="2.1501" y2="3.1001" layer="51"/>
+<rectangle x1="0.3899" y1="2" x2="0.8801" y2="3.1001" layer="51"/>
+<rectangle x1="-0.8801" y1="2" x2="-0.3899" y2="3.1001" layer="51"/>
+<rectangle x1="-2.1501" y1="2" x2="-1.6599" y2="3.1001" layer="51"/>
+</package>
+<package name="SOC8">
+<description>SOC package (DUB R-PDSO-G8 from TI.com)</description>
+<smd name="P$1" x="-7.62" y="-4.8006" dx="0.8" dy="3" layer="1"/>
+<smd name="P$2" x="-5.08" y="-4.8006" dx="0.8" dy="3" layer="1"/>
+<smd name="P$3" x="-2.54" y="-4.8006" dx="0.8" dy="3" layer="1"/>
+<smd name="P$4" x="0" y="-4.8006" dx="0.8" dy="3" layer="1"/>
+<smd name="P$5" x="0" y="4.8006" dx="0.8" dy="3" layer="1"/>
+<smd name="P$6" x="-2.54" y="4.8006" dx="0.8" dy="3" layer="1"/>
+<smd name="P$7" x="-5.08" y="4.8006" dx="0.8" dy="3" layer="1"/>
+<smd name="P$8" x="-7.62" y="4.8006" dx="0.8" dy="3" layer="1"/>
+<wire x1="-8.89" y1="3.302" x2="1.27" y2="3.302" width="0.127" layer="21"/>
+<wire x1="1.27" y1="3.302" x2="1.27" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="1.27" y1="-2.54" x2="1.27" y2="-3.302" width="0.127" layer="21"/>
+<wire x1="1.27" y1="-3.302" x2="-8.89" y2="-3.302" width="0.127" layer="21"/>
+<wire x1="-8.89" y1="-3.302" x2="-8.89" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-8.89" y1="-2.54" x2="-8.89" y2="3.302" width="0.127" layer="21"/>
+<wire x1="-8.89" y1="-2.54" x2="1.27" y2="-2.54" width="0.127" layer="21"/>
+<text x="2.794" y="2.032" size="1.27" layer="25">&gt;NAME</text>
+<text x="2.794" y="-0.254" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="EMCO_Q">
+<pad name="P$1" x="0" y="0" drill="0.9" diameter="1.397"/>
+<pad name="P$2" x="0" y="-3.81" drill="0.9" diameter="1.397"/>
+<pad name="P$3" x="8.89" y="0" drill="0.9" diameter="1.397"/>
+<pad name="P$4" x="8.89" y="-10.16" drill="0.9" diameter="1.397"/>
+<wire x1="-2.286" y1="1.651" x2="11.43" y2="1.651" width="0.127" layer="21"/>
+<wire x1="11.43" y1="1.651" x2="11.43" y2="-12.065" width="0.127" layer="21"/>
+<wire x1="11.43" y1="-12.065" x2="-2.286" y2="-12.065" width="0.127" layer="21"/>
+<wire x1="-2.286" y1="-12.065" x2="-2.286" y2="1.651" width="0.127" layer="21"/>
+<text x="3.302" y="-3.302" size="1.27" layer="25">&gt;NAME</text>
+<text x="3.302" y="-5.588" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
+<symbol name="DCDC-MTE1">
+<description>MTE1 series isolated DC/DC converter (Murata)</description>
+<wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<pin name="IN+" x="-12.7" y="2.54" visible="pin" length="middle"/>
+<pin name="IN-" x="-12.7" y="-2.54" visible="pin" length="middle"/>
+<pin name="OUT+" x="12.7" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="OUT-" x="12.7" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<text x="-5.08" y="7.62" size="1.27" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-7.62" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="ISOLATIONAMP">
+<description>Isolation amplifier</description>
+<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<pin name="VDD1" x="-15.24" y="7.62" visible="pin" length="middle"/>
+<pin name="GND1" x="-15.24" y="2.54" visible="pin" length="middle"/>
+<pin name="VIN+" x="-15.24" y="-2.54" visible="pin" length="middle"/>
+<pin name="VIN-" x="-15.24" y="-7.62" visible="pin" length="middle"/>
+<pin name="VOUT-" x="15.24" y="-7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="VOUT+" x="15.24" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="GND2" x="15.24" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="VDD2" x="15.24" y="7.62" visible="pin" length="middle" rot="R180"/>
+</symbol>
+<symbol name="EMCO-Q">
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<pin name="IN+" x="-12.7" y="5.08" visible="pin" length="middle"/>
+<pin name="IN-" x="-12.7" y="-2.54" visible="pin" length="middle"/>
+<pin name="OUT-" x="12.7" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="OUT+" x="12.7" y="5.08" visible="pin" length="middle" rot="R180"/>
+<text x="-5.08" y="10.16" size="1.27" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-7.62" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
+<deviceset name="MTE1" prefix="U" uservalue="yes">
+<description>MTE1 series isolated DC/DC converter (Murata).
+
+&lt;p&gt;http://power.murata.com/data/power/ncl/kdc_mte1.pdf&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="DCDC-MTE1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MTE1">
+<connects>
+<connect gate="G$1" pin="IN+" pad="3"/>
+<connect gate="G$1" pin="IN-" pad="1"/>
+<connect gate="G$1" pin="OUT+" pad="8"/>
+<connect gate="G$1" pin="OUT-" pad="7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AMC1100" prefix="U">
+<description>AMC1100 Isolation Amplifier, 100kHz.</description>
+<gates>
+<gate name="G$1" symbol="ISOLATIONAMP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SOP" package="SOC8">
+<connects>
+<connect gate="G$1" pin="GND1" pad="P$4"/>
+<connect gate="G$1" pin="GND2" pad="P$5"/>
+<connect gate="G$1" pin="VDD1" pad="P$1"/>
+<connect gate="G$1" pin="VDD2" pad="P$8"/>
+<connect gate="G$1" pin="VIN+" pad="P$2"/>
+<connect gate="G$1" pin="VIN-" pad="P$3"/>
+<connect gate="G$1" pin="VOUT+" pad="P$7"/>
+<connect gate="G$1" pin="VOUT-" pad="P$6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="Q035-5" prefix="U">
+<description>EMCO 350V DC/DC converter, 5V input</description>
+<gates>
+<gate name="G$1" symbol="EMCO-Q" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="EMCO_Q">
+<connects>
+<connect gate="G$1" pin="IN+" pad="P$2"/>
+<connect gate="G$1" pin="IN-" pad="P$1"/>
+<connect gate="G$1" pin="OUT+" pad="P$3"/>
+<connect gate="G$1" pin="OUT-" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
