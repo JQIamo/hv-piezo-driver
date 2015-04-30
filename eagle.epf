@@ -343,8 +343,8 @@ UsedLibrary="C:/Program Files (x86)/EAGLE-6.6.0/lbr/xilinx-xc9.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.6.0/lbr/xilinx-xcv.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.6.0/lbr/zetex.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.6.0/lbr/zilog.lbr"
-UsedLibrary="pchvd-library.lbr"
 UsedLibrary="C:/Users/arestell/Documents/GitHub/eagle-config/lbr-jqi/jqi_passives.lbr"
+UsedLibrary="pchvd-library.lbr"
 
 [Win_1]
 Type="Control Panel"
