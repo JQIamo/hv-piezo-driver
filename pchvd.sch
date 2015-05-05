@@ -13776,7 +13776,6 @@ some situations.</text>
 bandwidth of the HIGH_VOLTAGE_CONTROL?</text>
 <text x="233.68" y="55.88" size="1.778" layer="97">Used for, eg, triangle ramps (10s of Hz, possibly large voltage swings)
 or higher frequency (100s of Hz to kHz) but smaller voltage swing</text>
-<text x="256.54" y="129.54" size="1.778" layer="97">Also want an analog monitor</text>
 <text x="234.95" y="50.8" size="1.778" layer="97">We can add this in once we validate the design</text>
 </plain>
 <instances>
