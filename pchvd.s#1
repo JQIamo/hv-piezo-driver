@@ -13780,6 +13780,7 @@ or higher frequency (100s of Hz to kHz) but smaller voltage swing</text>
 <text x="199.39" y="152.4" size="1.778" layer="98">Vmon partition = .053; ~ 13V/250V</text>
 <text x="227.33" y="162.56" size="1.778" layer="98">This is actually 0.268...?</text>
 <text x="134.62" y="77.47" size="1.778" layer="98">+5V</text>
+<text x="151.13" y="111.76" size="1.778" layer="98">MOD_IN Transfer function is inverted</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
