@@ -13728,8 +13728,8 @@ grid 2.54 mm</description>
 <part name="R23" library="rcl" deviceset="R-US_" device="R1206"/>
 <part name="JP1" library="pchvd-library" deviceset="PINHD-2X4" device=""/>
 <part name="P+3" library="supply1" deviceset="V+" device=""/>
-<part name="R24" library="rcl" deviceset="R-US_" device="R1206" value="931k"/>
-<part name="R25" library="rcl" deviceset="R-US_" device="R1206" value="1k"/>
+<part name="R24" library="rcl" deviceset="R-US_" device="R1206" value="887k"/>
+<part name="R25" library="rcl" deviceset="R-US_" device="R1206" value="49.9k"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="R26" library="rlc-jqi" deviceset="RES" device="1206" value="10"/>
 <part name="C27" library="rlc-jqi" deviceset="CAP" device="0603" value="10nF"/>
@@ -13776,8 +13776,10 @@ some situations.</text>
 bandwidth of the HIGH_VOLTAGE_CONTROL?</text>
 <text x="233.68" y="55.88" size="1.778" layer="97">Used for, eg, triangle ramps (10s of Hz, possibly large voltage swings)
 or higher frequency (100s of Hz to kHz) but smaller voltage swing</text>
-<text x="256.54" y="129.54" size="1.778" layer="97">Also want an analog monitor</text>
 <text x="234.95" y="50.8" size="1.778" layer="97">We can add this in once we validate the design</text>
+<text x="199.39" y="152.4" size="1.778" layer="98">Vmon partition = .053; ~ 13V/250V</text>
+<text x="227.33" y="162.56" size="1.778" layer="98">This is actually 0.268...?</text>
+<text x="134.62" y="77.47" size="1.778" layer="98">+5V</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -13892,8 +13894,8 @@ or higher frequency (100s of Hz to kHz) but smaller voltage swing</text>
 <instance part="C33" gate="G$1" x="132.08" y="22.86" rot="R90"/>
 <instance part="R23" gate="G$1" x="165.1" y="96.52" rot="R90"/>
 <instance part="R24" gate="G$1" x="193.04" y="162.56" rot="R90"/>
-<instance part="R25" gate="G$1" x="193.04" y="147.32" rot="R90"/>
-<instance part="GND3" gate="1" x="193.04" y="132.08"/>
+<instance part="R25" gate="G$1" x="193.04" y="149.86" rot="R90"/>
+<instance part="GND3" gate="1" x="193.04" y="140.97"/>
 </instances>
 <busses>
 </busses>
@@ -14210,8 +14212,8 @@ or higher frequency (100s of Hz to kHz) but smaller voltage swing</text>
 </segment>
 <segment>
 <pinref part="R25" gate="G$1" pin="1"/>
-<wire x1="193.04" y1="142.24" x2="193.04" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
+<wire x1="193.04" y1="143.51" x2="193.04" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -14514,7 +14516,6 @@ or higher frequency (100s of Hz to kHz) but smaller voltage swing</text>
 <pinref part="R24" gate="G$1" pin="1"/>
 <pinref part="R25" gate="G$1" pin="2"/>
 <wire x1="193.04" y1="157.48" x2="193.04" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="154.94" x2="193.04" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="154.94" x2="205.74" y2="154.94" width="0.1524" layer="91"/>
 <junction x="193.04" y="154.94"/>
 <label x="200.66" y="154.94" size="1.778" layer="95"/>
@@ -14530,6 +14531,7 @@ or higher frequency (100s of Hz to kHz) but smaller voltage swing</text>
 <text x="207.01" y="111.76" size="1.778" layer="98">Chip select bit</text>
 <text x="207.01" y="109.22" size="1.778" layer="98">Register select</text>
 <text x="207.01" y="106.68" size="1.778" layer="98">reset</text>
+<text x="125.73" y="41.91" size="1.778" layer="98">Is this too much of a voltage drop 15 -&gt; 5V?</text>
 </plain>
 <instances>
 <instance part="P-1" gate="1" x="78.74" y="15.24"/>
