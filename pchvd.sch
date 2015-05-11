@@ -13552,8 +13552,8 @@ grid 2.54 mm</description>
 <part name="U$2" library="pchvd-library" deviceset="FLOATINGGROUND" device=""/>
 <part name="U$3" library="pchvd-library" deviceset="5V_FLOATING" device=""/>
 <part name="U$4" library="pchvd-library" deviceset="FLOATINGGROUND" device=""/>
-<part name="R1" library="rcl" deviceset="R-US_" device="R1206" value="10"/>
-<part name="R2" library="rcl" deviceset="R-US_" device="R1206" value="10"/>
+<part name="R1" library="rcl" deviceset="R-US_" device="R1206" value="20"/>
+<part name="R2" library="rcl" deviceset="R-US_" device="R1206" value="20"/>
 <part name="L3" library="rcl" deviceset="L-US" device="L3225P" value="100u">
 <attribute name="DIGIKEY" value="490-4065-1-ND"/>
 </part>
@@ -13575,65 +13575,65 @@ grid 2.54 mm</description>
 <part name="C2" library="rcl" deviceset="C-US" device="C1812K" value="1u">
 <attribute name="DIGIKEY" value="445-7769-1-ND"/>
 </part>
-<part name="R5" library="rcl" deviceset="R-US_" device="R1206" value="10"/>
+<part name="R5" library="rcl" deviceset="R-US_" device="R1206" value="20"/>
 <part name="C3" library="rcl" deviceset="C-US" device="C1812K" value="1u">
 <attribute name="DIGIKEY" value="445-7769-1-ND"/>
 </part>
-<part name="R6" library="rcl" deviceset="R-US_" device="R1206" value="10"/>
+<part name="R6" library="rcl" deviceset="R-US_" device="R1206" value="20"/>
 <part name="U$6" library="pchvd-library" deviceset="HVFLOAT" device=""/>
 <part name="IC1" library="linear" deviceset="OP27" device="D"/>
 <part name="U$7" library="pchvd-library" deviceset="FLOATINGGROUND" device=""/>
 <part name="U$8" library="pchvd-library" deviceset="HVFLOAT" device=""/>
-<part name="C4" library="rcl" deviceset="C-US" device="C1206"/>
-<part name="C5" library="rcl" deviceset="C-US" device="C1206"/>
-<part name="C6" library="rcl" deviceset="C-US" device="C0603"/>
-<part name="C7" library="rcl" deviceset="C-US" device="C0603"/>
+<part name="C4" library="rcl" deviceset="C-US" device="C1206" value="10n"/>
+<part name="C5" library="rcl" deviceset="C-US" device="C1206" value="10n"/>
+<part name="C6" library="rcl" deviceset="C-US" device="C0603" value="100n"/>
+<part name="C7" library="rcl" deviceset="C-US" device="C0603" value="100n"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="R7" library="rcl" deviceset="R-US_" device="R1206"/>
-<part name="R8" library="rcl" deviceset="R-US_" device="R1206"/>
+<part name="R7" library="rcl" deviceset="R-US_" device="R1206" value="10k"/>
+<part name="R8" library="rcl" deviceset="R-US_" device="R1206" value="10k"/>
 <part name="L7" library="rcl" deviceset="L-US" device="L3225M" value="10u"/>
 <part name="L8" library="rcl" deviceset="L-US" device="L3225M" value="10u"/>
-<part name="C9" library="rcl" deviceset="C-US" device="C1206"/>
+<part name="C9" library="rcl" deviceset="C-US" device="C1206" value="1u"/>
 <part name="L9" library="rcl" deviceset="L-US" device="L3225M" value="10u"/>
 <part name="L10" library="rcl" deviceset="L-US" device="L3225M" value="10u"/>
-<part name="C8" library="rcl" deviceset="C-US" device="C1206"/>
+<part name="C8" library="rcl" deviceset="C-US" device="C1206" value="1u"/>
 <part name="IC2" library="opamp-jqi" deviceset="OPAMP" device="-SO" value="LT1677"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
 <part name="P+5" library="supply1" deviceset="+5V" device=""/>
-<part name="C10" library="rcl" deviceset="C-US" device="C0603"/>
+<part name="C10" library="rcl" deviceset="C-US" device="C0603" value="100n"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
-<part name="C11" library="rcl" deviceset="C-US" device="C0603"/>
-<part name="R9" library="rcl" deviceset="R-US_" device="R1206" value="10"/>
+<part name="C11" library="rcl" deviceset="C-US" device="C0603" value="1u"/>
+<part name="R9" library="rcl" deviceset="R-US_" device="R1206" value="10k"/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
-<part name="C12" library="rcl" deviceset="C-US" device="C0603"/>
+<part name="C12" library="rcl" deviceset="C-US" device="C0603" value="100n"/>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
-<part name="C13" library="rcl" deviceset="C-US" device="C1206"/>
+<part name="C13" library="rcl" deviceset="C-US" device="C1206" value="10n"/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
-<part name="R10" library="rcl" deviceset="R-US_" device="R1206" value="10"/>
+<part name="R10" library="rcl" deviceset="R-US_" device="R1206" value="10k"/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="L11" library="rcl" deviceset="L-US" device="L3225M" value="10u"/>
-<part name="C17" library="rcl" deviceset="C-US" device="C1206"/>
-<part name="C18" library="rcl" deviceset="C-US" device="C0603"/>
+<part name="C17" library="rcl" deviceset="C-US" device="C1206" value="1u"/>
+<part name="C18" library="rcl" deviceset="C-US" device="C0603" value="100n"/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
-<part name="C19" library="rcl" deviceset="C-US" device="C1206"/>
-<part name="R13" library="rcl" deviceset="R-US_" device="R1206" value="10"/>
+<part name="C19" library="rcl" deviceset="C-US" device="C1206" value="DNP"/>
+<part name="R13" library="rcl" deviceset="R-US_" device="R1206" value="DNP"/>
 <part name="U$9" library="pchvd-library" deviceset="HVFLOAT" device=""/>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
 <part name="R14" library="rcl" deviceset="R-US_" device="R1206" value="1K"/>
 <part name="L12" library="rcl" deviceset="L-US" device="L3225M" value="10u"/>
 <part name="P+8" library="supply1" deviceset="+5V" device=""/>
-<part name="C20" library="rcl" deviceset="C-US" device="C1206"/>
-<part name="C21" library="rcl" deviceset="C-US" device="C0603"/>
+<part name="C20" library="rcl" deviceset="C-US" device="C1206" value="1u"/>
+<part name="C21" library="rcl" deviceset="C-US" device="C0603" value="100n"/>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
 <part name="GND24" library="supply1" deviceset="GND" device=""/>
-<part name="R15" library="rcl" deviceset="R-US_" device="R1206"/>
-<part name="R16" library="rcl" deviceset="R-US_" device="R1206"/>
+<part name="R15" library="rcl" deviceset="R-US_" device="R1206" value="DNP"/>
+<part name="R16" library="rcl" deviceset="R-US_" device="R1206" value="DNP"/>
 <part name="P-1" library="supply1" deviceset="-15V" device=""/>
 <part name="P+1" library="supply1" deviceset="+15V" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
@@ -13672,8 +13672,8 @@ grid 2.54 mm</description>
 <part name="P-5" library="supply1" deviceset="-15V" device=""/>
 <part name="GND40" library="supply1" deviceset="GND" device=""/>
 <part name="L20" library="rlc-jqi" deviceset="INDUCTOR" device="-0805" value="ferrite 1k"/>
-<part name="C50" library="rlc-jqi" deviceset="CAP" device="0603"/>
-<part name="R36" library="rlc-jqi" deviceset="RES" device="1206"/>
+<part name="C50" library="rlc-jqi" deviceset="CAP" device="0603" value="DNP"/>
+<part name="R36" library="rlc-jqi" deviceset="RES" device="1206" value="0"/>
 <part name="GND52" library="supply1" deviceset="GND" device=""/>
 <part name="C56" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="1uF"/>
 <part name="C57" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="1uF"/>
@@ -13696,10 +13696,10 @@ grid 2.54 mm</description>
 <part name="VDD4" library="supply1" deviceset="VDD" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="DAC2" library="misc-ics" deviceset="AD5541" device=""/>
-<part name="R11" library="rlc-jqi" deviceset="RES" device="1206" value="10"/>
-<part name="R12" library="rlc-jqi" deviceset="RES" device="1206" value="10"/>
-<part name="R18" library="rlc-jqi" deviceset="RES" device="1206" value="10"/>
-<part name="C24" library="rlc-jqi" deviceset="CAP" device="0603"/>
+<part name="R11" library="rlc-jqi" deviceset="RES" device="1206" value="200"/>
+<part name="R12" library="rlc-jqi" deviceset="RES" device="1206" value="200"/>
+<part name="R18" library="rlc-jqi" deviceset="RES" device="1206" value="200"/>
+<part name="C24" library="rlc-jqi" deviceset="CAP" device="0603" value="10n"/>
 <part name="MOD_IN" library="connector-jqi" deviceset="BNC" device="-H"/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="HV_OUT" library="connector-jqi" deviceset="BNC" device="-H"/>
@@ -13708,7 +13708,7 @@ grid 2.54 mm</description>
 <part name="P+11" library="supply1" deviceset="V+" device=""/>
 <part name="C16" library="rcl" deviceset="C-US" device="C1206" value="1uF"/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
-<part name="C25" library="rcl" deviceset="C-US" device="C1206"/>
+<part name="C25" library="rcl" deviceset="C-US" device="C1206" value="1u"/>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
 <part name="L13" library="rlc-jqi" deviceset="INDUCTOR" device="-0805"/>
 <part name="C26" library="rcl" deviceset="C-US" device="C1206"/>
@@ -13717,21 +13717,21 @@ grid 2.54 mm</description>
 <part name="GND26" library="supply1" deviceset="GND" device=""/>
 <part name="VSS6" library="supply1" deviceset="VSS" device=""/>
 <part name="U$10" library="pchvd-library" deviceset="FLOATINGGROUND" device=""/>
-<part name="R19" library="rcl" deviceset="R-US_" device="R1206"/>
-<part name="R20" library="rcl" deviceset="R-US_" device="R1206"/>
-<part name="R22" library="rcl" deviceset="R-US_" device="R1206"/>
+<part name="R19" library="rcl" deviceset="R-US_" device="R1206" value="30k"/>
+<part name="R20" library="rcl" deviceset="R-US_" device="R1206" value="10k"/>
+<part name="R22" library="rcl" deviceset="R-US_" device="R1206" value="15k"/>
 <part name="VSS7" library="supply1" deviceset="VSS" device=""/>
 <part name="IC3" library="linear" deviceset="78L*" device="F" technology="05">
 <attribute name="PARTNO" value="MC78L05ACHXCT-ND"/>
 </part>
-<part name="C33" library="rlc-jqi" deviceset="CAP" device="0603" value="100nF"/>
-<part name="R23" library="rcl" deviceset="R-US_" device="R1206"/>
+<part name="C33" library="rlc-jqi" deviceset="CAP" device="0603" value="100n"/>
+<part name="R23" library="rcl" deviceset="R-US_" device="R1206" value="10k"/>
 <part name="JP1" library="pchvd-library" deviceset="PINHD-2X4" device=""/>
 <part name="P+3" library="supply1" deviceset="V+" device=""/>
 <part name="R24" library="rcl" deviceset="R-US_" device="R1206" value="887k"/>
 <part name="R25" library="rcl" deviceset="R-US_" device="R1206" value="49.9k"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="R26" library="rlc-jqi" deviceset="RES" device="1206" value="10"/>
+<part name="R26" library="rlc-jqi" deviceset="RES" device="1206" value="1k"/>
 <part name="C27" library="rlc-jqi" deviceset="CAP" device="0603" value="10nF"/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="IC8" library="linear" deviceset="OP27" device="D"/>
@@ -13781,6 +13781,7 @@ or higher frequency (100s of Hz to kHz) but smaller voltage swing</text>
 <text x="227.33" y="162.56" size="1.778" layer="98">This is actually 0.268...?</text>
 <text x="134.62" y="77.47" size="1.778" layer="98">+5V</text>
 <text x="151.13" y="111.76" size="1.778" layer="98">MOD_IN Transfer function is inverted</text>
+<text x="69.596" y="90.678" size="1.778" layer="97">3kHz bandwidth</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -15326,6 +15327,7 @@ optionally sum onto MOD_IN </text>
 <text x="81.28" y="107.95" size="1.778" layer="97">Needs filters and connections</text>
 <text x="85.09" y="50.8" size="1.778" layer="97">Also send monitor voltage onto backplae
 use for feed forward, etc.</text>
+<text x="78.486" y="147.32" size="1.778" layer="97">Arbitrary set to -0.91 gain and 30kHz bandwidth </text>
 </plain>
 <instances>
 <instance part="JP1" gate="A" x="63.5" y="137.16"/>
