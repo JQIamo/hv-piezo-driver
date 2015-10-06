@@ -1584,7 +1584,6 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <part name="RF_0B" library="jqi_passives" deviceset="R_SMD" device="R1206" value="10k"/>
 <part name="R10" library="jqi_passives" deviceset="R_SMD" device="R1206" value="500k"/>
 <part name="R11" library="jqi_passives" deviceset="R_SMD" device="R1206" value="10k"/>
-<part name="JP1" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="X1" library="connector-jqi" deviceset="BNC" device="-H"/>
@@ -1669,6 +1668,9 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <part name="C41" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0805" value="10uF"/>
 <part name="C42" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF"/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
+<part name="X2" library="connector-jqi" deviceset="BNC" device="-H"/>
+<part name="GND22" library="supply1" deviceset="GND" device=""/>
+<part name="X3" library="connector-jqi" deviceset="BNC" device="-H"/>
 </parts>
 <sheets>
 <sheet>
@@ -1779,7 +1781,6 @@ Standard 1206 SMT resistors seem to have a max working voltage ~ 200V</text>
 <attribute name="NAME" x="-12.3825" y="-45.4025" size="1.524" layer="95"/>
 <attribute name="VALUE" x="-1.7462" y="-45.4025" size="1.524" layer="96"/>
 </instance>
-<instance part="JP1" gate="G$1" x="160.02" y="83.82" rot="R180"/>
 <instance part="GND12" gate="1" x="175.26" y="73.66"/>
 <instance part="GND13" gate="1" x="314.96" y="132.08"/>
 <instance part="X1" gate="G$1" x="332.74" y="139.7" rot="MR0"/>
@@ -1908,6 +1909,9 @@ Standard 1206 SMT resistors seem to have a max working voltage ~ 200V</text>
 <instance part="C41" gate="G$1" x="60.96" y="177.8"/>
 <instance part="C42" gate="G$1" x="68.58" y="177.8"/>
 <instance part="GND20" gate="1" x="73.66" y="180.34"/>
+<instance part="X2" gate="G$1" x="149.86" y="83.82"/>
+<instance part="GND22" gate="1" x="167.64" y="101.6"/>
+<instance part="X3" gate="G$1" x="157.48" y="109.22"/>
 </instances>
 <busses>
 </busses>
@@ -1962,10 +1966,10 @@ Standard 1206 SMT resistors seem to have a max working voltage ~ 200V</text>
 <junction x="-2.54" y="58.42"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="G$1" pin="1"/>
-<wire x1="162.56" y1="81.28" x2="175.26" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="81.28" x2="175.26" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="81.28" x2="175.26" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="GND12" gate="1" pin="GND"/>
+<pinref part="X2" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="GND13" gate="1" pin="GND"/>
@@ -2125,6 +2129,12 @@ Standard 1206 SMT resistors seem to have a max working voltage ~ 200V</text>
 <junction x="66.04" y="180.34"/>
 <wire x1="73.66" y1="185.42" x2="73.66" y2="182.88" width="0.1524" layer="91"/>
 <pinref part="GND20" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GND22" gate="1" pin="GND"/>
+<wire x1="160.02" y1="106.68" x2="167.64" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="106.68" x2="167.64" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="X3" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -2551,8 +2561,9 @@ Standard 1206 SMT resistors seem to have a max working voltage ~ 200V</text>
 </segment>
 <segment>
 <pinref part="R25" gate="G$1" pin="2"/>
-<wire x1="198.12" y1="109.22" x2="175.26" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="109.22" x2="160.02" y2="109.22" width="0.1524" layer="91"/>
 <label x="182.88" y="106.68" size="1.778" layer="95"/>
+<pinref part="X3" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -2639,9 +2650,9 @@ Standard 1206 SMT resistors seem to have a max working voltage ~ 200V</text>
 </net>
 <net name="N$20" class="0">
 <segment>
-<pinref part="JP1" gate="G$1" pin="2"/>
 <pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="162.56" y1="83.82" x2="175.26" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="83.82" x2="175.26" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="X2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$22" class="0">
