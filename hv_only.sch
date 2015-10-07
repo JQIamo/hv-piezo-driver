@@ -188,7 +188,7 @@ by exp-lbrs.ulp</description>
 <smd name="P$2" x="0" y="50.5" dx="51.5" dy="1" layer="1"/>
 <smd name="P$3" x="-25.25" y="25.25" dx="51.5" dy="1" layer="1" rot="R90"/>
 <smd name="P$4" x="25.25" y="25.25" dx="51.5" dy="1" layer="1" rot="R90"/>
-<text x="28" y="0" size="1.27" layer="21" rot="R90">RF Shield</text>
+<text x="25.4" y="-1.21" size="1.27" layer="25" rot="R180">RF Shield</text>
 </package>
 </packages>
 <symbols>
@@ -1616,7 +1616,7 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <part name="R11" library="jqi_passives" deviceset="R_SMD" device="R1206" value="10k"/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
-<part name="X1" library="connector-jqi" deviceset="BNC" device="-H"/>
+<part name="HV_OUT" library="connector-jqi" deviceset="BNC" device="-H"/>
 <part name="JP4" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="JP5" library="pinhead" deviceset="PINHD-1X3" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
@@ -1698,9 +1698,9 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <part name="C41" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0805" value="10uF"/>
 <part name="C42" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF"/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
-<part name="X2" library="connector-jqi" deviceset="BNC" device="-H"/>
+<part name="MOD_IN" library="connector-jqi" deviceset="BNC" device="-H"/>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
-<part name="X3" library="connector-jqi" deviceset="BNC" device="-H"/>
+<part name="DC_IN" library="connector-jqi" deviceset="BNC" device="-H"/>
 <part name="U$1" library="pchvd" deviceset="RF_36103505" device=""/>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
 <part name="R3" library="jqi_passives" deviceset="R_SMD" device="R1206" value="10k"/>
@@ -1818,7 +1818,7 @@ Standard 1206 SMT resistors seem to have a max working voltage ~ 200V</text>
 </instance>
 <instance part="GND12" gate="1" x="175.26" y="73.66"/>
 <instance part="GND13" gate="1" x="314.96" y="132.08"/>
-<instance part="X1" gate="G$1" x="332.74" y="139.7" rot="MR0"/>
+<instance part="HV_OUT" gate="G$1" x="332.74" y="139.7" rot="MR0"/>
 <instance part="JP4" gate="G$1" x="12.7" y="91.44" rot="R180"/>
 <instance part="JP5" gate="A" x="-43.18" y="129.54"/>
 <instance part="GND14" gate="1" x="-86.36" y="124.46"/>
@@ -1944,9 +1944,9 @@ Standard 1206 SMT resistors seem to have a max working voltage ~ 200V</text>
 <instance part="C41" gate="G$1" x="60.96" y="177.8"/>
 <instance part="C42" gate="G$1" x="68.58" y="177.8"/>
 <instance part="GND20" gate="1" x="73.66" y="180.34"/>
-<instance part="X2" gate="G$1" x="149.86" y="83.82"/>
+<instance part="MOD_IN" gate="G$1" x="149.86" y="83.82"/>
 <instance part="GND22" gate="1" x="167.64" y="101.6"/>
-<instance part="X3" gate="G$1" x="157.48" y="109.22"/>
+<instance part="DC_IN" gate="G$1" x="157.48" y="109.22"/>
 <instance part="U$1" gate="G$1" x="162.56" y="-5.08"/>
 <instance part="GND23" gate="1" x="162.56" y="-22.86"/>
 <instance part="R3" gate="G$1" x="2.54" y="88.9" smashed="yes" rot="R90">
@@ -2016,12 +2016,12 @@ Standard 1206 SMT resistors seem to have a max working voltage ~ 200V</text>
 <wire x1="152.4" y1="81.28" x2="175.26" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="81.28" x2="175.26" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="GND12" gate="1" pin="GND"/>
-<pinref part="X2" gate="G$1" pin="2"/>
+<pinref part="MOD_IN" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="GND13" gate="1" pin="GND"/>
 <wire x1="314.96" y1="137.16" x2="314.96" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="X1" gate="G$1" pin="2"/>
+<pinref part="HV_OUT" gate="G$1" pin="2"/>
 <wire x1="330.2" y1="137.16" x2="314.96" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -2181,7 +2181,7 @@ Standard 1206 SMT resistors seem to have a max working voltage ~ 200V</text>
 <pinref part="GND22" gate="1" pin="GND"/>
 <wire x1="160.02" y1="106.68" x2="167.64" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="106.68" x2="167.64" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="X3" gate="G$1" pin="2"/>
+<pinref part="DC_IN" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="GND"/>
@@ -2440,7 +2440,7 @@ Standard 1206 SMT resistors seem to have a max working voltage ~ 200V</text>
 <wire x1="264.16" y1="139.7" x2="294.64" y2="139.7" width="0.1524" layer="91"/>
 <junction x="264.16" y="139.7"/>
 <label x="287.02" y="139.7" size="1.9304" layer="95"/>
-<pinref part="X1" gate="G$1" pin="1"/>
+<pinref part="HV_OUT" gate="G$1" pin="1"/>
 <pinref part="R17" gate="G$1" pin="1"/>
 <wire x1="294.64" y1="139.7" x2="330.2" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="294.64" y1="139.7" x2="294.64" y2="71.12" width="0.1524" layer="91"/>
@@ -2621,7 +2621,7 @@ Standard 1206 SMT resistors seem to have a max working voltage ~ 200V</text>
 <pinref part="R25" gate="G$1" pin="2"/>
 <wire x1="198.12" y1="109.22" x2="160.02" y2="109.22" width="0.1524" layer="91"/>
 <label x="182.88" y="106.68" size="1.778" layer="95"/>
-<pinref part="X3" gate="G$1" pin="1"/>
+<pinref part="DC_IN" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -2710,7 +2710,7 @@ Standard 1206 SMT resistors seem to have a max working voltage ~ 200V</text>
 <segment>
 <pinref part="R8" gate="G$1" pin="1"/>
 <wire x1="152.4" y1="83.82" x2="175.26" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="X2" gate="G$1" pin="1"/>
+<pinref part="MOD_IN" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$22" class="0">
