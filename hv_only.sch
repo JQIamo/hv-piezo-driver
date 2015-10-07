@@ -1745,6 +1745,7 @@ Standard 1206 SMT resistors seem to have a max working voltage ~ 200V</text>
 <text x="271.78" y="78.74" size="1.778" layer="91">Dual zener</text>
 <text x="266.7" y="66.04" size="1.778" layer="91">check pinout here</text>
 <text x="-76.2" y="-66.04" size="1.778" layer="91">change 10k to 0603?</text>
+<text x="-20.32" y="88.9" size="1.778" layer="91">eventually change to pull down</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="53.34" y="66.04"/>
