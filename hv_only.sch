@@ -1703,6 +1703,8 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <part name="X3" library="connector-jqi" deviceset="BNC" device="-H"/>
 <part name="U$1" library="pchvd" deviceset="RF_36103505" device=""/>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
+<part name="R3" library="jqi_passives" deviceset="R_SMD" device="R1206" value="10k"/>
+<part name="P+7" library="supply1" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1946,6 +1948,11 @@ Standard 1206 SMT resistors seem to have a max working voltage ~ 200V</text>
 <instance part="X3" gate="G$1" x="157.48" y="109.22"/>
 <instance part="U$1" gate="G$1" x="162.56" y="-5.08"/>
 <instance part="GND23" gate="1" x="162.56" y="-22.86"/>
+<instance part="R3" gate="G$1" x="2.54" y="88.9" smashed="yes" rot="R90">
+<attribute name="NAME" x="2.2225" y="81.5975" size="1.524" layer="95" rot="R90"/>
+<attribute name="VALUE" x="2.2225" y="92.2338" size="1.524" layer="96" rot="R90"/>
+</instance>
+<instance part="P+7" gate="1" x="2.54" y="101.6"/>
 </instances>
 <busses>
 </busses>
@@ -1970,6 +1977,11 @@ Standard 1206 SMT resistors seem to have a max working voltage ~ 200V</text>
 <pinref part="C3" gate="G$1" pin="2"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="40.64" y1="99.06" x2="40.64" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="JP4" gate="G$1" pin="2"/>
+<wire x1="15.24" y1="91.44" x2="33.02" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="91.44" x2="33.02" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="96.52" x2="40.64" y2="96.52" width="0.1524" layer="91"/>
+<junction x="40.64" y="96.52"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
@@ -2208,14 +2220,24 @@ Standard 1206 SMT resistors seem to have a max working voltage ~ 200V</text>
 <wire x1="96.52" y1="-55.88" x2="91.44" y2="-55.88" width="0.1524" layer="91"/>
 <junction x="96.52" y="-55.88"/>
 </segment>
+<segment>
+<pinref part="P+7" gate="1" pin="+5V"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="2.54" y1="99.06" x2="2.54" y2="93.98" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="EN" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="EN"/>
 <wire x1="27.94" y1="66.04" x2="15.24" y2="66.04" width="0.1524" layer="91"/>
 <label x="17.78" y="66.04" size="1.778" layer="95"/>
-<wire x1="15.24" y1="66.04" x2="15.24" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="66.04" x2="15.24" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="JP4" gate="G$1" pin="1"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="15.24" y1="81.28" x2="15.24" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="83.82" x2="2.54" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="81.28" x2="15.24" y2="81.28" width="0.1524" layer="91"/>
+<junction x="15.24" y="81.28"/>
 </segment>
 </net>
 <net name="REXT+" class="0">
@@ -2431,7 +2453,7 @@ Standard 1206 SMT resistors seem to have a max working voltage ~ 200V</text>
 <junction x="254" y="71.12"/>
 </segment>
 </net>
-<net name="HV_MIDGND1" class="0">
+<net name="HVFB" class="0">
 <segment>
 <wire x1="0" y1="-45.72" x2="5.08" y2="-45.72" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="-45.72" x2="38.1" y2="-45.72" width="0.1524" layer="91"/>
@@ -2528,12 +2550,8 @@ Standard 1206 SMT resistors seem to have a max working voltage ~ 200V</text>
 <wire x1="40.64" y1="106.68" x2="50.8" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="106.68" x2="50.8" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="VDD"/>
-<wire x1="50.8" y1="106.68" x2="50.8" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="106.68" x2="50.8" y2="83.82" width="0.1524" layer="91"/>
 <junction x="50.8" y="106.68"/>
-<pinref part="JP4" gate="G$1" pin="2"/>
-<wire x1="50.8" y1="91.44" x2="50.8" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="91.44" x2="50.8" y2="91.44" width="0.1524" layer="91"/>
-<junction x="50.8" y="91.44"/>
 <wire x1="43.18" y1="170.18" x2="43.18" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="114.3" x2="50.8" y2="114.3" width="0.1524" layer="91"/>
 <junction x="43.18" y="170.18"/>
