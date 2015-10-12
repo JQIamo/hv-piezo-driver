@@ -160,10 +160,10 @@ by exp-lbrs.ulp</description>
 <smd name="2" x="-1.975" y="0.5" dx="0.28" dy="0.85" layer="1" rot="R270"/>
 <smd name="1" x="-1.975" y="1" dx="0.28" dy="0.85" layer="1" rot="R270"/>
 <smd name="PAD" x="0" y="0" dx="2.7" dy="2.7" layer="1"/>
-<pad name="V1" x="-0.635" y="0.635" drill="0.6"/>
-<pad name="V2" x="0.635" y="0.635" drill="0.6"/>
-<pad name="V4" x="0.635" y="-0.635" drill="0.6"/>
-<pad name="V3" x="-0.635" y="-0.635" drill="0.6"/>
+<pad name="V1" x="-0.635" y="0.635" drill="0.3556"/>
+<pad name="V2" x="0.635" y="0.635" drill="0.3556"/>
+<pad name="V4" x="0.635" y="-0.635" drill="0.3556"/>
+<pad name="V3" x="-0.635" y="-0.635" drill="0.3556"/>
 <wire x1="-2.2" y1="2.2" x2="2.2" y2="2.2" width="0.127" layer="21"/>
 <wire x1="2.2" y1="2.2" x2="2.2" y2="-2.2" width="0.127" layer="21"/>
 <wire x1="2.2" y1="-2.2" x2="-2.2" y2="-2.2" width="0.127" layer="21"/>
@@ -1579,28 +1579,18 @@ body 3.9 mm/JEDEC MS-012AA</description>
 </class>
 </classes>
 <parts>
-<part name="U1" library="pchvd" deviceset="DRV2700" device="">
-<attribute name="PARTNO" value="296-41118-1-ND"/>
-</part>
+<part name="U1" library="pchvd" deviceset="DRV2700" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="C1" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0805" value="10uF"/>
-<part name="C2" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF">
-<attribute name="PARTNO" value="1276-1936-1-ND"/>
-</part>
-<part name="C3" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF">
-<attribute name="PARTNO" value="1276-1936-1-ND"/>
-</part>
+<part name="C2" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF"/>
+<part name="C3" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
-<part name="T1" library="pchvd" deviceset="ATB3225" device="">
-<attribute name="PARTNO" value="445-8636-1-ND"/>
-</part>
+<part name="T1" library="pchvd" deviceset="ATB3225" device=""/>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="REXT" library="jqi_passives" deviceset="R_SMD" device="R0603" value="DNP"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="C4" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF">
-<attribute name="PARTNO" value="1276-1936-1-ND"/>
-</part>
+<part name="C4" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF"/>
 <part name="D1" library="diode" deviceset="DIODE_2CACA-" device="SOT23" value="MMBD3004S-7-F"/>
 <part name="C12" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_1206" value="1uF"/>
 <part name="C13" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_1206" value="1uF"/>
@@ -1608,24 +1598,16 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <part name="P+5" library="supply1" deviceset="+15V" device=""/>
 <part name="P-1" library="supply1" deviceset="-15V" device=""/>
 <part name="C15" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0805" value="10uF"/>
-<part name="C16" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF">
-<attribute name="PARTNO" value="1276-1936-1-ND"/>
-</part>
+<part name="C16" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="C17" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0805" value="10uF"/>
-<part name="C18" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF">
-<attribute name="PARTNO" value="1276-1936-1-ND"/>
-</part>
+<part name="C18" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF"/>
 <part name="P-2" library="supply1" deviceset="-15V" device=""/>
 <part name="C5" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0805" value="10uF"/>
-<part name="C6" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF">
-<attribute name="PARTNO" value="1276-1936-1-ND"/>
-</part>
+<part name="C6" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="C7" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0805" value="10uF"/>
-<part name="C8" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF">
-<attribute name="PARTNO" value="1276-1936-1-ND"/>
-</part>
+<part name="C8" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF"/>
 <part name="P+3" library="supply1" deviceset="+5V" device=""/>
 <part name="R7" library="jqi_passives" deviceset="R_SMD" device="R0603"/>
 <part name="RI_0" library="jqi_passives" deviceset="R_SMD" device="R1206" value="500k"/>
@@ -1634,35 +1616,25 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <part name="R11" library="jqi_passives" deviceset="R_SMD" device="R1206" value="10k"/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
-<part name="HV_OUT" library="connector-jqi" deviceset="BNC" device="-H">
-<attribute name="PARTNO" value="A32260-ND"/>
-</part>
+<part name="HV_OUT" library="connector-jqi" deviceset="BNC" device="-H"/>
 <part name="JP4" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="JP5" library="pinhead" deviceset="PINHD-1X3" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" deviceset="+15V" device=""/>
 <part name="P-3" library="supply1" deviceset="-15V" device=""/>
-<part name="U2" library="regulator-jqi" deviceset="MIC5209" device="">
-<attribute name="PARTNO" value="576-1277-ND"/>
-</part>
+<part name="U2" library="regulator-jqi" deviceset="MIC5209" device=""/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="R1" library="jqi_passives" deviceset="R_SMD" device="R1206" value="10k"/>
 <part name="R2" library="jqi_passives" deviceset="R_SMD" device="R1206" value="30.1k"/>
-<part name="C9" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="470pF">
-<attribute name="PARTNO" value="1276-1094-1-ND"/>
-</part>
+<part name="C9" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="470pF"/>
 <part name="C10" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0805" value="10uF"/>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
 <part name="C11" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_1206"/>
 <part name="C23" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_1206"/>
 <part name="C24" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603"/>
 <part name="C29" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_1206" value="1uF"/>
-<part name="C25" library="jqi_passives" deviceset="C_POL_SMD" device="F" value="220uF">
-<attribute name="PARTNO" value="PCE3955CT-ND"/>
-</part>
-<part name="C26" library="jqi_passives" deviceset="C_POL_SMD" device="F" value="220uF">
-<attribute name="PARTNO" value="PCE3955CT-ND"/>
-</part>
+<part name="C25" library="jqi_passives" deviceset="C_POL_SMD" device="F"/>
+<part name="C26" library="jqi_passives" deviceset="C_POL_SMD" device="F"/>
 <part name="R12" library="jqi_passives" deviceset="R_SMD" device="R0805" value="1k"/>
 <part name="R13" library="jqi_passives" deviceset="R_SMD" device="R0805" value="1k"/>
 <part name="R14" library="jqi_passives" deviceset="R_SMD" device="R0805" value="1k"/>
@@ -1672,17 +1644,13 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <part name="R5" library="jqi_passives" deviceset="R_SMD" device="R0603" value="5R"/>
 <part name="L1" library="jqi_passives" deviceset="L_FERRITE_SMD" device="LFERRITE_0603"/>
 <part name="C20" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0805" value="10uF"/>
-<part name="C21" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF">
-<attribute name="PARTNO" value="1276-1936-1-ND"/>
-</part>
+<part name="C21" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF"/>
 <part name="C22" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_1206" value="1uF"/>
 <part name="R6" library="jqi_passives" deviceset="R_SMD" device="R0805" value="1k"/>
 <part name="R18" library="jqi_passives" deviceset="R_SMD" device="R0805" value="1k"/>
 <part name="R19" library="jqi_passives" deviceset="R_SMD" device="R1206" value="1M"/>
 <part name="C27" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_1206" value="10pF"/>
-<part name="R20" library="jqi_passives" deviceset="R_SMD" device="R0805" value="49.9R">
-<attribute name="PARTNO" value="P49.9CCT-ND"/>
-</part>
+<part name="R20" library="jqi_passives" deviceset="R_SMD" device="R0805" value="50R"/>
 <part name="R23" library="jqi_passives" deviceset="R_SMD" device="R0603" value="20.5k"/>
 <part name="C28" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_1206"/>
 <part name="R4" library="jqi_passives" deviceset="R_SMD" device="R1206" value="10k"/>
@@ -1715,14 +1683,10 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <part name="C36" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0805" value="10uF"/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="C37" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0805" value="10uF"/>
-<part name="C38" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF">
-<attribute name="PARTNO" value="1276-1936-1-ND"/>
-</part>
+<part name="C38" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF"/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
 <part name="C39" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0805" value="10uF"/>
-<part name="C40" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF">
-<attribute name="PARTNO" value="1276-1936-1-ND"/>
-</part>
+<part name="C40" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF"/>
 <part name="P+1" library="supply1" deviceset="+15V" device=""/>
 <part name="RF_0A1" library="jqi_passives" deviceset="R_SMD" device="R1206" value="10k"/>
 <part name="R22" library="jqi_passives" deviceset="R_SMD" device="R1206" value="10k"/>
@@ -1732,23 +1696,29 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <part name="D2" library="semiconductor-jqi" deviceset="ZENER-DUAL" device="" value="AZ23C15-FDICT-ND"/>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
 <part name="C41" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0805" value="10uF"/>
-<part name="C42" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF">
-<attribute name="PARTNO" value="1276-1936-1-ND"/>
-</part>
+<part name="C42" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF"/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
-<part name="MOD_IN" library="connector-jqi" deviceset="BNC" device="-H">
-<attribute name="PARTNO" value="A32260-ND"/>
-</part>
+<part name="MOD_IN" library="connector-jqi" deviceset="BNC" device="-H"/>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
-<part name="DC_IN" library="connector-jqi" deviceset="BNC" device="-H">
-<attribute name="PARTNO" value="A32260-ND"/>
-</part>
-<part name="U$1" library="pchvd" deviceset="RF_36103505" device="">
-<attribute name="PARTNO" value="732-2495-ND"/>
-</part>
+<part name="DC_IN" library="connector-jqi" deviceset="BNC" device="-H"/>
+<part name="U$1" library="pchvd" deviceset="RF_36103505" device=""/>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
 <part name="R3" library="jqi_passives" deviceset="R_SMD" device="R1206" value="10k"/>
 <part name="P+7" library="supply1" deviceset="+5V" device=""/>
+<part name="C43" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_1206" value="DNP"/>
+<part name="C44" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_1206" value="DNP"/>
+<part name="C45" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_1206" value="DNP"/>
+<part name="C46" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_1206" value="DNP"/>
+<part name="C47" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_1206" value="DNP"/>
+<part name="C48" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_1206" value="DNP"/>
+<part name="GND24" library="supply1" deviceset="GND" device=""/>
+<part name="GND25" library="supply1" deviceset="GND" device=""/>
+<part name="GND26" library="supply1" deviceset="GND" device=""/>
+<part name="GND27" library="supply1" deviceset="GND" device=""/>
+<part name="GND28" library="supply1" deviceset="GND" device=""/>
+<part name="GND29" library="supply1" deviceset="GND" device=""/>
+<part name="C49" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_1206"/>
+<part name="R9" library="jqi_passives" deviceset="R_SMD" device="R0603"/>
 </parts>
 <sheets>
 <sheet>
@@ -1792,28 +1762,18 @@ Standard 1206 SMT resistors seem to have a max working voltage ~ 200V</text>
 <text x="-20.32" y="88.9" size="1.778" layer="91">eventually change to pull down</text>
 </plain>
 <instances>
-<instance part="U1" gate="G$1" x="53.34" y="66.04">
-<attribute name="PARTNO" x="53.34" y="66.04" size="1.778" layer="96" display="off"/>
-</instance>
+<instance part="U1" gate="G$1" x="53.34" y="66.04"/>
 <instance part="GND1" gate="1" x="55.88" y="25.4"/>
 <instance part="C1" gate="G$1" x="27.94" y="162.56"/>
-<instance part="C2" gate="G$1" x="38.1" y="162.56">
-<attribute name="PARTNO" x="38.1" y="162.56" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="C3" gate="G$1" x="40.64" y="104.14">
-<attribute name="PARTNO" x="40.64" y="104.14" size="1.778" layer="96" display="off"/>
-</instance>
+<instance part="C2" gate="G$1" x="38.1" y="162.56"/>
+<instance part="C3" gate="G$1" x="40.64" y="104.14"/>
 <instance part="GND2" gate="1" x="40.64" y="93.98"/>
-<instance part="T1" gate="1" x="63.5" y="152.4" rot="MR270">
-<attribute name="PARTNO" x="63.5" y="152.4" size="1.778" layer="96" display="off"/>
-</instance>
+<instance part="T1" gate="1" x="63.5" y="152.4" rot="MR270"/>
 <instance part="P+2" gate="1" x="15.24" y="177.8"/>
 <instance part="GND3" gate="1" x="33.02" y="152.4"/>
 <instance part="REXT" gate="G$1" x="-2.54" y="66.04" rot="R90"/>
 <instance part="GND4" gate="1" x="-2.54" y="53.34"/>
-<instance part="C4" gate="G$1" x="-27.94" y="71.12">
-<attribute name="PARTNO" x="-27.94" y="71.12" size="1.778" layer="96" display="off"/>
-</instance>
+<instance part="C4" gate="G$1" x="-27.94" y="71.12"/>
 <instance part="D1" gate="-B1" x="99.06" y="139.7" rot="R180"/>
 <instance part="C12" gate="G$1" x="162.56" y="137.16"/>
 <instance part="C13" gate="G$1" x="193.04" y="137.16"/>
@@ -1821,14 +1781,10 @@ Standard 1206 SMT resistors seem to have a max working voltage ~ 200V</text>
 <instance part="P+5" gate="1" x="309.88" y="81.28"/>
 <instance part="P-1" gate="1" x="309.88" y="40.64"/>
 <instance part="C15" gate="G$1" x="350.52" y="68.58"/>
-<instance part="C16" gate="G$1" x="360.68" y="68.58">
-<attribute name="PARTNO" x="360.68" y="68.58" size="1.778" layer="96" display="off"/>
-</instance>
+<instance part="C16" gate="G$1" x="360.68" y="68.58"/>
 <instance part="GND7" gate="1" x="375.92" y="58.42"/>
 <instance part="C17" gate="G$1" x="350.52" y="55.88"/>
-<instance part="C18" gate="G$1" x="360.68" y="55.88">
-<attribute name="PARTNO" x="360.68" y="55.88" size="1.778" layer="96" display="off"/>
-</instance>
+<instance part="C18" gate="G$1" x="360.68" y="55.88"/>
 <instance part="P-2" gate="1" x="96.52" y="-81.28" smashed="yes">
 <attribute name="VALUE" x="93.98" y="-83.82" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -1839,7 +1795,6 @@ Standard 1206 SMT resistors seem to have a max working voltage ~ 200V</text>
 <instance part="C6" gate="G$1" x="142.24" y="-58.42" smashed="yes">
 <attribute name="NAME" x="142.8115" y="-58.3565" size="1.524" layer="95"/>
 <attribute name="VALUE" x="142.8115" y="-62.8015" size="1.524" layer="96"/>
-<attribute name="PARTNO" x="142.24" y="-58.42" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND5" gate="1" x="157.48" y="-68.58" smashed="yes">
 <attribute name="VALUE" x="154.94" y="-71.12" size="1.778" layer="96"/>
@@ -1851,7 +1806,6 @@ Standard 1206 SMT resistors seem to have a max working voltage ~ 200V</text>
 <instance part="C8" gate="G$1" x="142.24" y="-71.12" smashed="yes">
 <attribute name="NAME" x="142.8115" y="-71.0565" size="1.524" layer="95"/>
 <attribute name="VALUE" x="142.8115" y="-75.5015" size="1.524" layer="96"/>
-<attribute name="PARTNO" x="142.24" y="-71.12" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="P+3" gate="1" x="96.52" y="-43.18" smashed="yes">
 <attribute name="VALUE" x="93.98" y="-48.26" size="1.778" layer="96" rot="R90"/>
@@ -1878,23 +1832,17 @@ Standard 1206 SMT resistors seem to have a max working voltage ~ 200V</text>
 </instance>
 <instance part="GND12" gate="1" x="175.26" y="73.66"/>
 <instance part="GND13" gate="1" x="314.96" y="132.08"/>
-<instance part="HV_OUT" gate="G$1" x="332.74" y="139.7" rot="MR0">
-<attribute name="PARTNO" x="332.74" y="139.7" size="1.778" layer="96" display="off"/>
-</instance>
+<instance part="HV_OUT" gate="G$1" x="332.74" y="139.7" rot="MR0"/>
 <instance part="JP4" gate="G$1" x="12.7" y="91.44" rot="R180"/>
 <instance part="JP5" gate="A" x="-43.18" y="129.54"/>
 <instance part="GND14" gate="1" x="-86.36" y="124.46"/>
 <instance part="P+4" gate="1" x="-53.34" y="144.78"/>
 <instance part="P-3" gate="1" x="-53.34" y="114.3"/>
-<instance part="U2" gate="G$1" x="-10.16" y="129.54">
-<attribute name="PARTNO" x="-10.16" y="129.54" size="1.778" layer="96" display="off"/>
-</instance>
+<instance part="U2" gate="G$1" x="-10.16" y="129.54"/>
 <instance part="GND15" gate="1" x="-10.16" y="111.76"/>
 <instance part="R1" gate="G$1" x="10.16" y="129.54" rot="R90"/>
 <instance part="R2" gate="G$1" x="10.16" y="114.3" rot="R90"/>
-<instance part="C9" gate="G$1" x="15.24" y="114.3">
-<attribute name="PARTNO" x="15.24" y="114.3" size="1.778" layer="96" display="off"/>
-</instance>
+<instance part="C9" gate="G$1" x="15.24" y="114.3"/>
 <instance part="C10" gate="G$1" x="25.4" y="132.08"/>
 <instance part="P+6" gate="1" x="27.94" y="139.7"/>
 <instance part="C11" gate="G$1" x="2.54" y="-2.54" smashed="yes" rot="R180">
@@ -1910,12 +1858,8 @@ Standard 1206 SMT resistors seem to have a max working voltage ~ 200V</text>
 <attribute name="VALUE" x="-3.2385" y="-52.7685" size="1.524" layer="96" rot="R90"/>
 </instance>
 <instance part="C29" gate="G$1" x="129.54" y="137.16"/>
-<instance part="C25" gate="G$1" x="-76.2" y="134.62">
-<attribute name="PARTNO" x="-76.2" y="134.62" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="C26" gate="G$1" x="-76.2" y="127">
-<attribute name="PARTNO" x="-76.2" y="127" size="1.778" layer="96" display="off"/>
-</instance>
+<instance part="C25" gate="G$1" x="-76.2" y="134.62"/>
+<instance part="C26" gate="G$1" x="-76.2" y="127"/>
 <instance part="R12" gate="G$1" x="149.86" y="139.7" rot="R180"/>
 <instance part="R13" gate="G$1" x="149.86" y="132.08" rot="R180"/>
 <instance part="R14" gate="G$1" x="180.34" y="139.7" rot="R180"/>
@@ -1925,17 +1869,13 @@ Standard 1206 SMT resistors seem to have a max working voltage ~ 200V</text>
 <instance part="R5" gate="G$1" x="50.8" y="170.18" rot="R180"/>
 <instance part="L1" gate="G$1" x="27.94" y="170.18"/>
 <instance part="C20" gate="G$1" x="15.24" y="167.64"/>
-<instance part="C21" gate="G$1" x="7.62" y="167.64">
-<attribute name="PARTNO" x="7.62" y="167.64" size="1.778" layer="96" display="off"/>
-</instance>
+<instance part="C21" gate="G$1" x="7.62" y="167.64"/>
 <instance part="C22" gate="G$1" x="228.6" y="137.16"/>
 <instance part="R6" gate="G$1" x="215.9" y="139.7" rot="R180"/>
 <instance part="R18" gate="G$1" x="215.9" y="132.08" rot="R180"/>
 <instance part="R19" gate="G$1" x="246.38" y="71.12"/>
 <instance part="C27" gate="G$1" x="243.84" y="63.5" rot="R90"/>
-<instance part="R20" gate="G$1" x="276.86" y="127" rot="R270">
-<attribute name="PARTNO" x="276.86" y="127" size="1.778" layer="96" display="off"/>
-</instance>
+<instance part="R20" gate="G$1" x="276.86" y="127" rot="R270"/>
 <instance part="R23" gate="G$1" x="228.6" y="55.88" rot="R90"/>
 <instance part="C28" gate="G$1" x="215.9" y="55.88"/>
 <instance part="R4" gate="G$1" x="-33.02" y="-45.72" smashed="yes" rot="R180">
@@ -1989,7 +1929,6 @@ Standard 1206 SMT resistors seem to have a max working voltage ~ 200V</text>
 <instance part="C38" gate="G$1" x="-111.76" y="76.2" smashed="yes">
 <attribute name="NAME" x="-111.1885" y="76.2635" size="1.524" layer="95"/>
 <attribute name="VALUE" x="-111.1885" y="71.8185" size="1.524" layer="96"/>
-<attribute name="PARTNO" x="-111.76" y="76.2" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND18" gate="1" x="-96.52" y="66.04" smashed="yes">
 <attribute name="VALUE" x="-99.06" y="63.5" size="1.778" layer="96"/>
@@ -2001,7 +1940,6 @@ Standard 1206 SMT resistors seem to have a max working voltage ~ 200V</text>
 <instance part="C40" gate="G$1" x="-111.76" y="63.5" smashed="yes">
 <attribute name="NAME" x="-111.1885" y="63.5635" size="1.524" layer="95"/>
 <attribute name="VALUE" x="-111.1885" y="59.1185" size="1.524" layer="96"/>
-<attribute name="PARTNO" x="-111.76" y="63.5" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="P+1" gate="1" x="-157.48" y="91.44"/>
 <instance part="RF_0A1" gate="G$1" x="-12.7" y="-7.62" smashed="yes" rot="R180">
@@ -2018,26 +1956,35 @@ Standard 1206 SMT resistors seem to have a max working voltage ~ 200V</text>
 <instance part="D2" gate="G$1" x="276.86" y="73.66" rot="R90"/>
 <instance part="GND21" gate="1" x="276.86" y="58.42"/>
 <instance part="C41" gate="G$1" x="60.96" y="177.8"/>
-<instance part="C42" gate="G$1" x="68.58" y="177.8">
-<attribute name="PARTNO" x="68.58" y="177.8" size="1.778" layer="96" display="off"/>
-</instance>
+<instance part="C42" gate="G$1" x="68.58" y="177.8"/>
 <instance part="GND20" gate="1" x="73.66" y="180.34"/>
-<instance part="MOD_IN" gate="G$1" x="149.86" y="83.82">
-<attribute name="PARTNO" x="149.86" y="83.82" size="1.778" layer="96" display="off"/>
-</instance>
+<instance part="MOD_IN" gate="G$1" x="149.86" y="83.82"/>
 <instance part="GND22" gate="1" x="167.64" y="101.6"/>
-<instance part="DC_IN" gate="G$1" x="157.48" y="109.22">
-<attribute name="PARTNO" x="157.48" y="109.22" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="U$1" gate="G$1" x="162.56" y="-5.08">
-<attribute name="PARTNO" x="162.56" y="-5.08" size="1.778" layer="96" display="off"/>
-</instance>
+<instance part="DC_IN" gate="G$1" x="157.48" y="109.22"/>
+<instance part="U$1" gate="G$1" x="162.56" y="-5.08"/>
 <instance part="GND23" gate="1" x="162.56" y="-22.86"/>
 <instance part="R3" gate="G$1" x="2.54" y="88.9" smashed="yes" rot="R90">
 <attribute name="NAME" x="2.2225" y="81.5975" size="1.524" layer="95" rot="R90"/>
 <attribute name="VALUE" x="2.2225" y="92.2338" size="1.524" layer="96" rot="R90"/>
 </instance>
 <instance part="P+7" gate="1" x="2.54" y="101.6"/>
+<instance part="C43" gate="G$1" x="193.04" y="147.32"/>
+<instance part="C44" gate="G$1" x="193.04" y="127"/>
+<instance part="C45" gate="G$1" x="228.6" y="147.32"/>
+<instance part="C46" gate="G$1" x="228.6" y="124.46"/>
+<instance part="C47" gate="G$1" x="264.16" y="149.86"/>
+<instance part="C48" gate="G$1" x="264.16" y="127"/>
+<instance part="GND24" gate="1" x="264.16" y="116.84"/>
+<instance part="GND25" gate="1" x="228.6" y="114.3"/>
+<instance part="GND26" gate="1" x="193.04" y="116.84"/>
+<instance part="GND27" gate="1" x="187.96" y="149.86"/>
+<instance part="GND28" gate="1" x="220.98" y="149.86"/>
+<instance part="GND29" gate="1" x="259.08" y="147.32"/>
+<instance part="C49" gate="G$1" x="180.34" y="91.44" rot="R90"/>
+<instance part="R9" gate="G$1" x="104.14" y="73.66" smashed="yes" rot="R270">
+<attribute name="NAME" x="104.4575" y="80.9625" size="1.524" layer="95" rot="R270"/>
+<attribute name="VALUE" x="104.4575" y="70.3262" size="1.524" layer="96" rot="R270"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -2272,6 +2219,42 @@ Standard 1206 SMT resistors seem to have a max working voltage ~ 200V</text>
 <pinref part="GND23" gate="1" pin="GND"/>
 <wire x1="162.56" y1="-20.32" x2="162.56" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND27" gate="1" pin="GND"/>
+<wire x1="187.96" y1="152.4" x2="187.96" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="154.94" x2="193.04" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="C43" gate="G$1" pin="1"/>
+<wire x1="193.04" y1="154.94" x2="193.04" y2="149.86" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND28" gate="1" pin="GND"/>
+<wire x1="220.98" y1="152.4" x2="220.98" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="154.94" x2="228.6" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="C45" gate="G$1" pin="1"/>
+<wire x1="228.6" y1="154.94" x2="228.6" y2="149.86" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND29" gate="1" pin="GND"/>
+<wire x1="259.08" y1="149.86" x2="259.08" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="154.94" x2="264.16" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="C47" gate="G$1" pin="1"/>
+<wire x1="264.16" y1="154.94" x2="264.16" y2="152.4" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C48" gate="G$1" pin="2"/>
+<pinref part="GND24" gate="1" pin="GND"/>
+<wire x1="264.16" y1="121.92" x2="264.16" y2="119.38" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C46" gate="G$1" pin="2"/>
+<pinref part="GND25" gate="1" pin="GND"/>
+<wire x1="228.6" y1="119.38" x2="228.6" y2="116.84" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C44" gate="G$1" pin="2"/>
+<pinref part="GND26" gate="1" pin="GND"/>
+<wire x1="193.04" y1="121.92" x2="193.04" y2="119.38" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+5V" class="0">
 <segment>
@@ -2375,6 +2358,8 @@ Standard 1206 SMT resistors seem to have a max working voltage ~ 200V</text>
 <pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="55.88" y1="-33.02" x2="104.14" y2="-33.02" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="-33.02" x2="104.14" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="R9" gate="G$1" pin="2"/>
+<junction x="104.14" y="68.58"/>
 </segment>
 </net>
 <net name="+15V" class="0">
@@ -2444,6 +2429,8 @@ Standard 1206 SMT resistors seem to have a max working voltage ~ 200V</text>
 <wire x1="193.04" y1="132.08" x2="210.82" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="R18" gate="G$1" pin="2"/>
 <junction x="193.04" y="132.08"/>
+<pinref part="C44" gate="G$1" pin="1"/>
+<wire x1="193.04" y1="129.54" x2="193.04" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="HV_MIDGND" class="0">
@@ -2455,6 +2442,8 @@ Standard 1206 SMT resistors seem to have a max working voltage ~ 200V</text>
 <label x="271.78" y="132.08" size="1.9304" layer="95"/>
 <pinref part="R16" gate="G$1" pin="1"/>
 <pinref part="R20" gate="G$1" pin="1"/>
+<pinref part="C48" gate="G$1" pin="1"/>
+<wire x1="264.16" y1="129.54" x2="264.16" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="HV_0" class="0">
@@ -2536,6 +2525,8 @@ Standard 1206 SMT resistors seem to have a max working voltage ~ 200V</text>
 <wire x1="254" y1="63.5" x2="248.92" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="254" y1="71.12" x2="254" y2="63.5" width="0.1524" layer="91"/>
 <junction x="254" y="71.12"/>
+<pinref part="C47" gate="G$1" pin="2"/>
+<wire x1="264.16" y1="139.7" x2="264.16" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="HVFB" class="0">
@@ -2618,7 +2609,7 @@ Standard 1206 SMT resistors seem to have a max working voltage ~ 200V</text>
 <wire x1="68.58" y1="170.18" x2="60.96" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="VDD_CONVERTER" class="0">
 <segment>
 <pinref part="C2" gate="G$1" pin="1"/>
 <pinref part="C1" gate="G$1" pin="1"/>
@@ -2640,6 +2631,11 @@ Standard 1206 SMT resistors seem to have a max working voltage ~ 200V</text>
 <wire x1="43.18" y1="170.18" x2="43.18" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="114.3" x2="50.8" y2="114.3" width="0.1524" layer="91"/>
 <junction x="43.18" y="170.18"/>
+<label x="43.18" y="129.54" size="1.778" layer="95"/>
+<pinref part="R9" gate="G$1" pin="1"/>
+<wire x1="104.14" y1="78.74" x2="104.14" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="114.3" x2="50.8" y2="114.3" width="0.1524" layer="91"/>
+<junction x="50.8" y="114.3"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -2650,6 +2646,8 @@ Standard 1206 SMT resistors seem to have a max working voltage ~ 200V</text>
 <wire x1="185.42" y1="139.7" x2="193.04" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="R14" gate="G$1" pin="1"/>
 <junction x="193.04" y="139.7"/>
+<pinref part="C43" gate="G$1" pin="2"/>
+<wire x1="193.04" y1="139.7" x2="193.04" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -2660,6 +2658,8 @@ Standard 1206 SMT resistors seem to have a max working voltage ~ 200V</text>
 <junction x="228.6" y="132.08"/>
 <pinref part="R18" gate="G$1" pin="1"/>
 <pinref part="R16" gate="G$1" pin="2"/>
+<pinref part="C46" gate="G$1" pin="1"/>
+<wire x1="228.6" y1="127" x2="228.6" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$18" class="0">
@@ -2670,6 +2670,8 @@ Standard 1206 SMT resistors seem to have a max working voltage ~ 200V</text>
 <junction x="228.6" y="139.7"/>
 <pinref part="R6" gate="G$1" pin="1"/>
 <pinref part="R17" gate="G$1" pin="2"/>
+<pinref part="C45" gate="G$1" pin="2"/>
+<wire x1="228.6" y1="139.7" x2="228.6" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$19" class="0">
@@ -2793,8 +2795,13 @@ Standard 1206 SMT resistors seem to have a max working voltage ~ 200V</text>
 <net name="N$20" class="0">
 <segment>
 <pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="152.4" y1="83.82" x2="175.26" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="83.82" x2="165.1" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="MOD_IN" gate="G$1" pin="1"/>
+<pinref part="C49" gate="G$1" pin="1"/>
+<wire x1="165.1" y1="83.82" x2="175.26" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="91.44" x2="165.1" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="91.44" x2="165.1" y2="83.82" width="0.1524" layer="91"/>
+<junction x="165.1" y="83.82"/>
 </segment>
 </net>
 <net name="N$22" class="0">
@@ -2814,12 +2821,17 @@ Standard 1206 SMT resistors seem to have a max working voltage ~ 200V</text>
 <wire x1="228.6" y1="71.12" x2="228.6" y2="66.04" width="0.1524" layer="91"/>
 <junction x="228.6" y="71.12"/>
 <wire x1="228.6" y1="66.04" x2="228.6" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="83.82" x2="228.6" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="83.82" x2="198.12" y2="83.82" width="0.1524" layer="91"/>
 <junction x="228.6" y="83.82"/>
 <pinref part="C28" gate="G$1" pin="1"/>
+<wire x1="198.12" y1="83.82" x2="228.6" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="58.42" x2="215.9" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="66.04" x2="228.6" y2="66.04" width="0.1524" layer="91"/>
 <junction x="228.6" y="66.04"/>
+<pinref part="C49" gate="G$1" pin="2"/>
+<wire x1="185.42" y1="91.44" x2="198.12" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="91.44" x2="198.12" y2="83.82" width="0.1524" layer="91"/>
+<junction x="198.12" y="83.82"/>
 </segment>
 </net>
 <net name="N$26" class="0">
