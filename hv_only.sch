@@ -5203,7 +5203,7 @@ W = angled&lt;p&gt;
 <part name="R28" library="jqi_passives" deviceset="R_SMD" device="R0805" value="2.7k"/>
 <part name="P-5" library="supply1" deviceset="V-" device=""/>
 <part name="R29" library="jqi_passives" deviceset="R_SMD" device="R0805" value="100k"/>
-<part name="C34" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0805" value="1nF">
+<part name="C34" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0805" value="100pF">
 <attribute name="PARTNO" value="445-9112-1-ND"/>
 </part>
 <part name="R30" library="jqi_passives" deviceset="R_SMD" device="R0805" value="15k"/>
@@ -5368,6 +5368,7 @@ ferrite L1?</text>
 <text x="403.86" y="-50.8" size="1.778" layer="98">V- mon</text>
 <text x="83.82" y="-167.64" size="1.778" layer="98">+5V</text>
 <text x="88.9" y="246.38" size="1.778" layer="91">use aux voltage for somethign??</text>
+<text x="127" y="124.46" size="1.778" layer="91">possibly do 1210, 100nF until last cap?</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="53.34" y="66.04">

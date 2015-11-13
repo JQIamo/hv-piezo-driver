@@ -1489,7 +1489,7 @@ design rules under a new name.</description>
 <element name="R29" library="jqi_passives" package="R_0805" value="100k" x="-21.59" y="-73.406" smashed="yes">
 <attribute name="NAME" x="-26.419" y="-73.703" size="1.016" layer="25" font="vector"/>
 </element>
-<element name="C34" library="jqi_passives" package="C_MLCC_0805" value="1nF" x="-21.59" y="-75.565" smashed="yes">
+<element name="C34" library="jqi_passives" package="C_MLCC_0805" value="100pF" x="-21.59" y="-75.565" smashed="yes">
 <attribute name="PARTNO" value="445-9112-1-ND" x="-21.59" y="-75.565" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-24.968" y="-76.089" size="1.016" layer="25" font="vector"/>
 </element>
