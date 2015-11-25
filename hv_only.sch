@@ -8874,7 +8874,6 @@ ferrite L1?</text>
 <text x="370.84" y="-22.86" size="1.778" layer="91">ADD IN I2C bus</text>
 <text x="472.44" y="-91.44" size="1.778" layer="91">maybe don't want this divider here...</text>
 <text x="391.16" y="-134.62" size="1.778" layer="91">ADD in encoder pins again</text>
-<text x="353.06" y="-81.28" size="1.778" layer="91">HV interlock line??</text>
 <text x="12.7" y="-10.16" size="1.778" layer="91">FIX BOM</text>
 <text x="111.76" y="76.2" size="1.778" layer="91">Input differential stage</text>
 <text x="-88.9" y="0" size="1.778" layer="97">NOR true table:
@@ -11485,6 +11484,11 @@ the high voltage</text>
 <wire x1="-68.58" y1="53.34" x2="-91.44" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="-68.58" y1="55.88" x2="-68.58" y2="53.34" width="0.1524" layer="91"/>
 <junction x="-68.58" y="53.34"/>
+</segment>
+<segment>
+<pinref part="IC5" gate="G$1" pin="PB7(XTAL2/TOSC2)"/>
+<wire x1="350.52" y1="-55.88" x2="320.04" y2="-55.88" width="0.1524" layer="91"/>
+<label x="314.96" y="-55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BACKPLANE_MODIN" class="0">
