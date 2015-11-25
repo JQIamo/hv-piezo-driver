@@ -8753,6 +8753,13 @@ http://www.zetex.com&lt;p&gt;
 <attribute name="PARTNO" value="P1.00MFCT-ND"/>
 </part>
 <part name="C64" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_1206" value="10pF"/>
+<part name="C65" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF">
+<attribute name="PARTNO" value="445-1316-1-ND"/>
+</part>
+<part name="C66" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF">
+<attribute name="PARTNO" value="445-1316-1-ND"/>
+</part>
+<part name="GND40" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9342,6 +9349,13 @@ the high voltage</text>
 <attribute name="PARTNO" x="180.34" y="101.6" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="C64" gate="G$1" x="177.8" y="99.06" rot="R90"/>
+<instance part="C65" gate="G$1" x="447.04" y="-50.8">
+<attribute name="PARTNO" x="447.04" y="-50.8" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C66" gate="G$1" x="454.66" y="-50.8">
+<attribute name="PARTNO" x="454.66" y="-50.8" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="GND40" gate="1" x="447.04" y="-60.96"/>
 </instances>
 <busses>
 </busses>
@@ -9785,6 +9799,14 @@ the high voltage</text>
 <pinref part="GND52" gate="1" pin="GND"/>
 <pinref part="C63" gate="G$1" pin="2"/>
 <wire x1="-12.7" y1="38.1" x2="-12.7" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND40" gate="1" pin="GND"/>
+<pinref part="C65" gate="G$1" pin="2"/>
+<wire x1="447.04" y1="-58.42" x2="447.04" y2="-55.88" width="0.1524" layer="91"/>
+<pinref part="C66" gate="G$1" pin="2"/>
+<wire x1="454.66" y1="-55.88" x2="447.04" y2="-55.88" width="0.1524" layer="91"/>
+<junction x="447.04" y="-55.88"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -10442,12 +10464,16 @@ the high voltage</text>
 <wire x1="462.28" y1="-43.18" x2="472.44" y2="-43.18" width="0.1524" layer="91"/>
 <pinref part="D3" gate="G$1" pin="C"/>
 <wire x1="472.44" y1="-43.18" x2="472.44" y2="-48.26" width="0.1524" layer="91"/>
-<wire x1="462.28" y1="-43.18" x2="441.96" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="462.28" y1="-43.18" x2="447.04" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="447.04" y1="-43.18" x2="441.96" y2="-43.18" width="0.1524" layer="91"/>
 <wire x1="441.96" y1="-43.18" x2="441.96" y2="-50.8" width="0.1524" layer="91"/>
 <wire x1="441.96" y1="-50.8" x2="416.56" y2="-50.8" width="0.1524" layer="91"/>
 <wire x1="416.56" y1="-50.8" x2="416.56" y2="-48.26" width="0.1524" layer="91"/>
 <pinref part="IC5" gate="G$1" pin="ADC6"/>
 <wire x1="416.56" y1="-48.26" x2="398.78" y2="-48.26" width="0.1524" layer="91"/>
+<pinref part="C65" gate="G$1" pin="1"/>
+<wire x1="447.04" y1="-48.26" x2="447.04" y2="-43.18" width="0.1524" layer="91"/>
+<junction x="447.04" y="-43.18"/>
 </segment>
 </net>
 <net name="RXI" class="0">
@@ -10573,12 +10599,16 @@ the high voltage</text>
 <wire x1="485.14" y1="-43.18" x2="485.14" y2="-40.64" width="0.1524" layer="91"/>
 <pinref part="R27" gate="G$1" pin="2"/>
 <wire x1="485.14" y1="-40.64" x2="485.14" y2="-35.56" width="0.1524" layer="91"/>
-<wire x1="439.42" y1="-40.64" x2="485.14" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="439.42" y1="-40.64" x2="454.66" y2="-40.64" width="0.1524" layer="91"/>
 <junction x="485.14" y="-40.64"/>
+<wire x1="454.66" y1="-40.64" x2="485.14" y2="-40.64" width="0.1524" layer="91"/>
 <wire x1="439.42" y1="-53.34" x2="406.4" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="406.4" y1="-53.34" x2="406.4" y2="-50.8" width="0.1524" layer="91"/>
 <pinref part="IC5" gate="G$1" pin="ADC7"/>
 <wire x1="406.4" y1="-50.8" x2="398.78" y2="-50.8" width="0.1524" layer="91"/>
+<pinref part="C66" gate="G$1" pin="1"/>
+<wire x1="454.66" y1="-48.26" x2="454.66" y2="-40.64" width="0.1524" layer="91"/>
+<junction x="454.66" y="-40.64"/>
 </segment>
 </net>
 <net name="LCD_RST" class="0">
@@ -10626,10 +10656,6 @@ the high voltage</text>
 </segment>
 </net>
 <net name="SW" class="0">
-<segment>
-<wire x1="403.86" y1="-5.08" x2="408.94" y2="-5.08" width="0.1524" layer="91"/>
-<label x="406.4" y="-5.08" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="C57" gate="G$1" pin="1"/>
 <pinref part="ENC" gate="A" pin="2"/>
@@ -10680,10 +10706,6 @@ the high voltage</text>
 <pinref part="C56" gate="G$1" pin="1"/>
 <wire x1="447.04" y1="25.4" x2="487.68" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="487.68" y1="25.4" x2="487.68" y2="15.24" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="401.32" y1="-7.62" x2="408.94" y2="-7.62" width="0.1524" layer="91"/>
-<label x="406.4" y="-7.62" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC5" gate="G$1" pin="PD6(AIN0)"/>
