@@ -8368,7 +8368,7 @@ http://www.zetex.com&lt;p&gt;
 <part name="RF_0B" library="jqi_passives" deviceset="R_SMD" device="R0603" value="10k">
 <attribute name="PARTNO" value="P10.0KHCT-ND"/>
 </part>
-<part name="R10" library="jqi_passives" deviceset="R_SMD" device="R0603" value="499k">
+<part name="R10" library="jqi_passives" deviceset="R_SMD" device="R1206" value="499k">
 <attribute name="PARTNO" value="P499KHCT-ND"/>
 </part>
 <part name="R11" library="jqi_passives" deviceset="R_SMD" device="R0603" value="10k">
@@ -8671,7 +8671,7 @@ http://www.zetex.com&lt;p&gt;
 <part name="IC6" library="regulator-jqi" deviceset="MIC5205" device="" value="MIC5205-3V">
 <attribute name="PARTNO" value="576-1258-1-ND"/>
 </part>
-<part name="C50" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="1uF">
+<part name="C50" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0805" value="10uF">
 <attribute name="PARTNO" value="1276-1184-1-ND"/>
 </part>
 <part name="U$4" library="supply1" deviceset="+3V" device=""/>
