@@ -8421,7 +8421,7 @@ http://www.zetex.com&lt;p&gt;
 <part name="HV_OUT" library="connector-jqi" deviceset="BNC" device="-H">
 <attribute name="PARTNO" value="A32260-ND"/>
 </part>
-<part name="JP5" library="pinhead" deviceset="PINHD-1X3" device=""/>
+<part name="JP5" library="pinhead" deviceset="PINHD-1X3" device="" value="DNP"/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" deviceset="+15V" device=""/>
 <part name="P-3" library="supply1" deviceset="-15V" device=""/>
@@ -8658,19 +8658,27 @@ http://www.zetex.com&lt;p&gt;
 <part name="C40" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF">
 <attribute name="PARTNO" value="1276-1936-1-ND"/>
 </part>
-<part name="JP1" library="pinhead" deviceset="PINHD-1X6" device=""/>
+<part name="JP1" library="pinhead" deviceset="PINHD-1X6" device="">
+<attribute name="PARTNO" value="609-3272-ND"/>
+</part>
 <part name="C47" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF">
 <attribute name="PARTNO" value="1276-1936-1-ND"/>
 </part>
 <part name="R100" library="jqi_passives" deviceset="R_SMD" device="R0603" value="10k">
 <attribute name="PARTNO" value="P10.0KHCT-ND"/>
 </part>
-<part name="SV1" library="con-lstb" deviceset="MA03-2" device=""/>
+<part name="SV1" library="con-lstb" deviceset="MA03-2" device="">
+<attribute name="PARTNO" value="609-2845-ND"/>
+</part>
 <part name="D3" library="diode" deviceset="DIODE-" device="SOD523" value="Schottky">
 <attribute name="PARTNO" value="568-7397-1-ND"/>
 </part>
-<part name="LCD" library="mcu-accessories" deviceset="PINHD-2X4" device="-SHROUD"/>
-<part name="ENC" library="mcu-accessories" deviceset="PINHD-2X4" device="-SHROUD"/>
+<part name="LCD" library="mcu-accessories" deviceset="PINHD-2X4" device="-SHROUD">
+<attribute name="PARTNO" value="609-3530-ND"/>
+</part>
+<part name="ENC" library="mcu-accessories" deviceset="PINHD-2X4" device="-SHROUD">
+<attribute name="PARTNO" value="609-3530-ND"/>
+</part>
 <part name="U$2" library="supply1" deviceset="+3V" device=""/>
 <part name="U5" library="semiconductor-jqi" deviceset="NT2006" device="">
 <attribute name="PARTNO" value="568-6661-1-ND"/>
@@ -8714,7 +8722,7 @@ http://www.zetex.com&lt;p&gt;
 <attribute name="PARTNO" value="576-1258-1-ND"/>
 </part>
 <part name="C50" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0805" value="10uF">
-<attribute name="PARTNO" value="1276-1184-1-ND"/>
+<attribute name="PARTNO" value="445-14417-1-ND"/>
 </part>
 <part name="U$4" library="supply1" deviceset="+3V" device=""/>
 <part name="D5" library="diode" deviceset="DIODE-" device="SOD523" value="Schottky">
@@ -8724,11 +8732,15 @@ http://www.zetex.com&lt;p&gt;
 <attribute name="PARTNO" value="568-7397-1-ND"/>
 </part>
 <part name="P+15" library="supply1" deviceset="+5V" device=""/>
-<part name="J1" library="connector-jqi" deviceset="VG64" device="C"/>
+<part name="J1" library="connector-jqi" deviceset="VG64" device="C">
+<attribute name="PARTNO" value="A32299-ND"/>
+</part>
 <part name="P+16" library="supply1" deviceset="+15V" device=""/>
 <part name="P-7" library="supply1" deviceset="-15V" device=""/>
 <part name="GND38" library="supply1" deviceset="GND" device=""/>
-<part name="X1" library="connector-jqi" deviceset="UMC" device=""/>
+<part name="X1" library="connector-jqi" deviceset="UMC" device="">
+<attribute name="PARTNO" value="A118077CT-ND"/>
+</part>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
 <part name="P+17" library="supply1" deviceset="V+" device=""/>
 <part name="P-8" library="supply1" deviceset="V-" device=""/>
@@ -8768,7 +8780,9 @@ http://www.zetex.com&lt;p&gt;
 <attribute name="PARTNO" value="A32260-ND"/>
 </part>
 <part name="GND44" library="supply1" deviceset="GND" device=""/>
-<part name="J2" library="pinhead" deviceset="PINHD-3X8" device=""/>
+<part name="J2" library="pinhead" deviceset="PINHD-3X8" device="">
+<attribute name="PARTNO" value="609-3273-ND"/>
+</part>
 <part name="T2" library="zetex" deviceset="NMOSSOT223" device="" value="HV MOS">
 <attribute name="PARTNO" value="497-3523-1-ND"/>
 </part>
@@ -9250,16 +9264,24 @@ the high voltage</text>
 <instance part="C40" gate="G$1" x="332.74" y="-45.72">
 <attribute name="PARTNO" x="332.74" y="-45.72" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="JP1" gate="A" x="254" y="-27.94" rot="MR0"/>
+<instance part="JP1" gate="A" x="254" y="-27.94" rot="MR0">
+<attribute name="PARTNO" x="254" y="-27.94" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="C47" gate="G$1" x="303.53" y="-33.02" rot="R90">
 <attribute name="PARTNO" x="303.53" y="-33.02" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R100" gate="G$1" x="337.82" y="-22.86" rot="R90">
 <attribute name="PARTNO" x="337.82" y="-22.86" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="SV1" gate="1" x="398.78" y="-106.68"/>
-<instance part="LCD" gate="A" x="238.76" y="-86.36"/>
-<instance part="ENC" gate="A" x="441.96" y="22.86"/>
+<instance part="SV1" gate="1" x="398.78" y="-106.68">
+<attribute name="PARTNO" x="398.78" y="-106.68" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="LCD" gate="A" x="238.76" y="-86.36">
+<attribute name="PARTNO" x="238.76" y="-86.36" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="ENC" gate="A" x="441.96" y="22.86">
+<attribute name="PARTNO" x="441.96" y="22.86" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="U$2" gate="G$1" x="218.44" y="-63.5"/>
 <instance part="U5" gate="G$1" x="276.86" y="-129.54" rot="MR0">
 <attribute name="PARTNO" x="276.86" y="-129.54" size="1.778" layer="96" display="off"/>
@@ -9318,11 +9340,15 @@ the high voltage</text>
 <instance part="P+15" gate="1" x="86.36" y="-165.1" smashed="yes">
 <attribute name="VALUE" x="83.82" y="-170.18" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="J1" gate="G$1" x="-76.2" y="269.24"/>
+<instance part="J1" gate="G$1" x="-76.2" y="269.24">
+<attribute name="PARTNO" x="-76.2" y="269.24" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="P+16" gate="1" x="-30.48" y="236.22"/>
 <instance part="P-7" gate="1" x="-106.68" y="226.06"/>
 <instance part="GND38" gate="1" x="-45.72" y="304.8"/>
-<instance part="X1" gate="G$1" x="7.62" y="271.78"/>
+<instance part="X1" gate="G$1" x="7.62" y="271.78">
+<attribute name="PARTNO" x="7.62" y="271.78" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND22" gate="1" x="15.24" y="264.16"/>
 <instance part="P+17" gate="1" x="-81.28" y="154.94"/>
 <instance part="P-8" gate="1" x="-63.5" y="114.3"/>
@@ -9409,7 +9435,9 @@ the high voltage</text>
 <attribute name="PARTNO" x="-106.68" y="-91.44" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND44" gate="1" x="-116.84" y="-99.06"/>
-<instance part="J2" gate="A" x="5.08" y="294.64" rot="MR0"/>
+<instance part="J2" gate="A" x="5.08" y="294.64" rot="MR0">
+<attribute name="PARTNO" x="5.08" y="294.64" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="J2" gate="C" x="43.18" y="238.76"/>
 <instance part="J2" gate="B" x="73.66" y="307.34"/>
 <instance part="T2" gate="A" x="-104.14" y="-38.1">
