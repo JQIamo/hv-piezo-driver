@@ -7663,66 +7663,6 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 </deviceset>
 </devicesets>
 </library>
-<library name="piezo_driver_additional_lib">
-<packages>
-<package name="TO237_MODIFIED">
-<description>&lt;b&gt;TO 273&lt;/b&gt;</description>
-<wire x1="-2.0946" y1="-1.651" x2="-0.7863" y2="2.5485" width="0.127" layer="21" curve="-111.099"/>
-<wire x1="0.7863" y1="2.5484" x2="2.0945" y2="-1.651" width="0.127" layer="21" curve="-111.1"/>
-<wire x1="-2.0945" y1="-1.651" x2="2.0945" y2="-1.651" width="0.127" layer="21"/>
-<wire x1="-0.7863" y1="2.5485" x2="0.7863" y2="2.5485" width="0.127" layer="51" curve="-34.2936"/>
-<wire x1="-2.794" y1="0.254" x2="2.794" y2="0.254" width="0.127" layer="21"/>
-<wire x1="2.794" y1="0.254" x2="2.794" y2="-0.254" width="0.127" layer="21"/>
-<wire x1="2.794" y1="-0.254" x2="-2.794" y2="-0.254" width="0.127" layer="21"/>
-<wire x1="-2.794" y1="-0.254" x2="-2.794" y2="0.254" width="0.127" layer="21"/>
-<pad name="1" x="2.54" y="0" drill="0.8128" shape="octagon"/>
-<pad name="2" x="0" y="0.635" drill="0.8128" shape="octagon"/>
-<pad name="3" x="-2.54" y="0" drill="0.8128" shape="octagon"/>
-<text x="3.175" y="0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="3.175" y="-1.27" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="IGFET-EN-GDS">
-<wire x1="-2.54" y1="-2.54" x2="-1.2192" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="0" y1="0.762" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="0" y1="3.683" x2="0" y2="1.397" width="0.254" layer="94"/>
-<wire x1="1.905" y1="0.635" x2="0.635" y2="0" width="0.254" layer="94"/>
-<wire x1="1.905" y1="-0.635" x2="0.635" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0.635" y2="0" width="0.1524" layer="94"/>
-<wire x1="0.635" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="0" y1="-1.397" x2="0" y2="-3.683" width="0.254" layer="94"/>
-<wire x1="-1.143" y1="2.54" x2="-1.143" y2="-2.54" width="0.254" layer="94"/>
-<text x="-11.43" y="0" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-11.43" y="2.54" size="1.778" layer="95">&gt;NAME</text>
-<pin name="D" x="5.08" y="2.54" visible="off" length="middle" direction="pas" rot="R180"/>
-<pin name="S" x="5.08" y="-2.54" visible="off" length="middle" direction="pas" rot="R180"/>
-<pin name="G" x="-5.08" y="-2.54" visible="off" length="short" direction="pas"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="1N50C" prefix="Q">
-<description>&lt;b&gt;N-Channel Enhancement MOSFET&lt;/b&gt; (VMOS); 60V; 0,5A; 7,5Ohm</description>
-<gates>
-<gate name="G$1" symbol="IGFET-EN-GDS" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TO237_MODIFIED">
-<connects>
-<connect gate="G$1" pin="D" pad="2"/>
-<connect gate="G$1" pin="G" pad="3"/>
-<connect gate="G$1" pin="S" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="aom_driver">
 <packages>
 <package name="MSOP10">
@@ -9135,17 +9075,17 @@ http://www.zetex.com&lt;p&gt;
 <part name="R7" library="jqi_passives" deviceset="R_SMD" device="R0603" value="10k">
 <attribute name="PARTNO" value="P10.0KHCT-ND"/>
 </part>
-<part name="RI_0" library="jqi_passives" deviceset="R_SMD" device="R1206" value="HV 499k">
-<attribute name="PARTNO" value="BC2832CT-ND"/>
+<part name="RI_0" library="jqi_passives" deviceset="R_SMD" device="R1206" value="499k">
+<attribute name="PARTNO" value="TNP499KACCT-ND"/>
 </part>
 <part name="RF_0B" library="jqi_passives" deviceset="R_SMD" device="R0603" value="10k">
-<attribute name="PARTNO" value="P10.0KHCT-ND"/>
+<attribute name="PARTNO" value="TNP10.0KAACT-ND"/>
 </part>
 <part name="R10" library="jqi_passives" deviceset="R_SMD" device="R1206" value="499k">
-<attribute name="PARTNO" value="P499KHCT-ND"/>
+<attribute name="PARTNO" value="TNP499KACCT-ND"/>
 </part>
 <part name="R11" library="jqi_passives" deviceset="R_SMD" device="R0603" value="10k">
-<attribute name="PARTNO" value="P10.0KHCT-ND"/>
+<attribute name="PARTNO" value="TNP10.0KAACT-ND"/>
 </part>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
@@ -9171,7 +9111,7 @@ http://www.zetex.com&lt;p&gt;
 <attribute name="PARTNO" value="709-1289-1-ND"/>
 </part>
 <part name="C23" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="2.2nF">
-<attribute name="PARTNO" value="1276-3152-1-ND"/>
+<attribute name="PARTNO" value="399-9040-1-ND"/>
 </part>
 <part name="C29" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_1206" value="HV 1nF">
 <attribute name="PARTNO" value="445-2288-1-ND"/>
@@ -9221,22 +9161,22 @@ http://www.zetex.com&lt;p&gt;
 <part name="R18" library="jqi_passives" deviceset="R_SMD" device="R0805" value="499R">
 <attribute name="PARTNO" value="P499CCT-ND"/>
 </part>
-<part name="R19" library="jqi_passives" deviceset="R_SMD" device="R1206" value="HV 1M">
+<part name="R19" library="jqi_passives" deviceset="R_SMD" device="R1206" value="1M">
 <attribute name="PARTNO" value="TNP1.00MACCT-ND"/>
 </part>
 <part name="R20" library="jqi_passives" deviceset="R_SMD" device="R0805" value="49.9R">
 <attribute name="PARTNO" value="P49.9CCT-ND"/>
 </part>
 <part name="R23" library="jqi_passives" deviceset="R_SMD" device="R0603" value="20.5k">
-<attribute name="PARTNO" value="P20.5KHCT-ND"/>
+<attribute name="PARTNO" value="RR08P20.5KDCT-ND"/>
 </part>
 <part name="C28" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_1206" value="DNP"/>
 <part name="R4" library="jqi_passives" deviceset="R_SMD" device="R0603" value="10k">
-<attribute name="PARTNO" value="P10.0KHCT-ND"/>
+<attribute name="PARTNO" value="TNP10.0KAACT-ND "/>
 </part>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="RF_0A" library="jqi_passives" deviceset="R_SMD" device="R0603" value="10k">
-<attribute name="PARTNO" value="P10.0KHCT-ND"/>
+<attribute name="PARTNO" value="TNP10.0KAACT-ND"/>
 </part>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="U3" library="opamp-jqi" deviceset="LM7171" device="">
@@ -9300,13 +9240,13 @@ http://www.zetex.com&lt;p&gt;
 <part name="C43" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_1206" value="HV 10nF">
 <attribute name="PARTNO" value="445-2291-1-ND"/>
 </part>
-<part name="C44" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_1206" value="10nF">
+<part name="C44" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_1206" value="HV 10nF">
 <attribute name="PARTNO" value="445-2291-1-ND"/>
 </part>
 <part name="C45" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_1206" value="HV 10nF">
 <attribute name="PARTNO" value="445-2291-1-ND"/>
 </part>
-<part name="C46" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_1206" value="10nF">
+<part name="C46" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_1206" value="HV 10nF">
 <attribute name="PARTNO" value="445-2291-1-ND"/>
 </part>
 <part name="GND25" library="supply1" deviceset="GND" device=""/>
@@ -9315,9 +9255,6 @@ http://www.zetex.com&lt;p&gt;
 <part name="GND28" library="supply1" deviceset="GND" device=""/>
 <part name="R9" library="jqi_passives" deviceset="R_SMD" device="R0603" value="27.4k">
 <attribute name="PARTNO" value="P27.4KHCT-ND"/>
-</part>
-<part name="Q1" library="piezo_driver_additional_lib" deviceset="1N50C" device="">
-<attribute name="PARTNO" value="FQN1N50CTACT-ND"/>
 </part>
 <part name="R2" library="jqi_passives" deviceset="R_SMD" device="R1206" value="HV 499R">
 <attribute name="PARTNO" value="P499FCT-ND"/>
@@ -9330,8 +9267,8 @@ http://www.zetex.com&lt;p&gt;
 <part name="R24" library="jqi_passives" deviceset="R_SMD" device="R0805" value="8.2k">
 <attribute name="PARTNO" value="P8.20KCCT-ND"/>
 </part>
-<part name="R26" library="jqi_passives" deviceset="R_SMD" device="R0805" value="1k">
-<attribute name="PARTNO" value="P1.00KCCT-ND"/>
+<part name="R26" library="jqi_passives" deviceset="R_SMD" device="R0805" value="499R">
+<attribute name="PARTNO" value="P499CCT-ND"/>
 </part>
 <part name="R28" library="jqi_passives" deviceset="R_SMD" device="R0805" value="2.7k">
 <attribute name="PARTNO" value="P2.70KCCT-ND"/>
@@ -9381,7 +9318,9 @@ http://www.zetex.com&lt;p&gt;
 <part name="C39" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF">
 <attribute name="PARTNO" value="1276-1936-1-ND"/>
 </part>
-<part name="IC5" library="atmel" deviceset="MEGA8" device="-AI"/>
+<part name="IC5" library="atmel" deviceset="MEGA8" device="-AI" value="ATMEGA328P">
+<attribute name="PARTNO" value=" 	ATMEGA328P-AURCT-ND "/>
+</part>
 <part name="C40" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF">
 <attribute name="PARTNO" value="1276-1936-1-ND"/>
 </part>
@@ -9533,7 +9472,7 @@ http://www.zetex.com&lt;p&gt;
 <attribute name="PARTNO" value="1276-1936-1-ND"/>
 </part>
 <part name="R37" library="jqi_passives" deviceset="R_SMD" device="R0603" value="20.5k">
-<attribute name="PARTNO" value="P20.5KHCT-ND"/>
+<attribute name="PARTNO" value="RR08P20.5KDCT-ND"/>
 </part>
 <part name="U7" library="pchvd" deviceset="AD8421" device="">
 <attribute name="DIGIKEY" value="AD8421BRZ-ND"/>
@@ -9579,7 +9518,7 @@ http://www.zetex.com&lt;p&gt;
 <attribute name="PARTNO" value="P10.0KHCT-ND"/>
 </part>
 <part name="R85" library="jqi_passives" deviceset="R_SMD" device="R0603" value="10k">
-<attribute name="PARTNO" value="P10.0KHCT-ND"/>
+<attribute name="PARTNO" value="TNP10.0KAACT-ND"/>
 </part>
 <part name="C65" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF">
 <attribute name="PARTNO" value="1276-1936-1-ND"/>
@@ -9598,15 +9537,19 @@ http://www.zetex.com&lt;p&gt;
 <part name="C27" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_1206" value="HV 1nF">
 <attribute name="PARTNO" value="445-2288-1-ND"/>
 </part>
-<part name="C49" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_1206" value="1nF">
+<part name="C49" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_1206" value="HV 1nF">
 <attribute name="PARTNO" value="445-2288-1-ND"/>
 </part>
 <part name="GND59" library="supply1" deviceset="GND" device=""/>
 <part name="R25" library="jqi_passives" deviceset="R_SMD" device="R0603" value="20.5k">
-<attribute name="PARTNO" value="P20.5KHCT-ND"/>
+<attribute name="PARTNO" value="RR08P20.5KDCT-ND"/>
 </part>
-<part name="C19" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603"/>
-<part name="SW1" library="pchvd" deviceset="SPDT" device="" value="ADG849"/>
+<part name="C19" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603">
+<attribute name="PARTNO" value="445-14276-1-ND"/>
+</part>
+<part name="SW1" library="pchvd" deviceset="SPDT" device="" value="ADG849">
+<attribute name="PARTNO" value="ADG849YKSZ-REELCT-ND"/>
+</part>
 <part name="C71" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0805" value="10uF">
 <attribute name="PARTNO" value="445-14417-1-ND"/>
 </part>
@@ -9619,8 +9562,12 @@ http://www.zetex.com&lt;p&gt;
 <part name="C72" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF">
 <attribute name="PARTNO" value="1276-1936-1-ND"/>
 </part>
-<part name="R45" library="jqi_passives" deviceset="R_SMD" device="R0603" value="1M"/>
-<part name="R48" library="jqi_passives" deviceset="R_SMD" device="R0603" value="1M"/>
+<part name="R45" library="jqi_passives" deviceset="R_SMD" device="R0603" value="1M">
+<attribute name="PARTNO" value="A102234CT-ND"/>
+</part>
+<part name="R48" library="jqi_passives" deviceset="R_SMD" device="R0603" value="1M">
+<attribute name="PARTNO" value="A102234CT-ND"/>
+</part>
 <part name="GND62" library="supply1" deviceset="GND" device=""/>
 <part name="J3" library="pchvd" deviceset="2X4_LOW_PROFILE_JUMPER" device="">
 <attribute name="PARTNO" value="S5801-04-ND"/>
@@ -9635,7 +9582,6 @@ http://www.zetex.com&lt;p&gt;
 <part name="EXT1" library="pchvd" deviceset="EXTRA_PART" device="" value="Jumper">
 <attribute name="DIGIKEY" value="S3404-ND"/>
 </part>
-<part name="LOGO1" library="JQI_Logo" deviceset="JQI-LOGO" device="SILK"/>
 </parts>
 <sheets>
 <sheet>
@@ -9688,8 +9634,6 @@ Standard 1206 SMT resistors seem to have a max working voltage ~ 200V</text>
 <text x="220.98" y="124.46" size="1.778" layer="91">possibly do 1210, 100nF until last cap?</text>
 <text x="99.06" y="248.92" size="1.778" layer="91">Buffer this first??</text>
 <text x="63.5" y="302.26" size="1.778" layer="91">UMC connector for optional frontpanel connection</text>
-<text x="-93.98" y="-7.62" size="1.778" layer="91">switch MOS, eg,
-497-3523-1-ND</text>
 <text x="276.86" y="68.58" size="1.778" layer="91">ok to pick off monitor here??</text>
 <text x="370.84" y="-22.86" size="1.778" layer="91">ADD IN I2C bus</text>
 <text x="472.44" y="-91.44" size="1.778" layer="91">maybe don't want this divider here...</text>
@@ -10021,7 +9965,9 @@ the high voltage</text>
 <instance part="C39" gate="G$1" x="149.86" y="220.98">
 <attribute name="PARTNO" x="149.86" y="220.98" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="IC5" gate="G$1" x="373.38" y="-58.42"/>
+<instance part="IC5" gate="G$1" x="373.38" y="-58.42">
+<attribute name="PARTNO" x="373.38" y="-58.42" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="C40" gate="G$1" x="332.74" y="-45.72">
 <attribute name="PARTNO" x="332.74" y="-45.72" size="1.778" layer="96" display="off"/>
 </instance>
@@ -10130,9 +10076,6 @@ the high voltage</text>
 <instance part="GND42" gate="1" x="264.16" y="-119.38"/>
 <instance part="C53" gate="G$1" x="370.84" y="137.16">
 <attribute name="PARTNO" x="370.84" y="137.16" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="Q1" gate="G$1" x="-101.6" y="-7.62">
-<attribute name="PARTNO" x="-101.6" y="-7.62" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R2" gate="G$1" x="-96.52" y="7.62" rot="R90">
 <attribute name="PARTNO" x="-96.52" y="7.62" size="1.778" layer="96" display="off"/>
@@ -10296,8 +10239,12 @@ the high voltage</text>
 <instance part="R25" gate="G$1" x="297.18" y="109.22" rot="R180">
 <attribute name="PARTNO" x="297.18" y="109.22" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="C19" gate="G$1" x="307.34" y="104.14"/>
-<instance part="SW1" gate="G$1" x="220.98" y="0" rot="MR0"/>
+<instance part="C19" gate="G$1" x="307.34" y="104.14">
+<attribute name="PARTNO" x="307.34" y="104.14" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="SW1" gate="G$1" x="220.98" y="0" rot="MR0">
+<attribute name="PARTNO" x="220.98" y="0" size="1.778" layer="96" rot="MR0" display="off"/>
+</instance>
 <instance part="C71" gate="G$1" x="238.76" y="10.16">
 <attribute name="PARTNO" x="238.76" y="10.16" size="1.778" layer="96" display="off"/>
 </instance>
@@ -10312,8 +10259,12 @@ the high voltage</text>
 <attribute name="VALUE" x="211.3915" y="-34.8615" size="1.524" layer="96"/>
 <attribute name="PARTNO" x="210.82" y="-30.48" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="R45" gate="G$1" x="322.58" y="104.14" rot="R90"/>
-<instance part="R48" gate="G$1" x="182.88" y="2.54" rot="R90"/>
+<instance part="R45" gate="G$1" x="322.58" y="104.14" rot="R90">
+<attribute name="PARTNO" x="322.58" y="104.14" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="R48" gate="G$1" x="182.88" y="2.54" rot="R90">
+<attribute name="PARTNO" x="182.88" y="2.54" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
 <instance part="GND62" gate="1" x="309.88" y="-63.5"/>
 <instance part="J3" gate="G$1" x="205.74" y="60.96" rot="R180">
 <attribute name="PARTNO" x="205.74" y="60.96" size="1.778" layer="96" rot="R180" display="off"/>
@@ -10682,13 +10633,10 @@ the high voltage</text>
 <pinref part="GND42" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="Q1" gate="G$1" pin="S"/>
-<wire x1="-96.52" y1="-10.16" x2="-96.52" y2="-43.18" width="0.1524" layer="91"/>
 <pinref part="GND17" gate="1" pin="GND"/>
 <pinref part="T2" gate="A" pin="S"/>
 <wire x1="-96.52" y1="-43.18" x2="-96.52" y2="-48.26" width="0.1524" layer="91"/>
 <wire x1="-104.14" y1="-43.18" x2="-96.52" y2="-43.18" width="0.1524" layer="91"/>
-<junction x="-96.52" y="-43.18"/>
 </segment>
 <segment>
 <pinref part="GND18" gate="1" pin="GND"/>
@@ -12143,11 +12091,8 @@ the high voltage</text>
 <net name="N$59" class="0">
 <segment>
 <pinref part="R26" gate="G$1" pin="1"/>
-<pinref part="Q1" gate="G$1" pin="G"/>
 <wire x1="-114.3" y1="-10.16" x2="-111.76" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="-111.76" y1="-10.16" x2="-106.68" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="-111.76" y1="-10.16" x2="-111.76" y2="-40.64" width="0.1524" layer="91"/>
-<junction x="-111.76" y="-10.16"/>
 <pinref part="T2" gate="A" pin="G"/>
 <wire x1="-111.76" y1="-40.64" x2="-109.22" y2="-40.64" width="0.1524" layer="91"/>
 </segment>
@@ -12185,13 +12130,10 @@ the high voltage</text>
 <net name="N$66" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
-<pinref part="Q1" gate="G$1" pin="D"/>
 <wire x1="-96.52" y1="2.54" x2="-96.52" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="T2" gate="A" pin="D"/>
-<wire x1="-96.52" y1="-2.54" x2="-96.52" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="-104.14" y1="-33.02" x2="-104.14" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="-104.14" y1="-2.54" x2="-96.52" y2="-2.54" width="0.1524" layer="91"/>
-<junction x="-96.52" y="-2.54"/>
 </segment>
 </net>
 <net name="N$12314" class="0">
