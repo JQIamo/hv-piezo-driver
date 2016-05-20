@@ -236,7 +236,7 @@ HIGH VOLTAGE!</text>
 <wire x1="99.1362" y1="-222.0468" x2="99.1362" y2="-223.5708" width="0.254" layer="21"/>
 <wire x1="99.187" y1="-224.3328" x2="99.187" y2="-228.2698" width="0.254" layer="21"/>
 <text x="100.711" y="-231.1908" size="0.889" layer="21" ratio="12" rot="R90">MOD_N</text>
-<text x="98.4758" y="-231.2924" size="0.889" layer="21" ratio="12" rot="R90">MOD_+</text>
+<text x="98.4758" y="-231.2924" size="0.889" layer="21" ratio="12" rot="R90">MOD_P</text>
 <wire x1="-7.5184" y1="-211.0994" x2="-2.413" y2="-204.2668" width="1.27" layer="21"/>
 <wire x1="-2.413" y1="-204.2668" x2="2.413" y2="-211.1248" width="1.27" layer="21"/>
 <wire x1="2.413" y1="-211.1248" x2="-7.5184" y2="-211.1248" width="1.27" layer="21"/>
@@ -256,6 +256,10 @@ HIGH VOLTAGE!</text>
 </polygon>
 <text x="20.955" y="-291.1856" size="1.778" layer="21" ratio="12">Piezo Compact HV Driver
 Ver. 1.0</text>
+<text x="106.68" y="-247.65" size="0.889" layer="21">ENC_A</text>
+<text x="106.68" y="-245.11" size="0.889" layer="21">ENC_SW</text>
+<text x="106.68" y="-242.57" size="0.889" layer="21">ENC_B</text>
+<text x="106.68" y="-240.03" size="0.889" layer="21">SW</text>
 </plain>
 <libraries>
 <library name="pchvd">
@@ -2507,7 +2511,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <attribute name="OC_FARNELL" value="9171371" x="102.616" y="-256.794" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="76.4286" y="-238.506" size="0.8128" layer="25" rot="R180"/>
 <attribute name="VALUE" x="76.6826" y="-232.156" size="0.8128" layer="27" rot="R180"/>
-<attribute name="PARTNO" value=" 	ATMEGA328P-AURCT-ND " x="73.66" y="-233.426" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PARTNO" value="  ATMEGA328P-AURCT-ND " x="73.66" y="-233.426" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C40" library="jqi_passives" package="C_MLCC_0603" value="100nF" x="67.056" y="-232.918" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="1276-1936-1-ND" x="91.186" y="-272.288" size="1.778" layer="27" rot="R180" display="off"/>
@@ -5110,7 +5114,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <contactref element="C54" pad="P$1"/>
 <wire x1="96.647" y1="-247.65" x2="102.374" y2="-247.65" width="0.4064" layer="1"/>
 </signal>
-<signal name="ENC_B">
+<signal name="ENC_SW">
 <contactref element="ENC" pad="6"/>
 <contactref element="IC5" pad="1"/>
 <wire x1="77.9526" y1="-236.226" x2="77.978" y2="-236.2514" width="0.4064" layer="1"/>
@@ -5124,7 +5128,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <contactref element="C55" pad="P$1"/>
 <wire x1="96.647" y1="-245.11" x2="102.374" y2="-245.11" width="0.4064" layer="1"/>
 </signal>
-<signal name="ENC_SW">
+<signal name="ENC_B">
 <contactref element="ENC" pad="4"/>
 <contactref element="C56" pad="P$1"/>
 <wire x1="102.374" y1="-242.57" x2="96.647" y2="-242.57" width="0.4064" layer="1"/>

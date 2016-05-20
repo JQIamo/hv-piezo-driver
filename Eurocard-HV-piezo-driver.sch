@@ -9319,7 +9319,7 @@ http://www.zetex.com&lt;p&gt;
 <attribute name="PARTNO" value="1276-1936-1-ND"/>
 </part>
 <part name="IC5" library="atmel" deviceset="MEGA8" device="-AI" value="ATMEGA328P">
-<attribute name="PARTNO" value=" 	ATMEGA328P-AURCT-ND "/>
+<attribute name="PARTNO" value="  ATMEGA328P-AURCT-ND "/>
 </part>
 <part name="C40" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF">
 <attribute name="PARTNO" value="1276-1936-1-ND"/>
@@ -11681,7 +11681,7 @@ the high voltage</text>
 <label x="430.53" y="-60.96" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="ENC_B" class="0">
+<net name="ENC_SW" class="0">
 <segment>
 <wire x1="447.04" y1="22.86" x2="472.44" y2="22.86" width="0.1524" layer="91"/>
 <label x="458.47" y="22.86" size="1.778" layer="95"/>
@@ -11695,7 +11695,7 @@ the high voltage</text>
 <label x="430.53" y="-63.5" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="ENC_SW" class="0">
+<net name="ENC_B" class="0">
 <segment>
 <label x="458.47" y="25.4" size="1.778" layer="95"/>
 <pinref part="ENC" gate="A" pin="4"/>
