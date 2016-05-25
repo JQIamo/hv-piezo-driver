@@ -1879,6 +1879,11 @@ diameter 1.8 mm, horizontal, grid 7.62 mm</description>
 <rectangle x1="-0.75" y1="-0.17" x2="-0.54" y2="0.17" layer="51"/>
 <rectangle x1="0.54" y1="-0.17" x2="0.75" y2="0.17" layer="51"/>
 <rectangle x1="-0.59" y1="-0.4" x2="-0.3" y2="0.4" layer="51"/>
+<wire x1="-1.524" y1="0.508" x2="-1.524" y2="-0.508" width="0.127" layer="21"/>
+<wire x1="-1.524" y1="-0.508" x2="1.27" y2="-0.508" width="0.127" layer="21"/>
+<wire x1="1.27" y1="-0.508" x2="1.27" y2="0.508" width="0.127" layer="21"/>
+<wire x1="1.27" y1="0.508" x2="-1.524" y2="0.508" width="0.127" layer="21"/>
+<rectangle x1="-1.524" y1="-0.508" x2="-1.016" y2="0.508" layer="21"/>
 </package>
 <package name="TO18D">
 <description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
@@ -7384,6 +7389,49 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <rectangle x1="2.30495" y1="-1.82005" x2="2.79515" y2="-0.71995" layer="51" rot="R270"/>
 <rectangle x1="2.30495" y1="-0.55005" x2="2.79515" y2="0.55005" layer="51" rot="R270"/>
 <rectangle x1="2.30495" y1="0.71995" x2="2.79515" y2="1.82005" layer="51" rot="R270"/>
+<wire x1="-1.524" y1="1.778" x2="-1.27" y2="1.778" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="1.778" x2="1.778" y2="1.778" width="0.2032" layer="21"/>
+<wire x1="1.778" y1="1.778" x2="1.778" y2="-3.048" width="0.2032" layer="21"/>
+<wire x1="1.778" y1="-3.048" x2="-1.27" y2="-3.048" width="0.2032" layer="21"/>
+<wire x1="-1.524" y1="1.778" x2="-2.032" y2="1.778" width="0.2032" layer="21"/>
+<wire x1="-2.032" y1="1.778" x2="-2.032" y2="-3.048" width="0.2032" layer="21"/>
+<wire x1="-2.032" y1="-3.048" x2="-1.524" y2="-3.048" width="0.2032" layer="21"/>
+<wire x1="-1.524" y1="-3.048" x2="-1.27" y2="-3.048" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="-3.048" x2="-1.27" y2="1.778" width="0.2032" layer="21"/>
+</package>
+<package name="SO08@1">
+<description>SO08 Package.
+
+body 3.9 mm/JEDEC MS-012AA</description>
+<wire x1="3.9" y1="2.265" x2="3.9" y2="-3.535" width="0.1998" layer="39"/>
+<wire x1="3.9" y1="-3.535" x2="-3.9" y2="-3.535" width="0.1998" layer="39"/>
+<wire x1="-3.9" y1="-3.535" x2="-3.9" y2="2.265" width="0.1998" layer="39"/>
+<wire x1="-3.9" y1="2.265" x2="3.9" y2="2.265" width="0.1998" layer="39"/>
+<wire x1="1.9" y1="-3.035" x2="-1.4" y2="-3.035" width="0.2032" layer="51"/>
+<wire x1="-1.4" y1="-3.035" x2="-1.9" y2="-3.035" width="0.2032" layer="51"/>
+<wire x1="-1.9" y1="-3.035" x2="-1.9" y2="1.765" width="0.2032" layer="51"/>
+<wire x1="-1.9" y1="1.765" x2="-1.4" y2="1.765" width="0.2032" layer="51"/>
+<wire x1="-1.4" y1="1.765" x2="1.9" y2="1.765" width="0.2032" layer="51"/>
+<wire x1="1.9" y1="1.765" x2="1.9" y2="-3.035" width="0.2032" layer="51"/>
+<wire x1="-1.4" y1="-3.035" x2="-1.4" y2="1.765" width="0.2032" layer="51"/>
+<smd name="2" x="-2.6" y="0" dx="0.6" dy="2.2" layer="1" rot="R270"/>
+<smd name="7" x="2.6" y="0" dx="0.6" dy="2.2" layer="1" rot="R270"/>
+<smd name="1" x="-2.6" y="1.27" dx="0.6" dy="2.2" layer="1" rot="R270"/>
+<smd name="3" x="-2.6" y="-1.27" dx="0.6" dy="2.2" layer="1" rot="R270"/>
+<smd name="4" x="-2.6" y="-2.54" dx="0.6" dy="2.2" layer="1" rot="R270"/>
+<smd name="8" x="2.6" y="1.27" dx="0.6" dy="2.2" layer="1" rot="R270"/>
+<smd name="6" x="2.6" y="-1.27" dx="0.6" dy="2.2" layer="1" rot="R270"/>
+<smd name="5" x="2.6" y="-2.54" dx="0.6" dy="2.2" layer="1" rot="R270"/>
+<text x="-1.905" y="2.54" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-5.08" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-2.79515" y1="0.71995" x2="-2.30495" y2="1.82005" layer="51" rot="R270"/>
+<rectangle x1="-2.79515" y1="-0.55005" x2="-2.30495" y2="0.55005" layer="51" rot="R270"/>
+<rectangle x1="-2.79515" y1="-1.82005" x2="-2.30495" y2="-0.71995" layer="51" rot="R270"/>
+<rectangle x1="-2.79515" y1="-3.09005" x2="-2.30495" y2="-1.98995" layer="51" rot="R270"/>
+<rectangle x1="2.30495" y1="-3.09005" x2="2.79515" y2="-1.98995" layer="51" rot="R270"/>
+<rectangle x1="2.30495" y1="-1.82005" x2="2.79515" y2="-0.71995" layer="51" rot="R270"/>
+<rectangle x1="2.30495" y1="-0.55005" x2="2.79515" y2="0.55005" layer="51" rot="R270"/>
+<rectangle x1="2.30495" y1="0.71995" x2="2.79515" y2="1.82005" layer="51" rot="R270"/>
 </package>
 <package name="MSOP08">
 <description>&lt;b&gt;8-Lead micro SO&lt;/b&gt; (RM-8)&lt;p&gt;
@@ -7448,7 +7496,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 <gate name="PWR" symbol="PWR" x="7.62" y="17.78"/>
 </gates>
 <devices>
-<device name="" package="SO08">
+<device name="" package="SO08@1">
 <connects>
 <connect gate="A" pin="+IN" pad="3"/>
 <connect gate="A" pin="-IN" pad="2"/>

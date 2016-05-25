@@ -29,7 +29,7 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
@@ -58,8 +58,8 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -710,6 +710,11 @@ Based on the following sources:
 <rectangle x1="-0.75" y1="-0.17" x2="-0.54" y2="0.17" layer="51"/>
 <rectangle x1="0.54" y1="-0.17" x2="0.75" y2="0.17" layer="51"/>
 <rectangle x1="-0.59" y1="-0.4" x2="-0.3" y2="0.4" layer="51"/>
+<wire x1="-1.524" y1="0.508" x2="-1.524" y2="-0.508" width="0.127" layer="21"/>
+<wire x1="-1.524" y1="-0.508" x2="1.27" y2="-0.508" width="0.127" layer="21"/>
+<wire x1="1.27" y1="-0.508" x2="1.27" y2="0.508" width="0.127" layer="21"/>
+<wire x1="1.27" y1="0.508" x2="-1.524" y2="0.508" width="0.127" layer="21"/>
+<rectangle x1="-1.524" y1="-0.508" x2="-1.016" y2="0.508" layer="21"/>
 </package>
 </packages>
 </library>
@@ -1361,6 +1366,49 @@ Based on the following sources:
 <library name="opamp-jqi">
 <packages>
 <package name="SO08">
+<description>SO08 Package.
+
+body 3.9 mm/JEDEC MS-012AA</description>
+<wire x1="3.9" y1="2.265" x2="3.9" y2="-3.535" width="0.1998" layer="39"/>
+<wire x1="3.9" y1="-3.535" x2="-3.9" y2="-3.535" width="0.1998" layer="39"/>
+<wire x1="-3.9" y1="-3.535" x2="-3.9" y2="2.265" width="0.1998" layer="39"/>
+<wire x1="-3.9" y1="2.265" x2="3.9" y2="2.265" width="0.1998" layer="39"/>
+<wire x1="1.9" y1="-3.035" x2="-1.4" y2="-3.035" width="0.2032" layer="51"/>
+<wire x1="-1.4" y1="-3.035" x2="-1.9" y2="-3.035" width="0.2032" layer="51"/>
+<wire x1="-1.9" y1="-3.035" x2="-1.9" y2="1.765" width="0.2032" layer="51"/>
+<wire x1="-1.9" y1="1.765" x2="-1.4" y2="1.765" width="0.2032" layer="51"/>
+<wire x1="-1.4" y1="1.765" x2="1.9" y2="1.765" width="0.2032" layer="51"/>
+<wire x1="1.9" y1="1.765" x2="1.9" y2="-3.035" width="0.2032" layer="51"/>
+<wire x1="-1.4" y1="-3.035" x2="-1.4" y2="1.765" width="0.2032" layer="51"/>
+<smd name="2" x="-2.6" y="0" dx="0.6" dy="2.2" layer="1" rot="R270"/>
+<smd name="7" x="2.6" y="0" dx="0.6" dy="2.2" layer="1" rot="R270"/>
+<smd name="1" x="-2.6" y="1.27" dx="0.6" dy="2.2" layer="1" rot="R270"/>
+<smd name="3" x="-2.6" y="-1.27" dx="0.6" dy="2.2" layer="1" rot="R270"/>
+<smd name="4" x="-2.6" y="-2.54" dx="0.6" dy="2.2" layer="1" rot="R270"/>
+<smd name="8" x="2.6" y="1.27" dx="0.6" dy="2.2" layer="1" rot="R270"/>
+<smd name="6" x="2.6" y="-1.27" dx="0.6" dy="2.2" layer="1" rot="R270"/>
+<smd name="5" x="2.6" y="-2.54" dx="0.6" dy="2.2" layer="1" rot="R270"/>
+<text x="-1.905" y="2.54" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-5.08" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-2.79515" y1="0.71995" x2="-2.30495" y2="1.82005" layer="51" rot="R270"/>
+<rectangle x1="-2.79515" y1="-0.55005" x2="-2.30495" y2="0.55005" layer="51" rot="R270"/>
+<rectangle x1="-2.79515" y1="-1.82005" x2="-2.30495" y2="-0.71995" layer="51" rot="R270"/>
+<rectangle x1="-2.79515" y1="-3.09005" x2="-2.30495" y2="-1.98995" layer="51" rot="R270"/>
+<rectangle x1="2.30495" y1="-3.09005" x2="2.79515" y2="-1.98995" layer="51" rot="R270"/>
+<rectangle x1="2.30495" y1="-1.82005" x2="2.79515" y2="-0.71995" layer="51" rot="R270"/>
+<rectangle x1="2.30495" y1="-0.55005" x2="2.79515" y2="0.55005" layer="51" rot="R270"/>
+<rectangle x1="2.30495" y1="0.71995" x2="2.79515" y2="1.82005" layer="51" rot="R270"/>
+<wire x1="-1.524" y1="1.778" x2="-1.27" y2="1.778" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="1.778" x2="1.778" y2="1.778" width="0.2032" layer="21"/>
+<wire x1="1.778" y1="1.778" x2="1.778" y2="-3.048" width="0.2032" layer="21"/>
+<wire x1="1.778" y1="-3.048" x2="-1.27" y2="-3.048" width="0.2032" layer="21"/>
+<wire x1="-1.524" y1="1.778" x2="-2.032" y2="1.778" width="0.2032" layer="21"/>
+<wire x1="-2.032" y1="1.778" x2="-2.032" y2="-3.048" width="0.2032" layer="21"/>
+<wire x1="-2.032" y1="-3.048" x2="-1.524" y2="-3.048" width="0.2032" layer="21"/>
+<wire x1="-1.524" y1="-3.048" x2="-1.27" y2="-3.048" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="-3.048" x2="-1.27" y2="1.778" width="0.2032" layer="21"/>
+</package>
+<package name="SO08@1">
 <description>SO08 Package.
 
 body 3.9 mm/JEDEC MS-012AA</description>
@@ -2342,13 +2390,13 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <element name="RF_0A" library="jqi_passives" package="R_0603" value="10k" x="45.847" y="-244.602" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="TNP10.0KAACT-ND" x="45.847" y="-244.602" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="U3" library="opamp-jqi" package="SO08" value="LM7171" x="13.081" y="-247.396" smashed="yes">
+<element name="U3" library="opamp-jqi" package="SO08@1" value="LM7171" x="13.081" y="-247.396" smashed="yes">
 <attribute name="PN" value="LM7171BIMX/NOPBCT-ND" x="13.081" y="-247.396" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="18.669" y="-249.428" size="1.27" layer="25" rot="R180"/>
 <attribute name="VALUE" x="11.176" y="-252.476" size="1.27" layer="27"/>
 <attribute name="PARTNO" value="LM7171BIMX/NOPBCT-ND" x="13.081" y="-247.396" size="1.778" layer="27" display="off"/>
 </element>
-<element name="U4" library="opamp-jqi" package="SO08" value="LM7171" x="50.038" y="-252.222" smashed="yes" rot="R180">
+<element name="U4" library="opamp-jqi" package="SO08@1" value="LM7171" x="50.038" y="-252.222" smashed="yes" rot="R180">
 <attribute name="PN" value="LM7171BIMX/NOPBCT-ND" x="50.038" y="-252.222" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="50.927" y="-252.476" size="1.27" layer="25" rot="R180"/>
 <attribute name="VALUE" x="51.943" y="-247.142" size="1.27" layer="27" rot="R180"/>
@@ -5942,8 +5990,10 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <approved hash="19,1,8853c1a1ccef851d"/>
 <approved hash="19,1,05d9e174e2eb0ea8"/>
 <approved hash="5,1,b454b928bff2b59a"/>
-<approved hash="18,29,4d268ae70ae7cd26"/>
+<approved hash="5,1,86924cad0ba84294"/>
+<approved hash="5,1,c8867eac6c598680"/>
 <approved hash="18,29,d588124a924a5588"/>
+<approved hash="18,29,4d268ae70ae7cd26"/>
 <approved hash="19,1,dbb1ddf2c7b235cc"/>
 <approved hash="19,1,d494a43a2fbbc0b8"/>
 <approved hash="5,1,7fa865ec0b9401e9"/>
@@ -5952,21 +6002,19 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <approved hash="19,1,9afa1b64bbfcfc55"/>
 <approved hash="19,1,c4b5a7ca4591a9bd"/>
 <approved hash="19,1,d37ede02fba85fa4"/>
-<approved hash="5,1,86924cad0ba84294"/>
-<approved hash="5,1,c8867eac6c598680"/>
 <approved hash="5,1,bf911ffd45f712bf"/>
 <approved hash="5,1,c1d126a1b621b8e8"/>
 <approved hash="5,1,8682ab20e11d0fbc"/>
 <approved hash="19,1,52832899ca685b22"/>
 <approved hash="5,1,5ee8d23349db2cd1"/>
-<approved hash="19,1,fa1e495c4b0df84f"/>
-<approved hash="19,1,f8fc4bbe453cf67e"/>
-<approved hash="19,1,7bdb48994d307e72"/>
-<approved hash="19,1,fa1c495e4b3cf87e"/>
-<approved hash="19,1,781d4b5f4d4c7e0e"/>
 <approved hash="19,1,fbda48984d3dfe7f"/>
-<approved hash="19,1,fa1a49584b3ff87d"/>
+<approved hash="19,1,7bdb48994d307e72"/>
+<approved hash="19,1,fa1e495c4b0df84f"/>
 <approved hash="19,1,7ddd4e9f4d2c7e6e"/>
+<approved hash="19,1,781d4b5f4d4c7e0e"/>
+<approved hash="19,1,fa1a49584b3ff87d"/>
+<approved hash="19,1,f8fc4bbe453cf67e"/>
+<approved hash="19,1,fa1c495e4b3cf87e"/>
 <approved hash="19,1,b974752b7537c15e"/>
 <approved hash="19,1,694f4be54b9b116f"/>
 <approved hash="19,1,bcfaef2ce89af842"/>
@@ -6005,21 +6053,21 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <approved hash="19,1,6e52f9f47e2dde36"/>
 <approved hash="5,1,bb30f28ae72cd287"/>
 <approved hash="19,1,710ae82eba66c71c"/>
-<approved hash="19,1,fb826a406825f9e7"/>
+<approved hash="19,1,797568b76e247fe6"/>
 <approved hash="19,1,7bc56a0767d47616"/>
 <approved hash="19,1,7bc76a05602871ea"/>
 <approved hash="19,1,7d036cc16ee87f2a"/>
-<approved hash="19,1,797568b76e247fe6"/>
+<approved hash="19,1,fb826a406825f9e7"/>
 <approved hash="19,1,fa1a6bd86825f9e7"/>
 <approved hash="19,1,f80461466325fa67"/>
 <approved hash="19,1,7ed9879b81227860"/>
-<approved hash="19,1,f99a8ad888cafb88"/>
-<approved hash="19,1,641b9759952a6668"/>
 <approved hash="19,1,e508964a933be079"/>
-<approved hash="19,1,7adb89998f2a7c68"/>
-<approved hash="19,1,7a4b89098b3a7878"/>
 <approved hash="19,1,789b8bd98d2a7e68"/>
+<approved hash="19,1,7adb89998f2a7c68"/>
+<approved hash="19,1,f99a8ad888cafb88"/>
 <approved hash="19,1,fa58891a85c5f687"/>
+<approved hash="19,1,641b9759952a6668"/>
+<approved hash="19,1,7a4b89098b3a7878"/>
 <approved hash="19,1,f76b284beac04858"/>
 <approved hash="19,1,8b1a59d85a2688e4"/>
 <approved hash="19,1,f81b9fd99c44fb86"/>
