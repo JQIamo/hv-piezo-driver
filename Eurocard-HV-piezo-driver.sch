@@ -9645,7 +9645,7 @@ http://www.zetex.com&lt;p&gt;
 <part name="R25" library="jqi_passives" deviceset="R_SMD" device="R0603" value="20.5k">
 <attribute name="PARTNO" value="RR08P20.5KDCT-ND"/>
 </part>
-<part name="C19" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603">
+<part name="C19" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="47nF">
 <attribute name="PARTNO" value="445-14276-1-ND"/>
 </part>
 <part name="SW1" library="pchvd" deviceset="SPDT" device="" value="ADG849">
@@ -9699,7 +9699,7 @@ http://www.zetex.com&lt;p&gt;
 10 =&gt; 110k</text>
 <text x="-102.87" y="-266.7" size="1.778" layer="98">TODO:
 * Series 0603 resistors of TNPW 0.1% instead of 1206
-* ...?</text>
+* swap out switch for bipolar version and/or implement alessandro's hack to bias that node</text>
 <text x="85.09" y="-236.22" size="1.778" layer="98">(to backplane/ucontroller)</text>
 <text x="85.09" y="-246.38" size="1.778" layer="98">(to frontpanel)</text>
 <text x="-8.89" y="-158.75" size="1.778" layer="98">(from DAC)</text>
@@ -9708,6 +9708,8 @@ or backplane modulation input</text>
 <text x="128.27" y="-186.69" size="1.778" layer="98" rot="R90">(protection zeener)</text>
 <text x="-115.57" y="-128.27" size="1.778" layer="98">(from flyback regulator)</text>
 <text x="39.37" y="-270.51" size="4.572" layer="94">Low-noise stabilization</text>
+<text x="53.34" y="-161.29" size="1.778" layer="98">(to switchable 
+low-pass filter)</text>
 </plain>
 <instances>
 <instance part="C12" gate="G$1" x="-21.59" y="-127">
@@ -10640,7 +10642,7 @@ the high voltage</text>
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="52.07" y1="102.87" x2="52.07" y2="93.98" width="0.1524" layer="91"/>
-<label x="66.04" y="91.44" size="1.778" layer="95"/>
+<label x="57.15" y="93.98" size="1.778" layer="95"/>
 <wire x1="52.07" y1="93.98" x2="78.74" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="U8" gate="G$1" pin="A"/>
 </segment>
@@ -10943,7 +10945,7 @@ the high voltage</text>
 <segment>
 <pinref part="U8" gate="G$1" pin="B"/>
 <wire x1="78.74" y1="99.06" x2="60.96" y2="99.06" width="0.1524" layer="91"/>
-<label x="29.21" y="99.06" size="1.778" layer="95"/>
+<label x="57.15" y="99.06" size="1.778" layer="95"/>
 <pinref part="R39" gate="G$1" pin="2"/>
 <wire x1="60.96" y1="99.06" x2="24.13" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="101.6" x2="60.96" y2="99.06" width="0.1524" layer="91"/>
@@ -11613,6 +11615,8 @@ the high voltage</text>
 <text x="217.17" y="209.55" size="1.778" layer="91">ADD IN I2C bus</text>
 <text x="113.03" y="196.85" size="1.778" layer="98" rot="R90">FTDI Header</text>
 <text x="181.61" y="48.26" size="4.572" layer="94">Digital/ucontroller</text>
+<text x="153.67" y="153.67" size="1.778" layer="98">(from filtered
+DAC voltage)</text>
 </plain>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="21.59"/>

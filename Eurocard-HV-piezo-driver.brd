@@ -3331,7 +3331,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <attribute name="PARTNO" value="RR08P20.5KDCT-ND" x="5.08" y="-249.682" size="0.635" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="4.3626" y="-248.5518" size="0.762" layer="25" font="vector"/>
 </element>
-<element name="C19" library="jqi_passives" package="C_MLCC_0603" value="" x="6.731" y="-249.7328" smashed="yes" rot="R270">
+<element name="C19" library="jqi_passives" package="C_MLCC_0603" value="47nF" x="6.731" y="-249.7328" smashed="yes" rot="R270">
 <attribute name="NAME" x="4.5928" y="-252.311" size="1.016" layer="25" font="vector"/>
 <attribute name="PARTNO" value="445-14276-1-ND" x="6.731" y="-249.7328" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
