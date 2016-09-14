@@ -302,6 +302,10 @@ MODULATION</text>
 MODULATION</text>
 <text x="55.88" y="-286.385" size="0.889" layer="21">Documentation:
 https://git.io/vri1l</text>
+<text x="-6.35" y="-323.215" size="1.778" layer="1">Modifications:
+* update QR code point to base repo
+* vmon to ucontroller
+* bias switch to 5V</text>
 </plain>
 <libraries>
 <library name="pchvd">
