@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -9688,6 +9688,10 @@ http://www.zetex.com&lt;p&gt;
 <part name="FRAME3" library="frames" deviceset="FRAME_A_L" device=""/>
 <part name="FRAME4" library="frames" deviceset="FRAME_A_L" device=""/>
 <part name="FRAME5" library="frames" deviceset="FRAME_A_L" device=""/>
+<part name="R40" library="jqi_passives" deviceset="R_SMD" device="R0603" value="1M">
+<attribute name="PARTNO" value="A102234CT-ND"/>
+</part>
+<part name="P+14" library="supply1" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11617,6 +11621,8 @@ the high voltage</text>
 <text x="181.61" y="48.26" size="4.572" layer="94">Digital/ucontroller</text>
 <text x="153.67" y="153.67" size="1.778" layer="98">(from filtered
 DAC voltage)</text>
+<text x="93.98" y="142.24" size="1.778" layer="98" rot="R90">bias at 2.5V to keep switch
+biased appropriately.</text>
 </plain>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="21.59"/>
@@ -11732,6 +11738,12 @@ DAC voltage)</text>
 <attribute name="VALUE" x="106.3625" y="155.7338" size="1.524" layer="96" rot="R90"/>
 </instance>
 <instance part="GND62" gate="1" x="156.21" y="168.91"/>
+<instance part="R40" gate="G$1" x="106.68" y="165.1" smashed="yes" rot="R90">
+<attribute name="PARTNO" x="106.68" y="165.1" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="NAME" x="103.8225" y="162.8775" size="1.524" layer="95" rot="R90"/>
+<attribute name="VALUE" x="106.3625" y="168.4338" size="1.524" layer="96" rot="R90"/>
+</instance>
+<instance part="P+14" gate="1" x="106.68" y="177.8"/>
 </instances>
 <busses>
 </busses>
@@ -12159,6 +12171,11 @@ DAC voltage)</text>
 <pinref part="C72" gate="G$1" pin="1"/>
 <junction x="119.38" y="127"/>
 </segment>
+<segment>
+<pinref part="P+14" gate="1" pin="+5V"/>
+<pinref part="R40" gate="G$1" pin="2"/>
+<wire x1="106.68" y1="175.26" x2="106.68" y2="170.18" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="EN" class="0">
 <segment>
@@ -12386,6 +12403,9 @@ DAC voltage)</text>
 <pinref part="SW1" gate="G$1" pin="SA"/>
 <wire x1="111.76" y1="157.48" x2="106.68" y2="157.48" width="0.3048" layer="91"/>
 <pinref part="R48" gate="G$1" pin="2"/>
+<pinref part="R40" gate="G$1" pin="1"/>
+<wire x1="106.68" y1="160.02" x2="106.68" y2="157.48" width="0.1524" layer="91"/>
+<junction x="106.68" y="157.48"/>
 </segment>
 </net>
 </nets>
