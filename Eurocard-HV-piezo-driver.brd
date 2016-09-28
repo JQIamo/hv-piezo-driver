@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -2494,7 +2494,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 </element>
 <element name="HV_OUT" library="connector-jqi" package="BNC90" value="BNC-H" x="-17.78" y="-240.538" smashed="yes" rot="R90">
 <attribute name="DIGIKEY" value="12345" x="-17.78" y="-240.538" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="-9.906" y="-240.157" size="1.27" layer="25" rot="R270"/>
+<attribute name="NAME" x="-10.414" y="-242.443" size="1.27" layer="25" rot="R270"/>
 <attribute name="PARTNO" value="A32260-ND" x="-17.78" y="-240.538" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="JP5" library="pinhead" package="1X03" value="DNP" x="99.949" y="-267.335" smashed="yes" rot="R90">
@@ -2667,7 +2667,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <element name="MOD_IN" library="connector-jqi" package="BNC90" value="BNC-H" x="-17.78" y="-259.588" smashed="yes" rot="R90">
 <attribute name="DIGIKEY" value="12345" x="-17.78" y="-259.588" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PARTNO" value="A32260-ND" x="-17.78" y="-259.588" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="-8.9916" y="-256.794" size="1.27" layer="25" rot="R90"/>
+<attribute name="NAME" x="-8.9916" y="-258.318" size="1.27" layer="25" rot="R90"/>
 </element>
 <element name="U$1" library="pchvd" package="36103505-SHIELD" value="RF_36103505" x="56.863" y="-224.635" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="732-2495-ND" x="56.863" y="-224.635" size="1.778" layer="27" rot="R180" display="off"/>
@@ -3083,11 +3083,15 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <element name="U$6" library="Eurocard-HV-piezo-driver" package="QR-HTTPS://GIT.IO/VIMFL-LIGHT-SILK" value="" x="50.546" y="-287.02" smashed="yes"/>
 <element name="R42" library="jqi_passives" package="R_1206" value="4.99M" x="-7.874" y="-239.014" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="BC2837CT-ND" x="-7.874" y="-239.014" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="-6.166" y="-237.776" size="1.016" layer="25" font="vector" rot="R270"/>
+<attribute name="NAME" x="-9.366" y="-242.132" size="1.016" layer="25" font="vector"/>
 </element>
 <element name="R43" library="jqi_passives" package="R_0603" value="63.4k" x="-7.874" y="-235.458" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="P63.4KHCT-ND" x="-7.874" y="-235.458" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="-6.566" y="-233.496" size="1.016" layer="25" font="vector" rot="R270"/>
+</element>
+<element name="C28" library="jqi_passives" package="C_MLCC_1206" value="HV 1nF" x="-5.334" y="-239.014" smashed="yes" rot="R90">
+<attribute name="PARTNO" value="445-2288-1-ND" x="-5.334" y="-239.014" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="-3.078" y="-240.706" size="1.016" layer="25" font="vector" rot="R90"/>
 </element>
 </elements>
 <signals>
@@ -3772,6 +3776,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="4.5974" y1="-230.7844" x2="7.3406" y2="-231.4194" width="0.635" layer="2"/>
 <wire x1="7.3406" y1="-231.4194" x2="7.62" y2="-231.14" width="0.635" layer="2"/>
 <contactref element="R43" pad="P$1"/>
+<contactref element="C28" pad="P$2"/>
 </signal>
 <signal name="+5V">
 <contactref element="U2" pad="4"/>
@@ -4190,8 +4195,11 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="17.465" y1="-239.268" x2="15.266" y2="-239.268" width="0.508" layer="1"/>
 <wire x1="15.266" y1="-239.268" x2="15.24" y2="-239.294" width="0.508" layer="1"/>
 <contactref element="R42" pad="P$2"/>
-<wire x1="-12.7" y1="-240.538" x2="-7.874" y2="-240.538" width="0.254" layer="1"/>
+<wire x1="-12.7" y1="-240.538" x2="-7.874" y2="-240.538" width="0.508" layer="1"/>
 <wire x1="-7.874" y1="-240.538" x2="-7.874" y2="-240.464" width="0.254" layer="1"/>
+<contactref element="C28" pad="P$1"/>
+<wire x1="-5.334" y1="-240.564" x2="-5.434" y2="-240.464" width="0.508" layer="1"/>
+<wire x1="-5.434" y1="-240.464" x2="-7.874" y2="-240.464" width="0.508" layer="1"/>
 </signal>
 <signal name="HVFB">
 <contactref element="R7" pad="P$2"/>

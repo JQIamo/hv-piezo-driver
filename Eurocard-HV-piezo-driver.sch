@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -9696,6 +9696,9 @@ http://www.zetex.com&lt;p&gt;
 <attribute name="PARTNO" value="P63.4KHCT-ND"/>
 </part>
 <part name="GND34" library="supply1" deviceset="GND" device=""/>
+<part name="C28" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_1206" value="HV 1nF">
+<attribute name="PARTNO" value="445-2288-1-ND"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -9718,6 +9721,9 @@ or backplane modulation input</text>
 <text x="39.37" y="-270.51" size="4.572" layer="94">Low-noise stabilization</text>
 <text x="38.1" y="-161.29" size="1.778" layer="98">(to switchable 
 low-pass filter)</text>
+<text x="60.96" y="-113.03" size="1.778" layer="98">C28 is a "minimum load" necessary for stability.
+Without, can induce oscillation if load
+changes suddenly.</text>
 </plain>
 <instances>
 <instance part="C12" gate="G$1" x="-36.83" y="-127">
@@ -9886,6 +9892,9 @@ low-pass filter)</text>
 <attribute name="PARTNO" x="111.76" y="-149.86" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="GND34" gate="1" x="111.76" y="-158.75"/>
+<instance part="C28" gate="G$1" x="100.33" y="-127">
+<attribute name="PARTNO" x="100.33" y="-127" size="1.778" layer="96" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -9980,6 +9989,10 @@ low-pass filter)</text>
 <pinref part="R43" gate="G$1" pin="1"/>
 <pinref part="GND34" gate="1" pin="GND"/>
 <wire x1="111.76" y1="-156.21" x2="111.76" y2="-154.94" width="0.3048" layer="91"/>
+<pinref part="C28" gate="G$1" pin="2"/>
+<wire x1="100.33" y1="-132.08" x2="100.33" y2="-156.21" width="0.3048" layer="91"/>
+<wire x1="100.33" y1="-156.21" x2="111.76" y2="-156.21" width="0.3048" layer="91"/>
+<junction x="111.76" y="-156.21"/>
 </segment>
 </net>
 <net name="GND_0" class="0">
@@ -10052,7 +10065,8 @@ low-pass filter)</text>
 <pinref part="HV_OUT" gate="G$1" pin="1"/>
 <pinref part="R17" gate="G$1" pin="1"/>
 <wire x1="77.47" y1="-124.46" x2="95.25" y2="-124.46" width="0.3048" layer="91"/>
-<wire x1="95.25" y1="-124.46" x2="111.76" y2="-124.46" width="0.3048" layer="91"/>
+<wire x1="95.25" y1="-124.46" x2="100.33" y2="-124.46" width="0.3048" layer="91"/>
+<wire x1="100.33" y1="-124.46" x2="111.76" y2="-124.46" width="0.3048" layer="91"/>
 <wire x1="111.76" y1="-124.46" x2="127" y2="-124.46" width="0.3048" layer="91"/>
 <wire x1="95.25" y1="-124.46" x2="95.25" y2="-193.04" width="0.3048" layer="91"/>
 <junction x="95.25" y="-124.46"/>
@@ -10067,6 +10081,8 @@ low-pass filter)</text>
 <pinref part="C27" gate="G$1" pin="2"/>
 <pinref part="R42" gate="G$1" pin="2"/>
 <junction x="111.76" y="-124.46"/>
+<pinref part="C28" gate="G$1" pin="1"/>
+<junction x="100.33" y="-124.46"/>
 </segment>
 </net>
 <net name="N$15" class="0">
