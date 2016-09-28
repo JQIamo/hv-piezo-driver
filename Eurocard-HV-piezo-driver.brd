@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -2593,7 +2593,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <attribute name="PARTNO" value="P49.9CCT-ND" x="16.383" y="-234.061" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R23" library="jqi_passives" package="R_0603" value="20.5k" x="13.843" y="-252.222" smashed="yes" rot="R90">
-<attribute name="NAME" x="15.1258" y="-258.1464" size="1.016" layer="25" font="vector" rot="R90"/>
+<attribute name="NAME" x="15.8878" y="-254.0824" size="1.016" layer="25" font="vector" rot="R90"/>
 <attribute name="PARTNO" value="RR08P20.5KDCT-ND" x="13.843" y="-252.222" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R4" library="jqi_passives" package="R_0603" value="10k" x="50.038" y="-257.302" smashed="yes" rot="R180">
@@ -2632,7 +2632,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <attribute name="PARTNO" value="445-1548-1-ND" x="12.0142" y="-254.254" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C30" library="jqi_passives" package="C_MLCC_0805" value="10uF" x="10.3378" y="-256.0574" smashed="yes">
-<attribute name="NAME" x="10.3888" y="-258.3594" size="1.016" layer="25" font="vector"/>
+<attribute name="NAME" x="9.1188" y="-258.3594" size="1.016" layer="25" font="vector"/>
 <attribute name="PARTNO" value="445-14417-1-ND" x="10.3378" y="-256.0574" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C31" library="jqi_passives" package="C_MLCC_0805" value="10uF" x="23.622" y="-247.904" smashed="yes" rot="R90">
@@ -2648,7 +2648,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <attribute name="PARTNO" value="445-14417-1-ND" x="42.291" y="-256.032" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R8" library="jqi_passives" package="R_1206" value="1M" x="6.477" y="-244.094" smashed="yes">
-<attribute name="NAME" x="2.572" y="-244.037" size="1.016" layer="25" font="vector"/>
+<attribute name="NAME" x="7.055" y="-243.808" size="1.016" layer="25" font="vector" rot="R90"/>
 <attribute name="PARTNO" value="TNP1.00MACCT-ND" x="6.477" y="-244.094" size="1.778" layer="27" display="off"/>
 </element>
 <element name="D2" library="semiconductor-jqi" package="SOT-23" value="AZ23C15-FDICT-ND" x="18.288" y="-230.124" smashed="yes" rot="R270">
@@ -2763,7 +2763,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 </element>
 <element name="C39" library="jqi_passives" package="C_MLCC_0603" value="100nF" x="5.461" y="-253.619" smashed="yes">
 <attribute name="PARTNO" value="1276-1936-1-ND" x="5.461" y="-253.619" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="6.896" y="-253.081" size="1.016" layer="25" font="vector" rot="R270"/>
+<attribute name="NAME" x="6.642" y="-252.573" size="1.016" layer="25" font="vector" rot="R270"/>
 </element>
 <element name="IC5" library="atmel" package="TQFP32-08" value="ATMEGA328P" x="73.66" y="-233.426" smashed="yes" rot="R180">
 <attribute name="OC_NEWARK" value="73M8863" x="102.616" y="-256.794" size="1.778" layer="27" rot="R180" display="off"/>
@@ -3019,7 +3019,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 </element>
 <element name="R41" library="jqi_passives" package="R_0805" value="49.9R" x="2.54" y="-245.11" smashed="yes">
 <attribute name="PARTNO" value="P49.9CCT-ND" x="2.54" y="-245.11" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-2.289" y="-245.534" size="1.016" layer="25" font="vector"/>
+<attribute name="NAME" x="1.521" y="-244.01" size="1.016" layer="25" font="vector"/>
 </element>
 <element name="C27" library="jqi_passives" package="C_MLCC_1206" value="HV 1nF" x="15.367" y="-242.57" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="445-2288-1-ND" x="15.367" y="-242.57" size="1.778" layer="27" rot="R90" display="off"/>
@@ -3027,23 +3027,24 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 </element>
 <element name="C49" library="jqi_passives" package="C_MLCC_1206" value="HV 1nF" x="6.604" y="-246.634" smashed="yes">
 <attribute name="PARTNO" value="445-2288-1-ND" x="6.604" y="-246.634" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="7.1074" y="-247.7672" size="0.889" layer="25" font="vector" rot="R90"/>
+<attribute name="NAME" x="7.1074" y="-248.0212" size="0.889" layer="25" font="vector" rot="R90"/>
 </element>
 <element name="R25" library="jqi_passives" package="R_0603" value="20.5k" x="5.08" y="-249.682" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="RR08P20.5KDCT-ND" x="5.08" y="-249.682" size="0.635" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="4.3626" y="-248.5518" size="0.762" layer="25" font="vector"/>
+<attribute name="NAME" x="4.1086" y="-248.5518" size="0.762" layer="25" font="vector"/>
 </element>
 <element name="C19" library="jqi_passives" package="C_MLCC_0603" value="47nF" x="6.731" y="-249.7328" smashed="yes" rot="R270">
-<attribute name="NAME" x="4.5928" y="-252.311" size="1.016" layer="25" font="vector"/>
+<attribute name="NAME" x="5.6088" y="-252.057" size="0.762" layer="25" font="vector"/>
 <attribute name="PARTNO" value="445-14276-1-ND" x="6.731" y="-249.7328" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="SW1" library="pchvd" package="SC70-6L" value="ADG849" x="-1.27" y="-247.396" smashed="yes" rot="R270">
-<attribute name="NAME" x="0.1054" y="-246.3484" size="0.762" layer="25" rot="R270"/>
+<attribute name="NAME" x="-1.6726" y="-243.8084" size="0.762" layer="25" rot="R270"/>
 <attribute name="VALUE" x="-3.62" y="-246.196" size="1.016" layer="27" rot="R270"/>
 <attribute name="PARTNO" value="ADG849YKSZ-REELCT-ND" x="-1.27" y="-247.396" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="C71" library="jqi_passives" package="C_MLCC_0805" value="10uF" x="2.54" y="-247.396" rot="R180">
+<element name="C71" library="jqi_passives" package="C_MLCC_0805" value="10uF" x="2.54" y="-247.396" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="445-14417-1-ND" x="2.54" y="-247.396" size="0.635" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="0.238" y="-246.304" size="0.762" layer="25" font="vector" rot="R270"/>
 </element>
 <element name="R46" library="jqi_passives" package="R_0603" value="10k" x="80.01" y="-229.235" rot="R270">
 <attribute name="PARTNO" value="P10.0KHCT-ND" x="80.01" y="-229.235" size="0.635" layer="27" rot="R270" display="off"/>

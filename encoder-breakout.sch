@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -629,7 +629,7 @@
 </class>
 </classes>
 <parts>
-<part name="U$1" library="mcu-accessories" deviceset="PEC11R" device=""/>
+<part name="ENC" library="mcu-accessories" deviceset="PEC11R" device=""/>
 <part name="JP1" library="mcu-accessories" deviceset="PINHD-2X4" device="-SHROUD"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
@@ -641,7 +641,7 @@
 <plain>
 </plain>
 <instances>
-<instance part="U$1" gate="G$1" x="43.18" y="71.12"/>
+<instance part="ENC" gate="G$1" x="43.18" y="71.12"/>
 <instance part="JP1" gate="A" x="104.14" y="68.58"/>
 <instance part="GND1" gate="1" x="88.9" y="55.88"/>
 <instance part="GND2" gate="1" x="20.32" y="41.91"/>
@@ -671,11 +671,11 @@
 <junction x="88.9" y="66.04"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="GND"/>
+<pinref part="ENC" gate="G$1" pin="GND"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="34.29" y1="71.12" x2="20.32" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="71.12" x2="20.32" y2="52.07" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="D"/>
+<pinref part="ENC" gate="G$1" pin="D"/>
 <wire x1="20.32" y1="52.07" x2="20.32" y2="44.45" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="66.04" x2="55.88" y2="52.07" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="52.07" x2="20.32" y2="52.07" width="0.1524" layer="91"/>
@@ -689,7 +689,7 @@
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="E"/>
+<pinref part="ENC" gate="G$1" pin="E"/>
 <wire x1="55.88" y1="76.2" x2="115.57" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="115.57" y1="76.2" x2="115.57" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="A" pin="6"/>
@@ -701,7 +701,7 @@
 <wire x1="121.92" y1="71.12" x2="121.92" y2="49.53" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="49.53" x2="33.02" y2="49.53" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="49.53" x2="33.02" y2="64.77" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="B"/>
+<pinref part="ENC" gate="G$1" pin="B"/>
 <wire x1="33.02" y1="64.77" x2="34.29" y2="64.77" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="A" pin="4"/>
 <wire x1="121.92" y1="71.12" x2="109.22" y2="71.12" width="0.1524" layer="91"/>
@@ -709,7 +709,7 @@
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="A"/>
+<pinref part="ENC" gate="G$1" pin="A"/>
 <wire x1="34.29" y1="77.47" x2="29.21" y2="77.47" width="0.1524" layer="91"/>
 <wire x1="29.21" y1="77.47" x2="29.21" y2="41.91" width="0.1524" layer="91"/>
 <wire x1="29.21" y1="41.91" x2="129.54" y2="41.91" width="0.1524" layer="91"/>
