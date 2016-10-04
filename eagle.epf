@@ -367,15 +367,6 @@ UsedLibrary="C:/Users/arestell/Documents/eagle/library/test.lbr"
 UsedLibrary="Eurocard-HV-piezo-driver.lbr"
 
 [Win_1]
-Type="Text Editor"
-Loc="702 271 1712 871"
-State=2
-Number=3
-File="C:/Users/arestell/Documents/GitHub/eagle-config/ulp-jqi/exp-lbrs-replace2.ulp"
-CursorPos="0 0"
-Font="Courier,11,-1,5,50,0,0,0,0,0"
-
-[Win_2]
 Type="Control Panel"
 Loc="423 102 1022 501"
 State=1
@@ -384,4 +375,3 @@ Number=0
 [Desktop]
 Screen="3840 1080"
 Window="Win_1"
-Window="Win_2"
