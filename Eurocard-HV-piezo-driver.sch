@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.05" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -9941,6 +9941,18 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 </part>
 <part name="P+13" library="Eurocard-HV-piezo-driver" deviceset="+5V" device=""/>
 <part name="FRAME7" library="Eurocard-HV-piezo-driver" deviceset="FRAME_A_L" device=""/>
+<part name="C40" library="Eurocard-HV-piezo-driver" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF">
+<attribute name="PARTNO" value="1276-1936-1-ND"/>
+</part>
+<part name="C47" library="Eurocard-HV-piezo-driver" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF">
+<attribute name="PARTNO" value="1276-1936-1-ND"/>
+</part>
+<part name="C58" library="Eurocard-HV-piezo-driver" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF">
+<attribute name="PARTNO" value="1276-1936-1-ND"/>
+</part>
+<part name="GND30" library="Eurocard-HV-piezo-driver" deviceset="GND" device=""/>
+<part name="GND32" library="Eurocard-HV-piezo-driver" deviceset="GND" device=""/>
+<part name="GND31" library="Eurocard-HV-piezo-driver" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12748,6 +12760,18 @@ native SPI</text>
 </instance>
 <instance part="P+13" gate="1" x="205.74" y="-5.08"/>
 <instance part="FRAME7" gate="G$2" x="158.75" y="-185.42"/>
+<instance part="C40" gate="G$1" x="33.02" y="-73.66">
+<attribute name="PARTNO" x="33.02" y="-73.66" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C47" gate="G$1" x="22.86" y="-71.12">
+<attribute name="PARTNO" x="22.86" y="-71.12" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C58" gate="G$1" x="15.24" y="-60.96">
+<attribute name="PARTNO" x="15.24" y="-60.96" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="GND30" gate="1" x="33.02" y="-86.614"/>
+<instance part="GND32" gate="1" x="22.86" y="-81.28"/>
+<instance part="GND31" gate="1" x="15.24" y="-72.39"/>
 </instances>
 <busses>
 </busses>
@@ -12820,6 +12844,21 @@ native SPI</text>
 <pinref part="SW2" gate="1" pin="P$1"/>
 <pinref part="GND68" gate="1" pin="GND"/>
 <wire x1="66.04" y1="0" x2="66.04" y2="2.54" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND30" gate="1" pin="GND"/>
+<wire x1="33.02" y1="-84.074" x2="33.02" y2="-78.74" width="0.3048" layer="91"/>
+<pinref part="C40" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="C47" gate="G$1" pin="2"/>
+<pinref part="GND32" gate="1" pin="GND"/>
+<wire x1="22.86" y1="-78.74" x2="22.86" y2="-76.2" width="0.3048" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND31" gate="1" pin="GND"/>
+<pinref part="C58" gate="G$1" pin="2"/>
+<wire x1="15.24" y1="-69.85" x2="15.24" y2="-66.04" width="0.3048" layer="91"/>
 </segment>
 </net>
 <net name="JTAG_TMS/SWD_DIO" class="0">
@@ -13142,8 +13181,11 @@ native SPI</text>
 <net name="V+MON" class="0">
 <segment>
 <pinref part="U9" gate="G$1" pin="D20/A6/PWM"/>
-<wire x1="10.16" y1="-68.58" x2="60.96" y2="-68.58" width="0.3048" layer="91" style="dashdot"/>
-<label x="10.16" y="-68.58" size="1.778" layer="95"/>
+<wire x1="17.78" y1="-68.58" x2="22.86" y2="-68.58" width="0.3048" layer="91" style="dashdot"/>
+<label x="29.21" y="-68.58" size="1.778" layer="95"/>
+<pinref part="C47" gate="G$1" pin="1"/>
+<wire x1="22.86" y1="-68.58" x2="60.96" y2="-68.58" width="0.3048" layer="91" style="dashdot"/>
+<junction x="22.86" y="-68.58"/>
 </segment>
 </net>
 <net name="DAC_CS" class="0">
@@ -13163,15 +13205,21 @@ native SPI</text>
 <net name="V-MON" class="0">
 <segment>
 <pinref part="U9" gate="G$1" pin="D21/A7/PWM"/>
-<wire x1="10.16" y1="-71.12" x2="60.96" y2="-71.12" width="0.3048" layer="91" style="dashdot"/>
-<label x="10.16" y="-71.12" size="1.778" layer="95"/>
+<wire x1="27.94" y1="-71.12" x2="33.02" y2="-71.12" width="0.3048" layer="91" style="dashdot"/>
+<label x="27.94" y="-71.12" size="1.778" layer="95"/>
+<pinref part="C40" gate="G$1" pin="1"/>
+<wire x1="33.02" y1="-71.12" x2="60.96" y2="-71.12" width="0.3048" layer="91" style="dashdot"/>
+<junction x="33.02" y="-71.12"/>
 </segment>
 </net>
 <net name="VMON_MON" class="0">
 <segment>
-<wire x1="10.16" y1="-58.42" x2="60.96" y2="-58.42" width="0.3048" layer="91" style="dashdot"/>
+<wire x1="10.16" y1="-58.42" x2="15.24" y2="-58.42" width="0.3048" layer="91" style="dashdot"/>
 <label x="10.16" y="-58.42" size="1.778" layer="95"/>
 <pinref part="U9" gate="G$1" pin="D16/A2/TOUCH"/>
+<pinref part="C58" gate="G$1" pin="1"/>
+<wire x1="15.24" y1="-58.42" x2="60.96" y2="-58.42" width="0.3048" layer="91" style="dashdot"/>
+<junction x="15.24" y="-58.42"/>
 </segment>
 </net>
 <net name="I2C_SCL" class="0">
