@@ -36,7 +36,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -46,9 +46,9 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
@@ -2880,16 +2880,16 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <attribute name="PARTNO" value="1276-1936-1-ND" x="12.192" y="-224.79" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="51.278" y="-205.575" size="1.016" layer="25" font="vector"/>
 </element>
-<element name="R21" library="Eurocard-HV-piezo-driver" package="R_0603" value="28.7k" x="86.487" y="-233.68" smashed="yes" rot="R270">
-<attribute name="PARTNO" value="P28.7KHCT-ND" x="65.151" y="-189.992" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="R21" library="Eurocard-HV-piezo-driver" package="R_0603" value="63.4k" x="86.487" y="-233.68" smashed="yes" rot="R270">
+<attribute name="PARTNO" value="---" x="65.151" y="-189.992" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="85.382" y="-234.766" size="1.016" layer="25" font="vector" rot="R270"/>
 </element>
 <element name="R27" library="Eurocard-HV-piezo-driver" package="R_0603" value="3k" x="88.011" y="-233.68" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="P3.00KHCT-ND" x="107.823" y="-251.968" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="88.354" y="-237.674" size="1.016" layer="25" font="vector" rot="R90"/>
 </element>
-<element name="R31" library="Eurocard-HV-piezo-driver" package="R_0603" value="28.7k" x="87.503" y="-229.743" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="P28.7KHCT-ND" x="109.601" y="-206.629" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="R31" library="Eurocard-HV-piezo-driver" package="R_0603" value="10k" x="87.503" y="-229.743" smashed="yes" rot="R180">
+<attribute name="PARTNO" value="---" x="109.601" y="-206.629" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="91.878" y="-229.146" size="1.016" layer="25" font="vector" rot="R180"/>
 </element>
 <element name="R33" library="Eurocard-HV-piezo-driver" package="R_0603" value="3k" x="87.503" y="-228.092" smashed="yes">
@@ -2958,8 +2958,8 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <attribute name="PARTNO" value="P10.0KHCT-ND" x="110.998" y="-209.042" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="111.0934" y="-208.115" size="1.016" layer="25" font="vector"/>
 </element>
-<element name="R36" library="Eurocard-HV-piezo-driver" package="R_0603" value="10k" x="108.712" y="-208.28" smashed="yes" rot="R270">
-<attribute name="PARTNO" value="P10.0KHCT-ND" x="108.712" y="-208.28" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="R36" library="Eurocard-HV-piezo-driver" package="R_0603" value="3k" x="108.712" y="-208.28" smashed="yes" rot="R270">
+<attribute name="PARTNO" value="P3.00KHCT-ND" x="108.712" y="-208.28" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="105.1498" y="-208.1912" size="1.016" layer="25" font="vector"/>
 </element>
 <element name="MON" library="Eurocard-HV-piezo-driver" package="BNC90" value="BNC-H" x="-17.78" y="-278.638" smashed="yes" rot="R90">
@@ -3127,9 +3127,9 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <attribute name="PARTNO" value="BC2837CT-ND" x="-5.588" y="-239.014" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="-3.232" y="-240.506" size="1.016" layer="25" font="vector" rot="R90"/>
 </element>
-<element name="R43" library="Eurocard-HV-piezo-driver" package="R_0603" value="63.4k" x="-5.588" y="-235.458" smashed="yes" rot="R270">
-<attribute name="PARTNO" value="P63.4KHCT-ND" x="-5.588" y="-235.458" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="-4.534" y="-232.226" size="1.016" layer="25" font="vector" rot="R270"/>
+<element name="R43" library="Eurocard-HV-piezo-driver" package="R_0805" value="100k" x="-5.588" y="-235.3056" smashed="yes" rot="R270">
+<attribute name="PARTNO" value="P100KCCT-ND" x="-5.588" y="-235.3056" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="-4.534" y="-232.0736" size="1.016" layer="25" font="vector" rot="R270"/>
 </element>
 <element name="C28" library="Eurocard-HV-piezo-driver" package="C_MLCC_1206" value="HV 1nF" x="-7.874" y="-239.014" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="445-2288-1-ND" x="-7.874" y="-239.014" size="1.778" layer="27" rot="R90" display="off"/>
@@ -4659,12 +4659,13 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <via x="15.494" y="-220.218" extent="1-16" drill="0.3556"/>
 <wire x1="15.494" y1="-220.218" x2="15.367" y2="-220.091" width="0.254" layer="1"/>
 <wire x1="15.367" y1="-220.091" x2="13.903" y2="-220.091" width="0.254" layer="1"/>
-<wire x1="-5.588" y1="-237.564" x2="-5.588" y2="-236.208" width="0.508" layer="1"/>
-<wire x1="-5.588" y1="-236.208" x2="-3.8996" y2="-236.208" width="0.254" layer="1"/>
+<wire x1="-5.588" y1="-237.564" x2="-5.588" y2="-236.2556" width="0.508" layer="1"/>
 <wire x1="-3.8996" y1="-236.208" x2="-3.8608" y2="-236.1692" width="0.254" layer="1"/>
 <via x="-3.8608" y="-236.1692" extent="1-16" drill="0.381"/>
 <wire x1="-3.8608" y1="-236.1692" x2="-3.81" y2="-236.22" width="0.254" layer="15"/>
 <wire x1="-3.81" y1="-236.22" x2="7.112" y2="-236.22" width="0.254" layer="15"/>
+<wire x1="-5.588" y1="-236.2556" x2="-3.8608" y2="-236.2556" width="0.4064" layer="1"/>
+<wire x1="-3.8608" y1="-236.2556" x2="-3.8608" y2="-236.1692" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$7">
 <polygon width="0.127" layer="16" pour="cutout">
@@ -5272,7 +5273,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="4.711" y1="-253.619" x2="3.7129" y2="-253.619" width="0.254" layer="1"/>
 <wire x1="3.7129" y1="-253.619" x2="3.54" y2="-253.4461" width="0.254" layer="1"/>
 </signal>
-<signal name="V+MON">
+<signal name="V-MON">
 <contactref element="R31" pad="P$2"/>
 <contactref element="R33" pad="P$1"/>
 <contactref element="D3" pad="C"/>
@@ -5421,15 +5422,9 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="64.516" y1="-264.668" x2="65.0748" y2="-264.1092" width="0.254" layer="1"/>
 <wire x1="65.0748" y1="-264.1092" x2="65.0748" y2="-263.017" width="0.254" layer="1"/>
 </signal>
-<signal name="V-MON">
-<contactref element="R21" pad="P$1"/>
-<contactref element="R27" pad="P$2"/>
-<wire x1="86.487" y1="-232.93" x2="88.011" y2="-232.93" width="0.4064" layer="1"/>
+<signal name="V--MON">
 <via x="85.471" y="-232.918" extent="1-16" drill="0.3556"/>
 <wire x1="85.471" y1="-232.918" x2="86.856" y2="-232.918" width="0.4064" layer="1"/>
-<wire x1="86.856" y1="-232.918" x2="86.487" y2="-232.93" width="0.4064" layer="1"/>
-<contactref element="C66" pad="P$1"/>
-<wire x1="88.011" y1="-232.93" x2="89.408" y2="-232.93" width="0.4064" layer="1"/>
 <contactref element="U9" pad="63"/>
 <wire x1="71.5772" y1="-263.017" x2="71.5772" y2="-261.366" width="0.254" layer="1"/>
 <wire x1="71.5772" y1="-261.366" x2="71.7296" y2="-261.2136" width="0.254" layer="1"/>
@@ -6827,6 +6822,13 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <vertex x="57.912" y="-250.698"/>
 <vertex x="57.404" y="-250.698"/>
 </polygon>
+</signal>
+<signal name="V+MON">
+<contactref element="R21" pad="P$1"/>
+<contactref element="R27" pad="P$2"/>
+<contactref element="C66" pad="P$1"/>
+<wire x1="86.487" y1="-232.93" x2="88.011" y2="-232.93" width="0.4064" layer="1"/>
+<wire x1="88.011" y1="-232.93" x2="89.408" y2="-232.93" width="0.4064" layer="1"/>
 </signal>
 </signals>
 <errors>
