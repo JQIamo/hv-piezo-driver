@@ -368,7 +368,7 @@ UsedLibrary="Eurocard-HV-piezo-driver.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="423 102 1022 501"
+Loc="-1920 0 -1 1017"
 State=1
 Number=0
 
