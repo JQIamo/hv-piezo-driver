@@ -2880,7 +2880,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <attribute name="PARTNO" value="1276-1936-1-ND" x="12.192" y="-224.79" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="51.278" y="-205.575" size="1.016" layer="25" font="vector"/>
 </element>
-<element name="R21" library="Eurocard-HV-piezo-driver" package="R_0603" value="63.4k" x="86.487" y="-233.68" smashed="yes" rot="R270">
+<element name="R21" library="Eurocard-HV-piezo-driver" package="R_0603" value="61.9k" x="86.487" y="-233.68" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="---" x="65.151" y="-189.992" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="85.382" y="-234.766" size="1.016" layer="25" font="vector" rot="R270"/>
 </element>

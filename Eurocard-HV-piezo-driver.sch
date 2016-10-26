@@ -9674,7 +9674,7 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 <part name="C48" library="Eurocard-HV-piezo-driver" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF">
 <attribute name="PARTNO" value="1276-1936-1-ND"/>
 </part>
-<part name="R21" library="Eurocard-HV-piezo-driver" deviceset="R_SMD" device="R0603" value="63.4k">
+<part name="R21" library="Eurocard-HV-piezo-driver" deviceset="R_SMD" device="R0603" value="61.9k">
 <attribute name="PARTNO" value="---"/>
 </part>
 <part name="R27" library="Eurocard-HV-piezo-driver" deviceset="R_SMD" device="R0603" value="3k">
