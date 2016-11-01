@@ -13213,7 +13213,7 @@ native SPI</text>
 <pinref part="U9" gate="G$1" pin="D12/MISO"/>
 </segment>
 </net>
-<net name="V--MON" class="0">
+<net name="V+MON" class="0">
 <segment>
 <pinref part="U9" gate="G$1" pin="D21/A7/PWM"/>
 <wire x1="27.94" y1="-71.12" x2="33.02" y2="-71.12" width="0.3048" layer="91" style="dashdot"/>
