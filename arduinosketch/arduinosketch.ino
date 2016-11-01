@@ -31,8 +31,8 @@ LCD_ST7032 lcd(LCD_RST, LCD_RS, LCD_CS);
 EncoderStream enc(LCDENC); //note LCDENC is a struct defined in "LCDEncoder.h" that allows to have something similar to a 
                            // global variable. 
 
-#define DC_VOLT_NUMSTEPS 3
-double dcVoltDelta[DC_VOLT_NUMSTEPS] = {1.0, 0.1, 0.01};
+#define DC_VOLT_NUMSTEPS 4
+double dcVoltDelta[DC_VOLT_NUMSTEPS] = {1.0, 0.1, 0.01, 0.004};
 uint8_t dcVoltDeltaIdx = 0;
 
 // threads
@@ -86,7 +86,8 @@ void increment_scan(){
 void pollEncoder(){
   // mode == 0, scan
   // mode == 1, DC
-  int mode = digitalRead(SW);
+  //int mode = digitalRead(SW);
+  int mode = 1;
 
 
   if (mode == 0){
@@ -210,7 +211,7 @@ void pollEncoder(){
         dc_volt -= dcVoltDelta[dcVoltDeltaIdx % DC_VOLT_NUMSTEPS];
       } else if (c == 'P'){
         // just to test hold vs push now...
-
+        //Serial.println("Puhs");
         dcVoltDeltaIdx++;
       }
 
@@ -218,7 +219,7 @@ void pollEncoder(){
       // make sure we've got the real deal (bounds checking)
       dc_volt = pzt.get_setpoint();
       lcd.setCursor(0, 1);
-      lcd.print(pzt.get_setpoint());
+      lcd.print(pzt.get_setpoint(), 3);
       lcd.print("     ");
     }
 
@@ -244,9 +245,9 @@ void pollEncoder(){
 void setup() {
   pzt.init();
   init_encoder(ENC_A,ENC_B,ENC_SW);
-  //Serial.begin(9600);
-
-  //Serial.println("alive");
+  Serial.begin(9600);
+delay(1000);
+  Serial.println("alive");
   SPI.begin();
 
   // DAC setup
@@ -254,6 +255,7 @@ void setup() {
   dac.setVolt(0, 0.0);
   dac.setVolt(1, 0.0);
   pzt.set_onoff(1);
+  dc_volt = 0.0;
 
   enc.begin();
 
@@ -261,11 +263,11 @@ void setup() {
   // LCD setup
   lcd.begin();
   lcd.clear();
-  // lcd.setCursor(0, 0);
-  // lcd.print("JQI - Piezo");
-  // lcd.setCursor(0, 1);
-  // lcd.print("Starting...");
-
+   lcd.setCursor(0, 0);
+   lcd.print("JQI - Piezo");
+   lcd.setCursor(0, 1);
+   lcd.print("Starting...");
+  lcd.cursor();
   scanThread.onRun(increment_scan);
   scanThread.setInterval(PIEZO_SCAN_RATE);
 
@@ -278,9 +280,9 @@ void setup() {
   controller.add(&scanThread);
   controller.add(&encThread);
 //  controller.add(&serThread);
-//  Serial.println("enabled");
+  //Serial.println("enabled");
   delay(1000);
-  pzt.set_mode(SCAN);
+  pzt.set_mode(SCAN);// hack to get display to do right thing
 //  Serial.println("scanning");
 //  delay(1000);
 }
@@ -294,5 +296,7 @@ void loop() {
   //delay(1000);
   //quadEncoder.poll();
 controller.run();
+//delay(1000);
+//Serial.println(LCDENC.flag);
 
 }

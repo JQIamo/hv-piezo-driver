@@ -18,35 +18,49 @@ struct Encoder {
   volatile int16_t pos = 0;
   //volatile bool state = 1;
   volatile bool flag = 0;
-  volatile unsigned long millis_down = 0;
-  volatile unsigned long millis_up = 0;
+  volatile uint32_t millis_down = 0;
+  volatile uint32_t millis_up = 0;
 } LCDENC;
 
+
 void encoder_a_has_changed(){
-  if (PIND & _BV(6)) {
-    LCDENC.pos--;
-  } else {
+  if (digitalReadFast(ENC_B)){
+  
+
     LCDENC.pos++;
+  } else {
+    LCDENC.pos--;
   }
 }
 
 // for switch; hopefully doesn't get out of sync!
-void encoder_sw_has_risen(){
+void encoder_sw_has_changed(){
+  //Serial.println("r");
     // if interrupted and enc is high == up;
+    if(digitalReadFast(ENC_SW)){
     LCDENC.millis_up = millis();
     LCDENC.flag = 1;
+    } else {
+          LCDENC.millis_down = millis();
+  
+    LCDENC.flag = 0;
+      
+    }
+   // Serial.println(LCDENC.millis_up);
 }
 
 void encoder_sw_has_fallen(){
+  Serial.println("f");
     // if enc is DOWN, record push
     LCDENC.millis_down = millis();
+  
     LCDENC.flag = 0;
 }
 
 void init_encoder(int e_a,int e_b,int e_sw){
-attachInterrupt(e_a,encoder_a_has_changed,CHANGE);
-attachInterrupt(e_sw,encoder_sw_has_risen,RISING);
-attachInterrupt(e_sw,encoder_sw_has_fallen,FALLING);
+attachInterrupt(e_a,encoder_a_has_changed,FALLING);
+attachInterrupt(e_sw,encoder_sw_has_changed,CHANGE);
+//attachInterrupt(e_sw,encoder_sw_has_fallen,FALLING);
 }
 
 
