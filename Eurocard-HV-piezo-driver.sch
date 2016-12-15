@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1086,50 +1086,6 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 <text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
 <text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
 </package>
-<package name="1X02">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="-0.635" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.1524" layer="21"/>
-<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
-<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
-<pad name="1" x="-1.27" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="2" x="1.27" y="0" drill="1.016" shape="long" rot="R90"/>
-<text x="-2.6162" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="1X02/90">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<wire x1="-2.54" y1="-1.905" x2="0" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="0" y1="-1.905" x2="0" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="0" y1="0.635" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="6.985" x2="-1.27" y2="1.27" width="0.762" layer="21"/>
-<wire x1="0" y1="-1.905" x2="2.54" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="-1.905" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="0.635" x2="0" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="6.985" x2="1.27" y2="1.27" width="0.762" layer="21"/>
-<rectangle x1="-1.651" y1="0.635" x2="-0.889" y2="1.143" layer="21"/>
-<rectangle x1="0.889" y1="0.635" x2="1.651" y2="1.143" layer="21"/>
-<rectangle x1="-1.651" y1="-2.921" x2="-0.889" y2="-1.905" layer="21"/>
-<rectangle x1="0.889" y1="-2.921" x2="1.651" y2="-1.905" layer="21"/>
-<pad name="1" x="-1.27" y="-3.81" drill="1.016" shape="long" rot="R90"/>
-<pad name="2" x="1.27" y="-3.81" drill="1.016" shape="long" rot="R90"/>
-<text x="-3.175" y="-3.81" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="4.445" y="-3.81" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-</package>
 <package name="ATB_TRANSFORMER">
 <wire x1="-1.6" y1="1.2" x2="-1.6" y2="-1.2" width="0.127" layer="21"/>
 <wire x1="-1.6" y1="-1.2" x2="1.6" y2="-1.2" width="0.127" layer="21"/>
@@ -1139,6 +1095,8 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 <smd name="2" x="-1.5" y="0.875" dx="1" dy="0.55" layer="1"/>
 <smd name="3" x="1.5" y="0.875" dx="1" dy="0.55" layer="1"/>
 <smd name="4" x="1.5" y="-0.875" dx="1" dy="0.55" layer="1"/>
+<text x="-2.54" y="2.54" size="1.27" layer="25">&gt;NAME</text>
+<circle x="0" y="0.762" radius="0.359209375" width="0.127" layer="21"/>
 </package>
 <package name="SOT223">
 <description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
@@ -6265,15 +6223,20 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 <wire x1="3.9" y1="0.8" x2="3.9" y2="-2.5" width="0.127" layer="21"/>
 <wire x1="3.9" y1="-2.5" x2="-3.9" y2="-2.5" width="0.127" layer="21"/>
 <wire x1="-3.9" y1="-2.5" x2="-3.9" y2="0.8" width="0.127" layer="21"/>
-<smd name="1" x="-1.3" y="0" dx="1.5" dy="0.45" layer="1" rot="R90"/>
-<smd name="2" x="-0.65" y="0" dx="1.5" dy="0.45" layer="1" rot="R90"/>
-<smd name="3" x="0" y="0" dx="1.5" dy="0.45" layer="1" rot="R90"/>
-<smd name="4" x="0.65" y="0" dx="1.5" dy="0.45" layer="1" rot="R90"/>
-<smd name="5" x="1.3" y="0" dx="1.5" dy="0.45" layer="1" rot="R90"/>
-<pad name="P$1" x="2.794" y="0.254" drill="0.8382" shape="square"/>
-<pad name="P$2" x="-2.794" y="0.254" drill="0.8382" shape="square"/>
+<smd name="1" x="-1.3" y="0.25" dx="1.25" dy="0.45" layer="1" rot="R90" cream="no"/>
+<smd name="2" x="-0.65" y="0.25" dx="1.25" dy="0.45" layer="1" rot="R90" cream="no"/>
+<smd name="3" x="0" y="0.25" dx="1.25" dy="0.45" layer="1" rot="R90" cream="no"/>
+<smd name="4" x="0.65" y="0.25" dx="1.25" dy="0.45" layer="1" rot="R90" cream="no"/>
+<smd name="5" x="1.3" y="0.25" dx="1.25" dy="0.45" layer="1" rot="R90" cream="no"/>
+<pad name="P$1" x="2.794" y="0.254" drill="1.2" diameter="1.5" shape="square"/>
+<pad name="P$2" x="-2.794" y="0.254" drill="1.2" diameter="1.5" shape="square"/>
 <pad name="P$3" x="0" y="-1.9304" drill="1.1938" shape="square"/>
 <text x="-3.8" y="-4.4" size="1.27" layer="21">&gt;NAME</text>
+<rectangle x1="-1.5" y1="-0.35" x2="-1.1" y2="0.85" layer="31"/>
+<rectangle x1="-0.85" y1="-0.35" x2="-0.45" y2="0.85" layer="31"/>
+<rectangle x1="-0.2" y1="-0.35" x2="0.2" y2="0.85" layer="31"/>
+<rectangle x1="0.45" y1="-0.35" x2="0.85" y2="0.85" layer="31"/>
+<rectangle x1="1.1" y1="-0.35" x2="1.5" y2="0.85" layer="31"/>
 </package>
 <package name="CRYSTAL-3.2-2.5">
 <circle x="-2.0574" y="-1.4224" radius="0.1626375" width="0.127" layer="21"/>
@@ -6292,6 +6255,78 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 <wire x1="2.0066" y1="1.6002" x2="2.0066" y2="1.0922" width="0.127" layer="21"/>
 <wire x1="1.4478" y1="-1.6002" x2="2.0066" y2="-1.6002" width="0.127" layer="21"/>
 <wire x1="2.0066" y1="-1.6002" x2="2.0066" y2="-1.1684" width="0.127" layer="21"/>
+</package>
+<package name="1X2_LOW_PROFILE">
+<wire x1="-1" y1="-1.5" x2="-1" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-1" y1="-1.5" x2="-0.5" y2="-2" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="-2" x2="0.5" y2="-2" width="0.127" layer="21"/>
+<wire x1="0.5" y1="-2" x2="1" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="1" y1="1.5" x2="0.5" y2="2" width="0.127" layer="21"/>
+<wire x1="0.5" y1="2" x2="-0.5" y2="2" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="2" x2="-1" y2="1.5" width="0.127" layer="21"/>
+<wire x1="1" y1="-1.5" x2="1" y2="1.5" width="0.127" layer="21"/>
+<pad name="1" x="0" y="-1" drill="0.8" diameter="1.27" shape="octagon" rot="R90"/>
+<pad name="2" x="0" y="1" drill="0.8" diameter="1.27" shape="octagon" rot="R90"/>
+<text x="-2" y="-3" size="1.27" layer="21" rot="R90">&gt;NAME</text>
+</package>
+<package name="1X7_LOW_PROFILE">
+<wire x1="-7" y1="-0.5" x2="-7" y2="0.5" width="0.127" layer="21"/>
+<wire x1="-7" y1="-0.5" x2="-6.5" y2="-1" width="0.127" layer="21"/>
+<wire x1="-6.5" y1="-1" x2="-5.5" y2="-1" width="0.127" layer="21"/>
+<wire x1="-5.5" y1="-1" x2="-5" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="-5" y1="-0.5" x2="-5" y2="0.5" width="0.127" layer="21"/>
+<wire x1="-5" y1="-0.5" x2="-4.5" y2="-1" width="0.127" layer="21"/>
+<wire x1="-4.5" y1="-1" x2="-3.5" y2="-1" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-1" x2="-3" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="-3" y1="-0.5" x2="-3" y2="0.5" width="0.127" layer="21"/>
+<wire x1="-3" y1="-0.5" x2="-2.5" y2="-1" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-1" x2="-1.5" y2="-1" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1" x2="-1" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="-1" y1="-0.5" x2="-1" y2="0.5" width="0.127" layer="21"/>
+<wire x1="-1" y1="-0.5" x2="-0.5" y2="-1" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="-1" x2="0.5" y2="-1" width="0.127" layer="21"/>
+<wire x1="0.5" y1="-1" x2="1" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="1" y1="-0.5" x2="1" y2="0.5" width="0.127" layer="21"/>
+<wire x1="1" y1="-0.5" x2="1.5" y2="-1" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1" x2="2.5" y2="-1" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-1" x2="3" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="3" y1="-0.5" x2="3" y2="0.5" width="0.127" layer="21"/>
+<wire x1="3" y1="-0.5" x2="3.5" y2="-1" width="0.127" layer="21"/>
+<wire x1="3.5" y1="-1" x2="4.5" y2="-1" width="0.127" layer="21"/>
+<wire x1="4.5" y1="-1" x2="5" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="5" y1="-0.5" x2="5" y2="0.5" width="0.127" layer="21"/>
+<wire x1="5" y1="-0.5" x2="5.5" y2="-1" width="0.127" layer="21"/>
+<wire x1="5.5" y1="-1" x2="6.5" y2="-1" width="0.127" layer="21"/>
+<wire x1="6.5" y1="-1" x2="7" y2="-0.5" width="0.127" layer="21"/>
+<pad name="P$1" x="-6" y="0" drill="0.8" diameter="1.27" shape="octagon" rot="R90"/>
+<pad name="P$2" x="-4" y="0" drill="0.8" diameter="1.27" shape="octagon" rot="R90"/>
+<pad name="P$3" x="-2" y="0" drill="0.8" diameter="1.27" shape="octagon" rot="R90"/>
+<pad name="P$4" x="0" y="0" drill="0.8" diameter="1.27" shape="octagon" rot="R90"/>
+<pad name="P$5" x="2" y="0" drill="0.8" diameter="1.27" shape="octagon" rot="R90"/>
+<pad name="P$6" x="4" y="0" drill="0.8" diameter="1.27" shape="octagon" rot="R90"/>
+<pad name="P$7" x="6" y="0" drill="0.8" diameter="1.27" shape="octagon" rot="R90"/>
+<wire x1="7" y1="-0.5" x2="7" y2="0.5" width="0.127" layer="21"/>
+<wire x1="7" y1="0.5" x2="6.5" y2="1" width="0.127" layer="21"/>
+<wire x1="6.5" y1="1" x2="5.5" y2="1" width="0.127" layer="21"/>
+<wire x1="5.5" y1="1" x2="5" y2="0.5" width="0.127" layer="21"/>
+<wire x1="5" y1="0.5" x2="4.5" y2="1" width="0.127" layer="21"/>
+<wire x1="4.5" y1="1" x2="3.5" y2="1" width="0.127" layer="21"/>
+<wire x1="3.5" y1="1" x2="3" y2="0.5" width="0.127" layer="21"/>
+<wire x1="3" y1="0.5" x2="2.5" y2="1" width="0.127" layer="21"/>
+<wire x1="2.5" y1="1" x2="1.5" y2="1" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1" x2="1" y2="0.5" width="0.127" layer="21"/>
+<wire x1="1" y1="0.5" x2="0.5" y2="1" width="0.127" layer="21"/>
+<wire x1="0.5" y1="1" x2="-0.5" y2="1" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="1" x2="-1" y2="0.5" width="0.127" layer="21"/>
+<wire x1="-1" y1="0.5" x2="-1.5" y2="1" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="1" x2="-2.5" y2="1" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="1" x2="-3" y2="0.5" width="0.127" layer="21"/>
+<wire x1="-3" y1="0.5" x2="-3.5" y2="1" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="1" x2="-4.5" y2="1" width="0.127" layer="21"/>
+<wire x1="-4.5" y1="1" x2="-5" y2="0.5" width="0.127" layer="21"/>
+<wire x1="-5" y1="0.5" x2="-5.5" y2="1" width="0.127" layer="21"/>
+<wire x1="-5.5" y1="1" x2="-6.5" y2="1" width="0.127" layer="21"/>
+<wire x1="-6.5" y1="1" x2="-7" y2="0.5" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -6513,16 +6548,6 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 <pin name="C" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
 <text x="0.762" y="2.0066" size="1.778" layer="95">&gt;NAME</text>
 <text x="-4.826" y="-3.4544" size="1.778" layer="96">&gt;VALUE</text>
-</symbol>
-<symbol name="PINHD2">
-<wire x1="-6.35" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="1.27" y2="5.08" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="5.08" x2="-6.35" y2="5.08" width="0.4064" layer="94"/>
-<wire x1="-6.35" y1="5.08" x2="-6.35" y2="-2.54" width="0.4064" layer="94"/>
-<pin name="1" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
-<pin name="2" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
-<text x="-6.35" y="5.715" size="1.778" layer="95">&gt;NAME</text>
-<text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="+5V">
 <wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
@@ -7184,6 +7209,18 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 <text x="1.524" y="-1.143" size="0.8636" layer="93">2</text>
 <text x="1.143" y="2.794" size="0.8636" layer="93" rot="R90">3</text>
 </symbol>
+<symbol name="1X2_LOW_PROFILE_JUMPER">
+<pin name="P$1" x="0" y="2.54" visible="off" length="point"/>
+<pin name="P$2" x="0" y="-2.54" visible="off" length="point"/>
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<text x="-2.54" y="7.62" size="1.27" layer="95">&gt;NAME</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="C_MLCC_SMD" prefix="C" uservalue="yes">
@@ -7632,32 +7669,6 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 <connect gate="-B1" pin="A" pad="1"/>
 <connect gate="-B1" pin="AC" pad="3"/>
 <connect gate="-B1" pin="C" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="PINHD-1X2" prefix="JP" uservalue="yes">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="PINHD2" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="1X02">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="/90" package="1X02/90">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -9198,6 +9209,20 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="_LOW_PROFILE" package="1X7_LOW_PROFILE">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+<connect gate="G$1" pin="5" pad="P$5"/>
+<connect gate="G$1" pin="6" pad="P$6"/>
+<connect gate="G$1" pin="7" pad="P$7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="SWITCH-TACTILE" prefix="SW">
@@ -9322,6 +9347,81 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 <connect gate="G$1" pin="GND@1" pad="2"/>
 <connect gate="G$1" pin="GND@2" pad="4"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1X2_LOW_PROFILE_JUMPER" prefix="JP">
+<gates>
+<gate name="G$1" symbol="1X2_LOW_PROFILE_JUMPER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1X2_LOW_PROFILE">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PARTNO" value="S5800-02-ND" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="fiducials-jqi">
+<packages>
+<package name="FID_1.0MM">
+<description>1 mm SMD Fiducial in 3 mm Opening</description>
+<smd name="FID" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" thermals="no" cream="no"/>
+<circle x="0" y="0" radius="0.75" width="1.5" layer="29"/>
+<circle x="0" y="0" radius="1.5" width="0.127" layer="39"/>
+<circle x="0" y="0" radius="0.75" width="1.5" layer="41"/>
+</package>
+<package name="FID_1.5MM">
+<description>1.5 mm SMD Fiducial in 4 mm Opening</description>
+<smd name="FID" x="0" y="0" dx="1.5" dy="1.5" layer="1" roundness="100" thermals="no" cream="no"/>
+<circle x="0" y="0" radius="1" width="2" layer="29"/>
+<circle x="0" y="0" radius="2" width="0.127" layer="39"/>
+<circle x="0" y="0" radius="1" width="2" layer="41"/>
+</package>
+<package name="FID_2.0MM">
+<description>2 mm SMD Fiducial in 5mm Opening</description>
+<smd name="FID" x="0" y="0" dx="2" dy="2" layer="1" roundness="100" thermals="no" cream="no"/>
+<circle x="0" y="0" radius="1.25" width="2.5" layer="29"/>
+<circle x="0" y="0" radius="2.5" width="0.127" layer="39"/>
+<circle x="0" y="0" radius="1.25" width="2.5" layer="41"/>
+</package>
+</packages>
+<symbols>
+<symbol name="FIDUCIAL">
+<description>Fiducial Name w/ Part Size Value</description>
+<text x="0" y="0" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="FIDUCIAL" prefix="FID">
+<description>SMD Fiducials for optical recognition systems</description>
+<gates>
+<gate name="G$1" symbol="FIDUCIAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-1.0MM" package="FID_1.0MM">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-1.5MM" package="FID_1.5MM">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-2.0MM" package="FID_2.0MM">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -9566,7 +9666,7 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 <part name="MOD_IN" library="Eurocard-HV-piezo-driver" deviceset="BNC" device="-H">
 <attribute name="PARTNO" value="A32260-ND"/>
 </part>
-<part name="U$1" library="Eurocard-HV-piezo-driver" deviceset="RF_36103505" device="">
+<part name="RF_SHIELD" library="Eurocard-HV-piezo-driver" deviceset="RF_36103505" device="">
 <attribute name="PARTNO" value="732-2495-ND"/>
 </part>
 <part name="GND23" library="Eurocard-HV-piezo-driver" deviceset="GND" device=""/>
@@ -9614,7 +9714,7 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 <attribute name="PARTNO" value="P100KCCT-ND"/>
 </part>
 <part name="C34" library="Eurocard-HV-piezo-driver" deviceset="C_MLCC_SMD" device="CMLCC_0805" value="100pF">
-<attribute name="PARTNO" value="445-9112-1-ND"/>
+<attribute name="PARTNO" value="732-8062-1-ND"/>
 </part>
 <part name="R30" library="Eurocard-HV-piezo-driver" deviceset="R_SMD" device="R0805" value="15k">
 <attribute name="PARTNO" value="P15.0KCCT-ND"/>
@@ -9674,16 +9774,16 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 <part name="C48" library="Eurocard-HV-piezo-driver" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF">
 <attribute name="PARTNO" value="1276-1936-1-ND"/>
 </part>
-<part name="R21" library="Eurocard-HV-piezo-driver" deviceset="R_SMD" device="R0603" value="61.9k">
-<attribute name="PARTNO" value="---"/>
+<part name="R21" library="Eurocard-HV-piezo-driver" deviceset="R_SMD" device="R0603" value="200k">
+<attribute name="PARTNO" value="P200KHCT-ND"/>
 </part>
-<part name="R27" library="Eurocard-HV-piezo-driver" deviceset="R_SMD" device="R0603" value="3k">
-<attribute name="PARTNO" value="P3.00KHCT-ND"/>
+<part name="R27" library="Eurocard-HV-piezo-driver" deviceset="R_SMD" device="R0603" value="10k">
+<attribute name="PARTNO" value="P10.0KHCT-ND"/>
 </part>
 <part name="P+10" library="Eurocard-HV-piezo-driver" deviceset="V+" device=""/>
 <part name="P-4" library="Eurocard-HV-piezo-driver" deviceset="V-" device=""/>
 <part name="R31" library="Eurocard-HV-piezo-driver" deviceset="R_SMD" device="R0603" value="10k">
-<attribute name="PARTNO" value="---"/>
+<attribute name="PARTNO" value="P10.0KHCT-ND"/>
 </part>
 <part name="R33" library="Eurocard-HV-piezo-driver" deviceset="R_SMD" device="R0603" value="3k">
 <attribute name="PARTNO" value="P3.00KHCT-ND"/>
@@ -9829,9 +9929,6 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 <attribute name="PARTNO" value="1276-1936-1-ND"/>
 </part>
 <part name="GND40" library="Eurocard-HV-piezo-driver" deviceset="GND" device=""/>
-<part name="JP2" library="Eurocard-HV-piezo-driver" deviceset="PINHD-1X2" device="">
-<attribute name="PARTNO" value="DNP"/>
-</part>
 <part name="GND53" library="Eurocard-HV-piezo-driver" deviceset="GND" device=""/>
 <part name="R41" library="Eurocard-HV-piezo-driver" deviceset="R_SMD" device="R0805" value="49.9R">
 <attribute name="PARTNO" value="P49.9CCT-ND"/>
@@ -9904,16 +10001,28 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 <attribute name="PARTNO" value="445-2288-1-ND"/>
 </part>
 <part name="U9" library="Eurocard-HV-piezo-driver" deviceset="MK20DX256VLH7" device=""/>
-<part name="X2" library="Eurocard-HV-piezo-driver" deviceset="CRYSTAL-3.2-2.5" device=""/>
+<part name="X2" library="Eurocard-HV-piezo-driver" deviceset="CRYSTAL-3.2-2.5" device="">
+<attribute name="PARTNO" value="644-1099-1-ND"/>
+</part>
 <part name="GND54" library="Eurocard-HV-piezo-driver" deviceset="GND" device=""/>
 <part name="GND56" library="Eurocard-HV-piezo-driver" deviceset="GND" device=""/>
-<part name="USBCONN1" library="Eurocard-HV-piezo-driver" deviceset="MICRO-USB/1051330011" device=""/>
-<part name="R37" library="Eurocard-HV-piezo-driver" deviceset="R_SMD" device="R0603" value="39"/>
-<part name="R44" library="Eurocard-HV-piezo-driver" deviceset="R_SMD" device="R0603" value="39"/>
+<part name="USBCONN1" library="Eurocard-HV-piezo-driver" deviceset="MICRO-USB/1051330011" device="">
+<attribute name="PARTNO" value="WM10134CT-ND"/>
+</part>
+<part name="R37" library="Eurocard-HV-piezo-driver" deviceset="R_SMD" device="R0603" value="39R">
+<attribute name="PARTNO" value="P39.0HCT-ND"/>
+</part>
+<part name="R44" library="Eurocard-HV-piezo-driver" deviceset="R_SMD" device="R0603" value="39R">
+<attribute name="PARTNO" value="P39.0HCT-ND"/>
+</part>
 <part name="GND57" library="Eurocard-HV-piezo-driver" deviceset="GND" device=""/>
-<part name="C64" library="Eurocard-HV-piezo-driver" deviceset="C_MLCC_SMD" device="CMLCC_0805" value="10uF"/>
+<part name="C64" library="Eurocard-HV-piezo-driver" deviceset="C_MLCC_SMD" device="CMLCC_0805" value="10uF">
+<attribute name="PARTNO" value="445-14417-1-ND"/>
+</part>
 <part name="GND58" library="Eurocard-HV-piezo-driver" deviceset="GND" device=""/>
-<part name="C67" library="Eurocard-HV-piezo-driver" deviceset="C_MLCC_SMD" device="CMLCC_0805" value="10uF"/>
+<part name="C67" library="Eurocard-HV-piezo-driver" deviceset="C_MLCC_SMD" device="CMLCC_0805" value="10uF">
+<attribute name="PARTNO" value="445-14417-1-ND"/>
+</part>
 <part name="GND63" library="Eurocard-HV-piezo-driver" deviceset="GND" device=""/>
 <part name="C68" library="Eurocard-HV-piezo-driver" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF">
 <attribute name="PARTNO" value="1276-1936-1-ND"/>
@@ -9925,16 +10034,22 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 <attribute name="PARTNO" value="1276-1936-1-ND"/>
 </part>
 <part name="GND64" library="Eurocard-HV-piezo-driver" deviceset="GND" device=""/>
-<part name="C73" library="Eurocard-HV-piezo-driver" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF"/>
+<part name="C73" library="Eurocard-HV-piezo-driver" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF">
+<attribute name="PARTNO" value="1276-1936-1-ND"/>
+</part>
 <part name="GND65" library="Eurocard-HV-piezo-driver" deviceset="GND" device=""/>
 <part name="3X3MM1" library="Eurocard-HV-piezo-driver" deviceset="CURRENT_BOOTLOADER" device="3X3MM"/>
 <part name="GND66" library="Eurocard-HV-piezo-driver" deviceset="GND" device=""/>
 <part name="GND67" library="Eurocard-HV-piezo-driver" deviceset="GND" device=""/>
-<part name="R47" library="Eurocard-HV-piezo-driver" deviceset="R_SMD" device="R0603" value="10k"/>
-<part name="R49" library="Eurocard-HV-piezo-driver" deviceset="R_SMD" device="R0603" value="10k"/>
+<part name="R47" library="Eurocard-HV-piezo-driver" deviceset="R_SMD" device="R0603" value="10k">
+<attribute name="PARTNO" value="P10.0KHCT-ND"/>
+</part>
+<part name="R49" library="Eurocard-HV-piezo-driver" deviceset="R_SMD" device="R0603" value="10k">
+<attribute name="PARTNO" value="P10.0KHCT-ND"/>
+</part>
 <part name="SW2" library="Eurocard-HV-piezo-driver" deviceset="SWITCH-TACTILE" device=""/>
 <part name="GND68" library="Eurocard-HV-piezo-driver" deviceset="GND" device=""/>
-<part name="J5" library="Eurocard-HV-piezo-driver" deviceset="MTA07-100" device=""/>
+<part name="J5" library="Eurocard-HV-piezo-driver" deviceset="MTA07-100" device="_LOW_PROFILE"/>
 <part name="FRAME6" library="Eurocard-HV-piezo-driver" deviceset="FRAME_A_L" device=""/>
 <part name="L11" library="Eurocard-HV-piezo-driver" deviceset="L_FERRITE_SMD" device="LFERRITE_0603" value="1000k Ferrite">
 <attribute name="PARTNO" value="445-1548-1-ND"/>
@@ -9953,6 +10068,11 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 <part name="GND30" library="Eurocard-HV-piezo-driver" deviceset="GND" device=""/>
 <part name="GND32" library="Eurocard-HV-piezo-driver" deviceset="GND" device=""/>
 <part name="GND31" library="Eurocard-HV-piezo-driver" deviceset="GND" device=""/>
+<part name="FID1" library="fiducials-jqi" deviceset="FIDUCIAL" device="-1.0MM"/>
+<part name="FID2" library="fiducials-jqi" deviceset="FIDUCIAL" device="-1.0MM"/>
+<part name="FID3" library="fiducials-jqi" deviceset="FIDUCIAL" device="-1.0MM"/>
+<part name="FID4" library="fiducials-jqi" deviceset="FIDUCIAL" device="-1.0MM"/>
+<part name="JP1" library="Eurocard-HV-piezo-driver" deviceset="1X2_LOW_PROFILE_JUMPER" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9978,6 +10098,7 @@ low-pass filter)</text>
 <text x="60.96" y="-113.03" size="1.778" layer="98">C28 is a "minimum load" necessary for stability.
 Without, can induce oscillation if load
 changes suddenly.</text>
+<text x="129.54" y="-162.56" size="1.778" layer="98" rot="R90">Vmon = Vout/50.9</text>
 </plain>
 <instances>
 <instance part="C12" gate="G$1" x="-36.83" y="-127">
@@ -10795,10 +10916,8 @@ the high voltage</text>
 <attribute name="VALUE" x="56.1975" y="108.4262" size="1.524" layer="96" rot="R270"/>
 <attribute name="PARTNO" x="60.96" y="106.68" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
-<instance part="JP2" gate="G$1" x="21.59" y="99.06" rot="R180">
-<attribute name="PARTNO" x="21.59" y="99.06" size="1.778" layer="96" display="off"/>
-</instance>
 <instance part="GND53" gate="1" x="30.48" y="86.36"/>
+<instance part="JP1" gate="G$1" x="20.32" y="96.52"/>
 </instances>
 <busses>
 </busses>
@@ -10895,10 +11014,11 @@ the high voltage</text>
 <wire x1="116.84" y1="83.82" x2="116.84" y2="88.9" width="0.3048" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="G$1" pin="1"/>
 <pinref part="GND53" gate="1" pin="GND"/>
-<wire x1="24.13" y1="96.52" x2="30.48" y2="96.52" width="0.3048" layer="91"/>
-<wire x1="30.48" y1="96.52" x2="30.48" y2="88.9" width="0.3048" layer="91"/>
+<wire x1="22.86" y1="93.98" x2="30.48" y2="93.98" width="0.3048" layer="91"/>
+<wire x1="30.48" y1="93.98" x2="30.48" y2="88.9" width="0.3048" layer="91"/>
+<pinref part="JP1" gate="G$1" pin="P$2"/>
+<wire x1="20.32" y1="93.98" x2="22.86" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -11239,10 +11359,11 @@ the high voltage</text>
 <wire x1="78.74" y1="99.06" x2="60.96" y2="99.06" width="0.3048" layer="91"/>
 <label x="57.15" y="99.06" size="1.778" layer="95"/>
 <pinref part="R39" gate="G$1" pin="2"/>
-<wire x1="60.96" y1="99.06" x2="24.13" y2="99.06" width="0.3048" layer="91"/>
+<wire x1="60.96" y1="99.06" x2="22.86" y2="99.06" width="0.3048" layer="91"/>
 <wire x1="60.96" y1="101.6" x2="60.96" y2="99.06" width="0.3048" layer="91"/>
 <junction x="60.96" y="99.06"/>
-<pinref part="JP2" gate="G$1" pin="2"/>
+<pinref part="JP1" gate="G$1" pin="P$1"/>
+<wire x1="20.32" y1="99.06" x2="22.86" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -11379,7 +11500,7 @@ partition between 10k and 3k
 <attribute name="VALUE" x="74.2315" y="180.9115" size="1.524" layer="96" rot="R90"/>
 </instance>
 <instance part="GND8" gate="1" x="67.31" y="172.72"/>
-<instance part="U$1" gate="G$1" x="180.34" y="165.1">
+<instance part="RF_SHIELD" gate="G$1" x="180.34" y="165.1">
 <attribute name="PARTNO" x="180.34" y="165.1" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND23" gate="1" x="180.34" y="149.86"/>
@@ -11549,7 +11670,7 @@ partition between 10k and 3k
 <junction x="77.47" y="175.26"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="GND"/>
+<pinref part="RF_SHIELD" gate="G$1" pin="GND"/>
 <pinref part="GND23" gate="1" pin="GND"/>
 <wire x1="180.34" y1="152.4" x2="180.34" y2="160.02" width="0.3048" layer="91"/>
 </segment>
@@ -12436,6 +12557,10 @@ connection via frontpanel</text>
 <instance part="EXT1" gate="G$1" x="219.71" y="166.37">
 <attribute name="DIGIKEY" x="219.71" y="166.37" size="1.778" layer="96"/>
 </instance>
+<instance part="FID1" gate="G$1" x="20.32" y="43.18"/>
+<instance part="FID2" gate="G$1" x="20.32" y="35.56"/>
+<instance part="FID3" gate="G$1" x="20.32" y="27.94"/>
+<instance part="FID4" gate="G$1" x="20.32" y="20.32"/>
 </instances>
 <busses>
 </busses>
@@ -12734,16 +12859,27 @@ native SPI</text>
 <instance part="U9" gate="G$1" x="88.9" y="-68.58"/>
 <instance part="X2" gate="G$1" x="132.08" y="-104.14" smashed="yes" rot="R90">
 <attribute name="NAME" x="137.16" y="-103.124" size="1.778" layer="95"/>
+<attribute name="PARTNO" x="132.08" y="-104.14" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="GND54" gate="1" x="139.7" y="-106.68"/>
 <instance part="GND56" gate="1" x="124.46" y="-106.68"/>
-<instance part="USBCONN1" gate="A" x="124.46" y="-152.4" rot="R90"/>
-<instance part="R37" gate="G$1" x="129.54" y="-127" rot="R90"/>
-<instance part="R44" gate="G$1" x="124.46" y="-127" rot="R90"/>
+<instance part="USBCONN1" gate="A" x="124.46" y="-152.4" rot="R90">
+<attribute name="PARTNO" x="124.46" y="-152.4" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="R37" gate="G$1" x="129.54" y="-127" rot="R90">
+<attribute name="PARTNO" x="129.54" y="-127" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R44" gate="G$1" x="124.46" y="-127" rot="R90">
+<attribute name="PARTNO" x="124.46" y="-127" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND57" gate="1" x="106.68" y="-132.08"/>
-<instance part="C64" gate="G$1" x="177.8" y="-33.02" rot="R180"/>
+<instance part="C64" gate="G$1" x="177.8" y="-33.02" rot="R180">
+<attribute name="PARTNO" x="177.8" y="-33.02" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND58" gate="1" x="177.8" y="-40.64"/>
-<instance part="C67" gate="G$1" x="162.56" y="-33.02" rot="R180"/>
+<instance part="C67" gate="G$1" x="162.56" y="-33.02" rot="R180">
+<attribute name="PARTNO" x="162.56" y="-33.02" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND63" gate="1" x="162.56" y="-43.18"/>
 <instance part="C68" gate="G$1" x="142.24" y="-30.48" rot="R180">
 <attribute name="PARTNO" x="142.24" y="-30.48" size="1.778" layer="96" rot="R180" display="off"/>
@@ -12755,13 +12891,19 @@ native SPI</text>
 <attribute name="PARTNO" x="137.16" y="-35.56" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="GND64" gate="1" x="137.16" y="-63.5"/>
-<instance part="C73" gate="G$1" x="124.46" y="-48.26" rot="R180"/>
+<instance part="C73" gate="G$1" x="124.46" y="-48.26" rot="R180">
+<attribute name="PARTNO" x="124.46" y="-48.26" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND65" gate="1" x="127" y="-66.04"/>
 <instance part="3X3MM1" gate="G$1" x="134.62" y="15.24"/>
 <instance part="GND66" gate="1" x="111.76" y="15.24"/>
 <instance part="GND67" gate="1" x="205.74" y="-137.16"/>
-<instance part="R47" gate="G$1" x="182.88" y="-86.36" rot="R270"/>
-<instance part="R49" gate="G$1" x="165.1" y="-76.2" rot="R270"/>
+<instance part="R47" gate="G$1" x="182.88" y="-86.36" rot="R270">
+<attribute name="PARTNO" x="182.88" y="-86.36" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R49" gate="G$1" x="165.1" y="-76.2" rot="R270">
+<attribute name="PARTNO" x="165.1" y="-76.2" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="SW2" gate="1" x="66.04" y="7.62" rot="R90"/>
 <instance part="GND68" gate="1" x="66.04" y="-2.54"/>
 <instance part="J5" gate="G$1" x="157.48" y="-134.62" rot="MR270"/>
