@@ -2709,6 +2709,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 </element>
 <element name="C2" library="Eurocard-HV-piezo-driver" package="C_MLCC_0603" value="100nF" x="55.753" y="-231.521" smashed="yes">
 <attribute name="PARTNO" value="1276-1936-1-ND" x="55.753" y="-231.521" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="55.753" y="-233.321" size="1.016" layer="25" font="vector"/>
 </element>
 <element name="C3" library="Eurocard-HV-piezo-driver" package="C_MLCC_0603" value="100nF" x="59.944" y="-235.4326" smashed="yes">
 <attribute name="NAME" x="64.3936" y="-234.861" size="1.016" layer="25" font="vector" rot="R180"/>
@@ -2719,6 +2720,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 </element>
 <element name="REXT" library="Eurocard-HV-piezo-driver" package="R_0603" value="10k" x="57.912" y="-243.078" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="P10.0KHCT-ND" x="57.912" y="-243.078" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="56.912" y="-246.278" size="1.016" layer="25" font="vector" rot="R90"/>
 </element>
 <element name="C4" library="Eurocard-HV-piezo-driver" package="C_MLCC_0603" value="100nF" x="60.833" y="-236.855" smashed="yes">
 <attribute name="NAME" x="60.541" y="-239.2218" size="1.016" layer="25" font="vector" rot="R90"/>
@@ -2859,6 +2861,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 </element>
 <element name="L1" library="Eurocard-HV-piezo-driver" package="L_FERRITE_0603" value="1000k Ferrite" x="55.753" y="-229.997" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="445-1548-1-ND" x="55.753" y="-229.997" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="56.853" y="-228.097" size="1.016" layer="25" font="vector" rot="R180"/>
 </element>
 <element name="C20" library="Eurocard-HV-piezo-driver" package="C_MLCC_0805" value="10uF" x="60.452" y="-231.013" smashed="yes" rot="R270">
 <attribute name="NAME" x="61.579" y="-229.667" size="1.016" layer="25" font="vector" rot="R270"/>
@@ -2866,6 +2869,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 </element>
 <element name="C21" library="Eurocard-HV-piezo-driver" package="C_MLCC_0603" value="100nF" x="57.912" y="-230.759" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="1276-1936-1-ND" x="57.912" y="-230.759" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="57.312" y="-226.559" size="1.016" layer="25" font="vector" rot="R270"/>
 </element>
 <element name="C22" library="Eurocard-HV-piezo-driver" package="C_MLCC_1210" value="HV 100nF" x="21.463" y="-237.744" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="445-14941-1-ND" x="21.463" y="-237.744" size="1.778" layer="27" rot="R90" display="off"/>
