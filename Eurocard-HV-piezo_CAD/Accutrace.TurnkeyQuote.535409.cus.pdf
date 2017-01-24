@@ -1,0 +1,182 @@
+%PDF-1.4
+%”ÙÃ·
+% PDFsharp Version 0.9.653 (verbose mode)
+% Creation date: 12/21/2016 2:47:18 PM           
+% Creation time: 0.005 seconds                   
+% File size:     7613 bytes                      
+% Pages:         1                               
+% Objects:       9                               
+%--------------------------------------------------------------------------------------------------
+1 0 obj   % PdfSharp.Pdf.PdfDocumentInformation
+<<
+  /CreationDate (D:20161221144718-08'00')
+  /Creator (PDFsharp 0.9.653 \(www.pdfsharp.com\))
+  /Producer (PDFsharp 0.9.653 \(www.pdfsharp.com\))
+>>
+endobj
+%--------------------------------------------------------------------------------------------------
+2 0 obj   % PdfSharp.Pdf.Advanced.PdfCatalog
+<<
+  /Pages 3 0 R
+  /Type /Catalog
+>>
+endobj
+%--------------------------------------------------------------------------------------------------
+3 0 obj   % PdfSharp.Pdf.PdfPages
+<<
+  /Count 1
+  /Kids [4 0 R]
+  /Type /Pages
+>>
+endobj
+%--------------------------------------------------------------------------------------------------
+4 0 obj   % PdfSharp.Pdf.PdfPage
+<<
+  /Contents 5 0 R
+  /MediaBox [0 0 612 792]
+  /Parent 3 0 R
+  /Resources 6 0 R
+  /Type /Page
+>>
+endobj
+%--------------------------------------------------------------------------------------------------
+5 0 obj   % PdfSharp.Pdf.Advanced.PdfContent
+<<
+  /Length 3580
+>>
+stream
+q
+1 0 0 -1 0 792 cm -100 Tz
+q
+BT
+/GS0 gs
+/F0 -10 Tf
+10 20 Td (                         Accutrace Inc.) Tj
+0 11.328 Td (                         2986 Scott Blvd,) Tj
+0 11.328 Td (                         Santa Clara, CA 95054) Tj
+0 11.328 Td (                         Tel \(408\) 748-9600 Fax \(408\) 748-1982) Tj
+0 11.328 Td (                         http://www.PCB4u.com) Tj
+0 11.328 Td (                         ) Tj
+0 11.328 Td (                         PC BOARD MANUFACTURING QUOTE) Tj
+0 11.328 Td (   To: University of Maryland-PHYSICS PHYSICQuote#  535409   JOB# ) Tj
+0 11.328 Td (       4296 Stadium DR RM 0253              Date    12/21/2016) Tj
+0 11.328 Td (       College Park MD 20742                ID#     UNI063) Tj
+0 11.328 Td (                                            PO#     ) Tj
+0 11.328 Td (         ------------------------------) Tj
+0 11.328 Td (   Attn: | Neal Pisenti               |) Tj
+0 11.328 Td (         ------------------------------) Tj
+0 11.328 Td (   We are pleased to quote you the following as per your specifications) Tj
+0 11.328 Td (   and requirements.  This quote is valid for 30 days.  Please refer to) Tj
+0 11.328 Td (   the above quote number when placing an order.  Feel free to call us) Tj
+0 11.328 Td (   if you have any questions.) Tj
+0 22.656 Td (   ---------------------------------------------------------------------) Tj
+0 11.328 Td (   Part Number- HV Piezo Driver           Board Size - 6.300 x 3.938) Tj
+0 11.328 Td (   Revision   -                           ) Tj
+0 11.328 Td (   ref#       - Fab and Assembly          Panel Size - 7.000 x 4.638) Tj
+0 11.328 Td (   Layers     - 4                         Array      - 1) Tj
+0 11.328 Td (   Material   - FR4                       Routing    - Route/Retain) Tj
+0 11.328 Td (   Thickness  - 062                       OtherInfo  - ) Tj
+0 11.328 Td (   Finish Type- Leaded Finish             Testing    - YES) Tj
+0 11.328 Td (   ---------------------------------------------------------------------) Tj
+0 11.328 Td (   Hole Count - 730        Mask Type   - LPI         Silk \(Top\)    - White) Tj
+0 11.328 Td (   Tool Count - 14         Mask \(top\)  - Green       Silk \(Bottom\) - White) Tj
+0 11.328 Td (   Small Hole - 014        Mask\(bottom\)- Green       Min Cu. Wt.   - 1.0) Tj
+0 11.328 Td (   Min Line   - 008        Min Spacing - 008         Slots/Cutouts - 0) Tj
+0 11.328 Td (   SMT Sides  - Top side   SMT Pitch   - 0.020       SMT Pads      - 0) Tj
+0 11.328 Td (   ---------------------------------------------------------------------) Tj
+0 11.328 Td (   ---------------------------------------------------------------------) Tj
+0 22.656 Td (                    QUOTE INFORMATION BASED ON ABOVE SPECS.) Tj
+0 22.656 Td (                     Quantity   Turn Around   Unit Price   Line Total) Tj
+0 11.328 Td (                     ----------------------------------------------------------) Tj
+0 11.328 Td (                     20         10    Days    $157.87      $3157.40) Tj
+0 11.328 Td (                     20         15    Days    $136.45      $2729.00) Tj
+0 22.656 Td (                                      Tooling Charge       $250.00) Tj
+0 11.328 Td (SPECIAL INSTRUCTIONS: ------------------------------------------------------) Tj
+0 11.328 Td (HV Piezo Driver Fab & Assembly quote.) Tj
+0 11.328 Td (TESTING "yes" FAB only.) Tj
+0 22.656 Td (NonROHS) Tj
+0 11.328 Td (4LAYER) Tj
+0 11.328 Td (.062) Tj
+0 11.328 Td (LEADED) Tj
+0 11.328 Td (FR4) Tj
+0 11.328 Td (1oz) Tj
+0 11.328 Td (Testing \(FAB only\)) Tj
+0 22.656 Td (THANK YOU!) Tj
+0 11.328 Td (Jodi ) Tj
+ET
+Q
+Q
+endstream
+endobj
+%--------------------------------------------------------------------------------------------------
+6 0 obj   % PdfSharp.Pdf.Advanced.PdfResources
+<<
+  /ExtGState
+  <<
+    /GS0 7 0 R
+  >>
+  /Font
+  <<
+    /F0 9 0 R
+  >>
+  /ProcSet [/PDF/Text/ImageB/ImageC/ImageI]
+>>
+endobj
+%--------------------------------------------------------------------------------------------------
+7 0 obj   % PdfSharp.Pdf.Advanced.PdfExtGState
+<<
+  /ca 1
+  /Type /ExtGState
+>>
+endobj
+%--------------------------------------------------------------------------------------------------
+8 0 obj   % PdfSharp.Pdf.Advanced.PdfFontDescriptor
+<<
+  /Ascent 833
+  /CapHeight 571
+  /Descent -300
+  /Flags 32
+  /FontBBox [-122 -680 623 1021]
+  /FontName /CourierNew
+  /ItalicAngle 0
+  /StemV 0
+  /Type /FontDescriptor
+  /XHeight 423
+>>
+endobj
+%--------------------------------------------------------------------------------------------------
+9 0 obj   % PdfSharp.Pdf.Advanced.PdfTrueTypeFont
+<<
+  /BaseFont /CourierNew
+  /Encoding /WinAnsiEncoding
+  /FirstChar 0
+  /FontDescriptor 8 0 R
+  /LastChar 255
+  /Subtype /TrueType
+  /Type /Font
+  /Widths [600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600 600]
+>>
+endobj
+%--------------------------------------------------------------------------------------------------
+xref
+0 10
+0000000000 65535 f 
+0000000407 00000 n 
+0000000713 00000 n 
+0000000903 00000 n 
+0000001092 00000 n 
+0000001331 00000 n 
+0000005101 00000 n 
+0000005375 00000 n 
+0000005562 00000 n 
+0000005910 00000 n 
+trailer
+<<
+  /ID [<52249A7E0E106E42A763CB96348A83F7><52249A7E0E106E42A763CB96348A83F7>]
+  /Info 1 0 R
+  /Root 2 0 R
+  /Size 10
+>>
+startxref
+7252
+%%EOF

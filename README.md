@@ -2,4 +2,16 @@
 
 For more details, see our paper on the ArXiv: [[http://arxiv.org/abs/1609.03607]]
 
-NOTE: switched LP corner capacitor needs to be biased at 2.5V to avoid distortion by the switch when going from sweep to DC mode of operation. This change will be made for v1.1 (forthcoming).
+Release notes:
+
+**v1.2**
+
+* Teensy 32-bit ARM microcontroller used (MK20DX256VLH7)
+* Voltage monitor now directly proportional to output voltage
+* LP corner capacitor switch now properly biased at 2.5V (may have been true in v1.1 too).
+
+Planned implementation in codebase:
+
+* "unlimited digital integrator" -- uController integrates mod_in to zero with some given timeconstant.
+* easier integration with eurocard backplane -- mostly refactoring, etc.
+* ... other?
