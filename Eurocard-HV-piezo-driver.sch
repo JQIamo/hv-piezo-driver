@@ -10082,9 +10082,9 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 50 =&gt; 20.5k
 20 =&gt; 52.3k
 10 =&gt; 110k</text>
-<text x="-102.87" y="-266.7" size="1.778" layer="98">TODO:
-* Series 0603 resistors of TNPW 0.1% instead of 1206
-* swap out switch for bipolar version and/or implement alessandro's hack to bias that node</text>
+<text x="-115.57" y="-266.7" size="1.778" layer="98">Possible TODO:
+* Series 0603 resistors of TNPW 0.1% instead of 1206 for R19
+* swap out switch for bipolar version</text>
 <text x="69.85" y="-236.22" size="1.778" layer="98">(to backplane/ucontroller)</text>
 <text x="69.85" y="-246.38" size="1.778" layer="98">(to frontpanel)</text>
 <text x="-24.13" y="-158.75" size="1.778" layer="98">(from DAC)</text>
