@@ -12,6 +12,7 @@ Release notes:
 
 Planned implementation in codebase:
 
-* "unlimited digital integrator" -- uController integrates mod_in to zero with some given timeconstant.
-* easier integration with eurocard backplane -- mostly refactoring, etc.
+* "unlimited digital integrator" -- uController integrates mod_in to zero with some given timeconstant. (DONE)
+* scan module -- generate output scan/sweep. (easy to do, but need to find time. Stub `scan_module.h` file in code already)
+* easier integration with eurocard backplane
 * ... other?
