@@ -1,0 +1,8 @@
+{
+  "builtInLibrariesFolders": "/Applications/Arduino.app/Contents/Java/libraries",
+  "customBuildProperties": "",
+  "fqbn": "teensy:avr:teensy31:usb=serial,speed=96,opt=o1std,keys=en-us",
+  "hardwareFolders": "/Applications/Arduino.app/Contents/Java/hardware,/Users/npisenti/Library/Arduino15/packages",
+  "otherLibrariesFolders": "lib",
+  "toolsFolders": "/Applications/Arduino.app/Contents/Java/tools-builder,/Applications/Arduino.app/Contents/Java/hardware/tools/avr,/Users/npisenti/Library/Arduino15/packages"
+}
