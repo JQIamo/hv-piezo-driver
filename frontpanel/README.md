@@ -5,3 +5,7 @@ The frontpanel file is built with the tool from Front Panel Express (https://www
 They cost ~ $77 @ QTY 10.
 
 ![Frontpanel Screenshot](Frontpanel_Screenshot.png)
+
+## Release notes
+
+v1.2.1 -- fixed distance between switch and rotary encoder to be 0.75" matching actual breakout board.
