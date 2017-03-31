@@ -1,8 +1,8 @@
 #ifndef PIEZO_REGISTERS_H
 #define PIEZO_REGISTERS_H
 
-#define RWREG_COUNT 0x1C
-#define CALIBRATION_POINTS 16
+#define RWREG_COUNT 0x4C
+#define CALIBRATION_POINTS 64
 
 
 
@@ -25,10 +25,10 @@ enum Registers
   /* 16 calibration points, PIEZO_CALIB run sfrom 0x0C to 0x1B */
   PIEZO_CALIB =     0x0C,
 
-  MONPIEZO =        0x1C, // monitor of piezo; not currently used
-  MONVP =           0x1D, // monitor pos rail; not currently used
-  MONVM =           0x1E,  // monitor neg rail; not currently used
-  REG_COUNT =       0x1F
+  MONPIEZO =        0x4C, // monitor of piezo; not currently used
+  MONVP =           0x4D, // monitor pos rail; not currently used
+  MONVM =           0x4E,  // monitor neg rail; not currently used
+  REG_COUNT =       0x4F
 };
 
 volatile uint32_t * RegArray[REG_COUNT];

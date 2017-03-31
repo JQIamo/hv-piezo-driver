@@ -200,6 +200,7 @@ void Piezo::begin(uint8_t cs, uint8_t clr, uint8_t ldac){
     regWrite(PIEZO, 0x00);
 
     //analogReference(INTERNAL);  // set analog reference to internal ref
+    analogReference(INTERNAL);
     analogReadRes(16);          // Teensy 3.0: set ADC resolution to this many bits
     //analogReadResolution(16);
 
@@ -369,12 +370,12 @@ void calibrate(){
       Serial.println(read_val);
     #endif
 
-    if (i < 12){
-      val += 1024;
+    if (i < 40){
+      val += 400;
     } else if (i == CALIBRATION_POINTS - 2){
       val = 65535;  // last point should be full scale
     } else {
-      val += 16384; 
+      val += 2000;
     }
   }
 
