@@ -337,9 +337,9 @@ MODULATION</text>
 <text x="84.9884" y="-249.2248" size="1.016" layer="25" rot="R90">PROGRAM</text>
 <text x="102.362" y="-261.62" size="1.27" layer="21" rot="R90">-15 V</text>
 <text x="101.092" y="-273.304" size="1.27" layer="21" rot="R270">+15 V</text>
-<text x="117.602" y="-281.178" size="1.27" layer="21">-15 V</text>
-<text x="123.2662" y="-285.242" size="1.27" layer="21" rot="R180">+15 V</text>
-<text x="123.1646" y="-282.5496" size="1.27" layer="21" rot="R180">GND</text>
+<text x="118.422" y="-276.402" size="1.27" layer="21" rot="R315">-15 V</text>
+<text x="122.1662" y="-282.542" size="1.27" layer="21" rot="R180">+15 V</text>
+<text x="122.4646" y="-206.3496" size="1.27" layer="21" rot="R180">GND</text>
 <wire x1="98.044" y1="-262.89" x2="102.616" y2="-262.89" width="0.254" layer="21"/>
 <wire x1="102.616" y1="-262.89" x2="103.378" y2="-262.89" width="0.254" layer="21"/>
 <wire x1="103.378" y1="-262.89" x2="103.378" y2="-271.78" width="0.254" layer="21"/>
@@ -2794,7 +2794,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <attribute name="PARTNO" value="A32260-ND" x="-17.78" y="-240.538" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="JP5" library="Eurocard-HV-piezo-driver" package="1X03" value="DNP" x="99.949" y="-267.335" smashed="yes" rot="R90">
-<attribute name="NAME" x="97.6122" y="-268.1732" size="0.762" layer="25" ratio="10" rot="R90"/>
+<attribute name="NAME" x="104.8122" y="-268.2732" size="0.762" layer="25" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="103.124" y="-271.145" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="U2" library="Eurocard-HV-piezo-driver" package="TO263-5" value="MIC5209" x="92.837" y="-283.464" smashed="yes" rot="R180">
