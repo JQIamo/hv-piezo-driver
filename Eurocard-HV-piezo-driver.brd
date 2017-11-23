@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
+<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -34,7 +34,7 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
@@ -358,6 +358,7 @@ MODULATION</text>
 <wire x1="75" y1="-206" x2="74" y2="-206" width="0.254" layer="21"/>
 <wire x1="74" y1="-206" x2="74" y2="-217" width="0.254" layer="21"/>
 <wire x1="74" y1="-217" x2="93" y2="-217" width="0.254" layer="21"/>
+<text x="93.98" y="-267.97" size="1.27" layer="21">GND</text>
 </plain>
 <libraries>
 <library name="JQI_Logo">
@@ -2795,7 +2796,6 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 </element>
 <element name="JP5" library="Eurocard-HV-piezo-driver" package="1X03" value="DNP" x="99.949" y="-267.335" smashed="yes" rot="R90">
 <attribute name="NAME" x="104.8122" y="-268.2732" size="0.762" layer="25" ratio="10" rot="R90"/>
-<attribute name="VALUE" x="103.124" y="-271.145" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="U2" library="Eurocard-HV-piezo-driver" package="TO263-5" value="MIC5209" x="92.837" y="-283.464" smashed="yes" rot="R180">
 <attribute name="NAME" x="98.425" y="-277.876" size="1.27" layer="25" rot="R270"/>
