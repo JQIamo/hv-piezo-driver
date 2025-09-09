@@ -10,6 +10,8 @@ It is written for the Kinetis MK20 (used on teensy 3.1, 3.2). You should be able
 
 A few things to note:
 
+* The most recent update makes this project compatibile also with [Platformio](https://platformio.org/). 
+
 * All "libraries" are under `/lib`; because of Arduino IDE stupidity and how it finds compilation dependencies, it is hard to get this to work nicely in the IDE as expected (hence the makefile). Basically, though, if you don't want to mess with Make but still change the code, you should be able to copy the contents of `/lib` to your Arduino libraries folder and be ok. However, this is untested.
 * The top level sketch is `piezo.ino`. This is where the `setup()` and `loop()` are located, but much of the code resides in the `/src` directory. Specifically:
 
